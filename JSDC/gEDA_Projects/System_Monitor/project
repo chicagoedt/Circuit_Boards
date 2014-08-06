@@ -1,0 +1,3 @@
+schematics System_Monitor.sch
+output-name System_Monitor
+elements-dir symbols

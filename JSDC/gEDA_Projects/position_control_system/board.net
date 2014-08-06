@@ -1,0 +1,19 @@
+unnamed_net17	R108-1 D107-2 
+unnamed_net16	R103-1 D104-2 
+unnamed_net15	R107-1 D103-2 
+unnamed_net14	R106-1 D102-2 
+unnamed_net13	R102-1 D101-2 
+unnamed_net12	C101-2 J104-32 
+unnamed_net11	J103-2 J104-39 
+unnamed_net10	D102-1 J104-14 
+unnamed_net9	D101-1 J104-15 
+unnamed_net8	D103-1 J104-16 
+unnamed_net7	D104-1 J104-17 
+unnamed_net6	J102-1 J104-18 
+unnamed_net5	J104-20 J101-1 
+unnamed_net4	R101-2 J104-9 CONN103-5 
+unnamed_net3	J104-8 CONN103-3 
+unnamed_net2	J104-7 CONN103-1 
+GND	R108-2 R107-2 R106-2 R103-2 R102-2 C101-1 J102-3 J103-3 J104-31 J104-11 J101-3 CONN104-1 CONN103-6 
+unnamed_net1	J104-6 CONN103-4 
+Vcc	R101-1 J103-1 J104-30 J104-10 J101-2 CONN104-2 D107-1 CONN103-2 

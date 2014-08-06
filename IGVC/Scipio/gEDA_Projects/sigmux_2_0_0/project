@@ -1,0 +1,6 @@
+schematics sigmux.sch
+output-name sigmux_board
+elements-dir gschem-sym 
+elements-dir ../pcb-symbols
+pcb-elements gschem-sym
+pcb-elements footprints

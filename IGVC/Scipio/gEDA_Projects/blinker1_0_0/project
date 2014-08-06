@@ -1,0 +1,8 @@
+schematics blinker.sch
+output-name blinker_board
+elements-dir gschem-sym 
+
+pcb-elements gschem-sym
+pcb-elements footprints
+
+

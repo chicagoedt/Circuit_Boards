@@ -1,0 +1,6 @@
+schematics sonar.sch
+output-name sonar_board
+elements-dir gschem-sym 
+elements-dir ../pcb-symbols
+pcb-elements gschem-sym
+pcb-elements footprints

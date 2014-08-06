@@ -1,0 +1,8 @@
+schematics edcs.sch
+output-name edcs_board
+elements-dir gschem-sym 
+elements-dir ../pcb-symbols
+pcb-elements gschem-sym
+pcb-elements footprints
+
+

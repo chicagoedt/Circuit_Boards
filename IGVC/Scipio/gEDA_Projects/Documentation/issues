@@ -1,0 +1,67 @@
+Issues for IGVC circuits
+
+general 
+- add standoff's to all daughtercards
+-make a custom gschem symbol for a 74LSO4 inverter (Low priority)
+-reorganize repo (low priority)
+-shrink fuse footprint
+-buy blue leds
+-buy 28 pin packages
+
+backplane
+-Widen all daughtercard innerconnects
+-Widen Molex power 
+-Shrink LRF Power Connector
+-fet
+
+-We need to rotate the ICSP pins on the backplane by 180 degrees
+-remove LEDS for SigMux from backplane
+-Revisit Pinout. I dont belive we need to be transfering GND and VCC between boards in so many places 
+
+sigmux
+need to move external LED hookup to before resistors. ground resistors after
+
+estop
+-label colors and direction for LEDS
+-update footprint for OR gate (pads are not wide long enough
+
+blinker
+moved onboard LED indicator to after transistor. This allows the GD's to shine really bright
+-label UC's
+-fet
+-autonomous blink is to slow
+-need pull down on transistor to keep it a solid color when off
+
+
+
+purchasing
+
+
+
+COMPELTED
+
+backplane
+-Add connection from R-EDCS[18] to SigMux[8]
+-Remove extra PWM Connectors
+-change the relay/diode/transistor on the e-stop to be on the backplane. Just grab a signal from the E-Stop
+-Flip-Flop RX 
+-add power light
+-move e-stop RX from [30] to [31]
+-I2C is not consistent between devices
+-updated transistors
+-deleted pin 43 on edcs (ground) for i2c
+-replace VIA's as holes for mounting
+
+SigMux
+-Fix EDCS-In pins to match Backplane ( pins[7:11] >> pins[2:6] )
+-PIN 1 on the Shift Register for buttons isnt connected to pin 2 on uC (THis is the asynchronous parallel load input selector)
+-RC Good/Bad LED is wrong
+-"TO BLINKER BOARD" is not recieving autonomous signal, like it should be
+-grab flashing light signal before the R's and D
+-Updated transistors
+
+E-Stop
+-change the relay/diode/transistor setup to be on the backplane. Just grab a signal from the E-Stop
+-change the estop power light to the other side
+-RX in has been moved from [30] to [31]
+

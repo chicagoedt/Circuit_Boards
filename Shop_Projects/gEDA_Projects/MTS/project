@@ -1,0 +1,8 @@
+schematics MTS.sch
+output-name MTS_board
+elements-dir gschem-sym 
+elements-dir ../pcb-symbols
+pcb-elements gschem-sym
+pcb-elements footprints
+
+
