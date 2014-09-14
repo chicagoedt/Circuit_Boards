@@ -851,19 +851,6 @@ Via[84000 289500 4000 2000 0 2000 "" ""]
 Via[57000 270500 4000 2000 0 2000 "" "found"]
 Via[108600 257400 4000 2000 0 2000 "" ""]
 
-Element["" "1206" "C103" "68uF" 177995 77210 -5940 4930 0 100 ""]
-(
-	Attribute("device" "CAPACITOR")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[5905 -1181 5905 1181 5118 2000 5718 "1" "1" "square"]
-	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "2" "2" "square"]
-	ElementLine [-2362 3740 2362 3740 800]
-	ElementLine [-2362 -3740 2362 -3740 800]
-
-	)
 
 Element["" "HEADER2_1" "CONN109" "unknown" 274800 125100 -3700 5600 0 100 ""]
 (
@@ -883,40 +870,7 @@ Element["" "HEADER2_1" "CONN109" "unknown" 274800 125100 -3700 5600 0 100 ""]
 
 	)
 
-Element["" "1206" "C104" "0.1uF" 130300 16800 -6550 10150 0 100 ""]
-(
-	Attribute("device" "CAPACITOR")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-1181 -5905 1181 -5905 5118 2000 5718 "1" "1" "square"]
-	Pad[-1181 5905 1181 5905 5118 2000 5718 "2" "2" "square"]
-	ElementLine [3740 -2362 3740 2362 800]
-	ElementLine [-3740 -2362 -3740 2362 800]
 
-	)
-
-Element["" "MOLEX430450602" "CONN103" "Molex" 195555 24408 -10110 -19416 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_6")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[11800 8300 5000 2000 5600 2500 "3" "3" "edge2"]
-	Pin[-11800 8300 5000 2000 5600 2500 "1" "1" "edge2"]
-	Pin[0 8300 5000 2000 5600 2500 "2" "2" "edge2"]
-	Pin[0 -8700 6300 2000 6900 5900 "" "7" "edge2"]
-	Pin[11800 20100 5000 2000 5600 2500 "6" "6" "edge2"]
-	Pin[-11800 20100 5000 2000 5600 2500 "4" "4" "edge2"]
-	Pin[0 20100 5000 2000 5600 2500 "5" "5" "edge2"]
-	ElementLine [-24900 -24300 25000 -24300 1000]
-	ElementLine [-24900 -24300 -24900 23900 1000]
-	ElementLine [25000 -24300 25000 23900 1000]
-	ElementLine [-24900 23900 24900 23900 1000]
-
-	)
 
 Element["" "SIP9" "J101" "CC3000 Header" 93000 309000 -25900 6900 0 100 ""]
 (
@@ -1154,98 +1108,11 @@ Element["" "HEADER2_1" "CONN105" "Energy Analysis Micro" 128500 329000 -5200 610
 
 	)
 
-Element["" "DO5022P-104MLD" "L101" "100uH" 101850 99800 -4800 9800 0 100 ""]
-(
-	Attribute("device" "INDUCTOR")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-30500 500 -30000 500 11000 2000 12000 "1" "1" "square"]
-	Pad[30500 500 31000 500 11000 2000 12000 "2" "2" "square,edge2"]
 
-	)
 
-Element["" "SOIC_8N" "U104" "MAX5035BASA/V+" 45279 20794 -5600 13350 0 100 ""]
-(
-	Attribute("device" "unknown")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-21250 -7500 -14550 -7500 2400 2000 4400 "BST" "1" "square"]
-	Pad[-21250 -2500 -14550 -2500 2400 2000 4400 "VD" "2" "square"]
-	Pad[-21250 2500 -14550 2500 2400 2000 4400 "SGND" "3" "square"]
-	Pad[-21250 7500 -14550 7500 2400 2000 4400 "FB" "4" "square"]
-	Pad[14550 7500 21250 7500 2400 2000 4400 "ON/~OFF" "5" "square,edge2"]
-	Pad[14550 2500 21250 2500 2400 2000 4400 "GND" "6" "square,edge2"]
-	Pad[14550 -2500 21250 -2500 2400 2000 4400 "Vin" "7" "square,edge2"]
-	Pad[14550 -7500 21250 -7500 2400 2000 4400 "LX" "8" "square,edge2"]
-	ElementLine [-11350 -2200 -11350 -7250 1000]
-	ElementLine [-11350 -7250 -7750 -10850 1000]
-	ElementLine [-7750 -10850 11350 -10850 1000]
-	ElementLine [11350 -10850 11350 -2200 1000]
-	ElementLine [-11350 2200 -11350 10850 1000]
-	ElementLine [-11350 10850 11350 10850 1000]
-	ElementLine [11350 10850 11350 2200 1000]
 
-	)
 
-Element["" "1206" "C106" "68uF" 158205 102100 -4350 5650 0 100 ""]
-(
-	Attribute("device" "POLARIZED_CAPACITOR")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "+" "1" "square"]
-	Pad[5905 -1181 5905 1181 5118 2000 5718 "-" "2" "square"]
-	ElementLine [-2362 -3740 2362 -3740 800]
-	ElementLine [-2362 3740 2362 3740 800]
 
-	)
-
-Element["" "1206" "C105" "0.1uF" 47095 4800 -34740 -3650 0 100 ""]
-(
-	Attribute("device" "CAPACITOR")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[5905 -1181 5905 1181 5118 2000 5718 "1" "1" "square"]
-	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "2" "2" "square"]
-	ElementLine [-2362 3740 2362 3740 800]
-	ElementLine [-2362 -3740 2362 -3740 800]
-
-	)
-
-Element["" "1206" "R106" "1M" 177795 61700 -6640 5450 0 100 ""]
-(
-	Attribute("device" "RESISTOR")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[5905 -1181 5905 1181 5118 2000 5718 "1" "1" "square"]
-	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "2" "2" "square"]
-	ElementLine [-2362 3740 2362 3740 800]
-	ElementLine [-2362 -3740 2362 -3740 800]
-
-	)
-
-Element["" "1206" "R107" "384K" 151265 38583 -298 -16768 0 100 ""]
-(
-	Attribute("device" "RESISTOR")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-1181 5905 1181 5905 5118 2000 5718 "1" "1" "square"]
-	Pad[-1181 -5905 1181 -5905 5118 2000 5718 "2" "2" "square"]
-	ElementLine [-3740 -2362 -3740 2362 800]
-	ElementLine [3740 -2362 3740 2362 800]
-
-	)
 
 Element["onsolder" "1206" "R102" "330" 256095 151000 -7150 -4850 0 100 "auto"]
 (
@@ -1349,25 +1216,6 @@ Element["" "1206" "R101" "1M" 18905 288000 -6055 -11150 0 100 ""]
 
 	)
 
-Element["onsolder" "SC70_6" "U103" "SN74LVC1G18DCKR" 194000 328100 17400 -600 2 100 "auto"]
-(
-	Attribute("device" "SN74LVC1G18DCKR")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-1000 0 1000 0 1500 3000 2100 "S" "1" "onsolder,square"]
-	Pad[-1000 -2600 1000 -2600 1500 3000 2100 "GND" "2" "onsolder,square"]
-	Pad[-1000 -5100 1000 -5100 1500 3000 2100 "A" "3" "onsolder,square"]
-	Pad[6000 -5100 8000 -5100 1500 3000 2100 "Y1" "4" "onsolder,square,edge2"]
-	Pad[6000 -2600 8000 -2600 1500 3000 2100 "Vcc" "5" "onsolder,square,edge2"]
-	Pad[6000 0 8000 0 1500 3000 2100 "Y0" "6" "onsolder,square,edge2"]
-	ElementLine [-2500 1400 9400 1400 1000]
-	ElementLine [-2500 -6600 -2500 1400 1000]
-	ElementLine [-2500 -6600 9400 -6600 1000]
-	ElementLine [9400 -6600 9400 1400 1000]
-
-	)
 
 Element["" "1206" "LED103" "Power_LED" 256200 125300 -8540 4950 0 100 ""]
 (
@@ -1397,23 +1245,6 @@ Element["onsolder" "1206" "R104" "330" 256200 125200 -7150 -4850 0 100 "auto"]
 
 	)
 
-Element["" "ALF300" "Z101" "VS-50SQ080" 15184 70216 7132 12400 0 100 ""]
-(
-	Attribute("device" "ZENER_DIODE")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 5000 3000 5600 2000 "1" "1" "square"]
-	Pin[0 30000 5000 3000 5600 2000 "2" "2" ""]
-	ElementLine [0 0 0 10000 1000]
-	ElementLine [0 20000 0 30000 1000]
-	ElementLine [0 10000 5000 20000 1000]
-	ElementLine [-5000 20000 5000 20000 1000]
-	ElementLine [-5000 20000 0 10000 1000]
-	ElementLine [-5000 10000 5000 10000 1000]
-
-	)
 
 Element["" "1206" "LED106" "unknown" 255781 279832 -7525 5601 0 100 ""]
 (
@@ -1429,23 +1260,6 @@ Element["" "1206" "LED106" "unknown" 255781 279832 -7525 5601 0 100 ""]
 
 	)
 
-Element["" "CONNECTOR 1 2" "CONN106" "unknown" 13000 330000 -5800 6300 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-	ElementLine [-5000 5000 15000 5000 1000]
-	ElementLine [15000 5000 15000 -5000 1000]
-	ElementLine [15000 -5000 -5000 -5000 1000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementLine [5000 5000 5000 -5000 1000]
-
-	)
 
 Element["onsolder" "1206" "R108" "330" 255737 279836 5127 -11221 2 100 "auto"]
 (
