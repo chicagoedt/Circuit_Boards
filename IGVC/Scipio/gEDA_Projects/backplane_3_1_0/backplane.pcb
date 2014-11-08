@@ -6,7 +6,7 @@ FileVersion[20070407]
 PCB["" 600000 600000]
 
 Grid[500.0 0 0 0]
-Cursor[168500 4500 0.000000]
+Cursor[227500 43000 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[700 1000 700 500 800 500]
@@ -2136,7 +2136,7 @@ Element["" "4PINMOLEX" "CONN168" "SAMTEC PES-04-02-L-VT" 568750 552150 -5000 -36
 
 	)
 
-Element["" "CON_HDR-254P-6C-1R-6N__Mill-Max_800-Series" "J1" "toRoboteq" 295000 42000 30000 12000 2 100 ""]
+Element["" "CON_HDR-254P-6C-1R-6N__Mill-Max_800-Series" "J1" "toRoboteq" 295000 42000 32500 -3000 0 100 ""]
 (
 	Attribute("device" "CONNECTOR_6")
 	Attribute("manufacturer" "unknown")
@@ -2937,8 +2937,6 @@ Layer(10 "silk")
 	Text[393000 510500 0 490 "Chicago EDT" "clearline"]
 	Text[391000 577500 0 250 "Backplane" "clearline"]
 	Text[392500 563500 0 245 "Engineered in Chicago" "clearline"]
-	Text[505000 583000 0 130 "4/2014" "clearline"]
-	Text[469000 582500 0 140 "Rev 3.0" "clearline"]
 	Text[554000 13500 0 265 "+" "clearline"]
 	Text[524000 13500 0 265 "+" "clearline"]
 	Text[585000 367000 1 185 "#QUINNING" "clearline"]
@@ -2951,6 +2949,8 @@ Layer(10 "silk")
 	Text[423500 77500 0 100 "+ 12V -" "clearline"]
 	Text[454500 77500 0 100 "+  5V -" "clearline"]
 	Text[560000 114000 0 100 "- 3.3V +" "clearline"]
+	Text[500500 582500 0 100 "11/2014" "clearline"]
+	Text[469000 584000 0 100 "Rev 3.0" "clearline"]
 	Polygon("clearpoly")
 	(
 		[384000 87500] [544000 87500] [544000 187500] [384000 187500] 
