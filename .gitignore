@@ -4,5 +4,8 @@
 *.sch~
 *.pcb-
 *.sch-
+*.pcb#
+*.sch#
+*.xlsx#
 *.zip
 *.ps

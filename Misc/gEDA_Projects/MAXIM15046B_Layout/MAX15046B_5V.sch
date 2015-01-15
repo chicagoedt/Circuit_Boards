@@ -60,10 +60,12 @@ T 45600 49600 5 10 1 1 0 0 1
 refdes=C107
 T 46200 49800 5 10 0 0 270 0 1
 symversion=0.1
-T 44500 49300 5 10 0 0 0 0 1
-description=IC=24
 T 45600 49300 5 10 1 0 0 0 1
 value=10uF
+T 45300 50000 5 10 0 0 0 0 1
+footprint=1210
+T 45300 50000 5 10 0 0 0 0 1
+description=UMK325BJ106KM-T
 }
 C 47100 50000 1 270 0 capacitor-1.sym
 {
@@ -76,7 +78,9 @@ symversion=0.1
 T 47400 49300 5 10 1 0 0 0 1
 value=10uF
 T 47100 50000 5 10 0 0 0 0 1
-description=IC=24
+footprint=1210
+T 47100 50000 5 10 0 0 0 0 1
+description=UMK325BJ106KM-T
 }
 C 48600 50000 1 270 0 capacitor-1.sym
 {
@@ -89,7 +93,7 @@ symversion=0.1
 T 48900 49300 5 10 1 0 0 0 1
 value=100nF
 T 48600 50000 5 10 0 0 0 0 1
-description=IC=24
+description=GRM155R71C104KA88D
 T 48600 50000 5 10 0 0 0 0 1
 footprint=0402
 }
@@ -310,6 +314,10 @@ T 49600 44000 5 10 0 0 0 0 1
 value=4.7uF
 T 49600 44000 5 10 0 0 0 0 1
 description=IC=5.25
+T 49600 44000 5 10 0 0 0 0 1
+footprint=1206
+T 49600 44000 5 10 0 0 0 0 1
+description=TR3A475K010C1500
 }
 C 49300 43700 1 0 0 gnd-1.sym
 N 48900 44900 49400 44900 4
