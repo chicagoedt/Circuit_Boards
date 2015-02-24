@@ -1,0 +1,10 @@
+ATX power connector now follows standard for 12V instead of 5V
+DC-DC's moved up to allow ATX connector to not need to be cut to fit
+60 pin connectors made larger for no drilling
+e-stop fet made larger for no drilling
+
+Removed RC Receiver.
+Added two additional +5V spare connections.
+Added two additional +12V spare connections.
+Added one additional +3.3V spare connection.
+
