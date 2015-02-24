@@ -66,13 +66,13 @@ ChangePinName(U101, 3, 3)
 ChangePinName(C104, 2, 2)
 ChangePinName(C104, 1, 1)
 
-# Start of element D101
-ChangePinName(D101, 2, 2)
-ChangePinName(D101, 1, 1)
+# Start of element D102
+ChangePinName(D102, 2, 2)
+ChangePinName(D102, 1, 1)
 
-# Start of element R102
-ChangePinName(R102, 1, 1)
-ChangePinName(R102, 2, 2)
+# Start of element R101
+ChangePinName(R101, 1, 1)
+ChangePinName(R101, 2, 2)
 
 # Start of element F101
 ChangePinName(F101, 2, 2)
