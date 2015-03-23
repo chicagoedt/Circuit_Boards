@@ -1,5 +1,35 @@
 # Pin name action command file
 
+# Start of element U110
+ChangePinName(U110, 11, INVALID)
+ChangePinName(U110, 12, T2in)
+ChangePinName(U110, 13, T1in)
+ChangePinName(U110, 14, FORCEON)
+ChangePinName(U110, 15, R1out)
+ChangePinName(U110, 16, R1in)
+ChangePinName(U110, 17, T1out)
+ChangePinName(U110, 18, GND)
+ChangePinName(U110, 19, Vcc)
+ChangePinName(U110, 20, FORCEOFF)
+ChangePinName(U110, 10, R2out)
+ChangePinName(U110, 9, R2in)
+ChangePinName(U110, 8, T2out)
+ChangePinName(U110, 7, V-)
+ChangePinName(U110, 6, C2-)
+ChangePinName(U110, 5, C2+)
+ChangePinName(U110, 4, C1-)
+ChangePinName(U110, 3, V+)
+ChangePinName(U110, 2, C1+)
+ChangePinName(U110, 1, EN)
+
+# Start of element U111
+ChangePinName(U111, 4, B)
+ChangePinName(U111, 5, C)
+ChangePinName(U111, 6, A)
+ChangePinName(U111, 3, GND)
+ChangePinName(U111, 2, Vcc)
+ChangePinName(U111, 1, BE)
+
 # Start of element U109
 ChangePinName(U109, 23, GND)
 ChangePinName(U109, 24, AVcc)
@@ -67,37 +97,6 @@ ChangePinName(CONN120, 1, 1)
 ChangePinName(CONN120, 4, 4)
 ChangePinName(CONN120, 2, 2)
 ChangePinName(CONN120, 3, 3)
-
-# Start of element CONN119
-ChangePinName(CONN119, 3, 3)
-ChangePinName(CONN119, 1, 1)
-ChangePinName(CONN119, 2, 2)
-
-# Start of element U105
-ChangePinName(U105, 16, Vcc)
-ChangePinName(U105, 15, !E)
-ChangePinName(U105, 14, I0D)
-ChangePinName(U105, 13, I1D)
-ChangePinName(U105, 12, YD)
-ChangePinName(U105, 11, I0C)
-ChangePinName(U105, 10, I1C)
-ChangePinName(U105, 9, YC)
-ChangePinName(U105, 8, GND)
-ChangePinName(U105, 7, YB)
-ChangePinName(U105, 6, I1B)
-ChangePinName(U105, 5, I0B)
-ChangePinName(U105, 4, YA)
-ChangePinName(U105, 3, I1A)
-ChangePinName(U105, 2, I0A)
-ChangePinName(U105, 1, S)
-
-# Start of element C110
-ChangePinName(C110, 2, 2)
-ChangePinName(C110, 1, 1)
-
-# Start of element C109
-ChangePinName(C109, 2, 2)
-ChangePinName(C109, 1, 1)
 
 # Start of element U108
 ChangePinName(U108, 15, USBDP)
@@ -227,18 +226,6 @@ ChangePinName(CONN106, 2, 2)
 # Start of element CONN105
 ChangePinName(CONN105, 1, 1)
 ChangePinName(CONN105, 2, 2)
-
-# Start of element J103
-ChangePinName(J103, 6, 6)
-ChangePinName(J103, 7, 7)
-ChangePinName(J103, 8, 8)
-ChangePinName(J103, 9, 9)
-ChangePinName(J103, 10, 10)
-ChangePinName(J103, 5, 5)
-ChangePinName(J103, 1, 1)
-ChangePinName(J103, 4, 4)
-ChangePinName(J103, 3, 3)
-ChangePinName(J103, 2, 2)
 
 # Start of element C102
 ChangePinName(C102, 2, 2)
