@@ -219,10 +219,6 @@ ChangePinName(CONN108, 2, 2)
 ChangePinName(CONN107, 1, 1)
 ChangePinName(CONN107, 2, 2)
 
-# Start of element CONN106
-ChangePinName(CONN106, 1, 1)
-ChangePinName(CONN106, 2, 2)
-
 # Start of element CONN105
 ChangePinName(CONN105, 1, 1)
 ChangePinName(CONN105, 2, 2)
