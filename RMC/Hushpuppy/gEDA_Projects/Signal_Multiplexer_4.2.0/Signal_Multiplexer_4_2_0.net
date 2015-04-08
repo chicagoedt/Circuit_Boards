@@ -11,7 +11,7 @@ unnamed_net42	U111-1 U109-12
 unnamed_net41	U109-13 CONN121-5 
 unnamed_net40	U110-9 CONN116-5 
 unnamed_net39	U112-3 CONN116-3 
-unnamed_net38	U112-1 CONN116-1 
+unnamed_net38	U112-2 U112-1 CONN116-1 
 unnamed_net37	TP104-1 U110-17 CONN116-6 
 unnamed_net36	U109-38 CONN116-4 
 unnamed_net35	U109-41 CONN120-4 
