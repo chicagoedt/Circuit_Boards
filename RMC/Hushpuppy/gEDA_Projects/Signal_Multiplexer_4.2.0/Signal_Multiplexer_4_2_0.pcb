@@ -6,7 +6,7 @@ FileVersion[20070407]
 PCB["" 475000 325000]
 
 Grid[10.0 0 0 0]
-Cursor[139040 57590 0.000000]
+Cursor[280720 49220 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[700 1000 700 500 800 500]
@@ -1727,7 +1727,7 @@ Element["" "CON_TP__Keystone_5000" "TP102" "unknown" 448280 35970 -7806 5335 0 1
 
 	)
 
-Element["" "CON_TP__Keystone_5000" "TP101" "unknown" 310830 38337 -6675 -11825 0 100 ""]
+Element["" "CON_TP__Keystone_5000" "TP101" "unknown" 310830 38337 -14445 4145 0 100 ""]
 (
 	Pin[0 0 6500 2000 8500 4600 "" "1" ""]
 	ElementArc [0 0 5000 5000 0 360 1000]
@@ -1754,6 +1754,45 @@ Element["" "SOT23-95P-280L1-6N__LTC_S6_Package" "U111" "unknown" 179150 102210 -
 	ElementLine [1750 -6100 1750 -2200 1000]
 	ElementLine [-1750 -6100 1750 -6100 1000]
 	ElementLine [-1750 -6100 -1750 -2200 1000]
+
+	)
+
+Element["" "HEADER2_1" "CONN124" "unknown" 288780 17330 -17900 5730 0 100 ""]
+(
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
+	Pin[0 -10000 6000 3000 6600 3800 "2" "2" "thermal(5X)"]
+	ElementLine [-5000 5000 5000 5000 1000]
+	ElementLine [5000 -15000 5000 5000 1000]
+	ElementLine [-5000 -15000 5000 -15000 1000]
+	ElementLine [-5000 -15000 -5000 5000 1000]
+	ElementLine [5000 -5000 5000 5000 1000]
+	ElementLine [-5000 -5000 5000 -5000 1000]
+
+	)
+
+Element["" "HEADER2_1" "CONN123" "unknown" 307930 17220 -9540 5880 0 100 ""]
+(
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
+	Pin[0 -10000 6000 3000 6600 3800 "2" "2" "thermal(5X)"]
+	ElementLine [-5000 5000 5000 5000 1000]
+	ElementLine [5000 -15000 5000 5000 1000]
+	ElementLine [-5000 -15000 5000 -15000 1000]
+	ElementLine [-5000 -15000 -5000 5000 1000]
+	ElementLine [5000 -5000 5000 5000 1000]
+	ElementLine [-5000 -5000 5000 -5000 1000]
+
+	)
+
+Element["" "HEADER2_1" "CONN122" "unknown" 266170 16910 -21560 5720 0 100 ""]
+(
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
+	Pin[0 -10000 6000 3000 6600 3800 "2" "2" "thermal(5X)"]
+	ElementLine [-5000 5000 5000 5000 1000]
+	ElementLine [5000 -15000 5000 5000 1000]
+	ElementLine [-5000 -15000 5000 -15000 1000]
+	ElementLine [-5000 -15000 -5000 5000 1000]
+	ElementLine [5000 -5000 5000 5000 1000]
+	ElementLine [-5000 -5000 5000 -5000 1000]
 
 	)
 Layer(1 "Power_Top")
@@ -2309,7 +2348,7 @@ Layer(6 "Bottom")
 	)
 	Polygon("clearpoly")
 	(
-		[0 0] [474981 0] [474981 324987] [0 324987] 
+		[20 10] [475001 10] [475001 324997] [20 324997] 
 	)
 )
 Layer(7 "outline")
@@ -2372,6 +2411,9 @@ NetList()
 		Connect("CONN116-2")
 		Connect("CONN120-1")
 		Connect("CONN121-6")
+		Connect("CONN122-2")
+		Connect("CONN123-2")
+		Connect("CONN124-2")
 		Connect("J101-9")
 		Connect("R101-1")
 		Connect("R102-2")
@@ -2639,40 +2681,36 @@ NetList()
 	)
 	Net("unnamed_net44" "(unknown)")
 	(
-		Connect("U109-39")
-	)
-	Net("unnamed_net45" "(unknown)")
-	(
 		Connect("TP103-1")
 		Connect("U110-13")
 		Connect("U111-5")
 	)
-	Net("unnamed_net46" "(unknown)")
+	Net("unnamed_net45" "(unknown)")
 	(
 		Connect("C115-2")
 		Connect("U110-2")
 	)
-	Net("unnamed_net47" "(unknown)")
+	Net("unnamed_net46" "(unknown)")
 	(
 		Connect("C119-2")
 		Connect("U110-3")
 	)
-	Net("unnamed_net48" "(unknown)")
+	Net("unnamed_net47" "(unknown)")
 	(
 		Connect("C115-1")
 		Connect("U110-4")
 	)
-	Net("unnamed_net49" "(unknown)")
+	Net("unnamed_net48" "(unknown)")
 	(
 		Connect("C116-2")
 		Connect("U110-5")
 	)
-	Net("unnamed_net50" "(unknown)")
+	Net("unnamed_net49" "(unknown)")
 	(
 		Connect("C116-1")
 		Connect("U110-6")
 	)
-	Net("unnamed_net51" "(unknown)")
+	Net("unnamed_net50" "(unknown)")
 	(
 		Connect("C118-1")
 		Connect("U110-7")
@@ -2682,6 +2720,9 @@ NetList()
 		Connect("C117-2")
 		Connect("CONN109-2")
 		Connect("CONN121-2")
+		Connect("CONN122-1")
+		Connect("CONN123-1")
+		Connect("CONN124-1")
 		Connect("J101-7")
 		Connect("LED103-1")
 		Connect("LED113-1")

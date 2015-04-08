@@ -1,5 +1,17 @@
 # Pin name action command file
 
+# Start of element CONN124
+ChangePinName(CONN124, 1, 1)
+ChangePinName(CONN124, 2, 2)
+
+# Start of element CONN123
+ChangePinName(CONN123, 1, 1)
+ChangePinName(CONN123, 2, 2)
+
+# Start of element CONN122
+ChangePinName(CONN122, 1, 1)
+ChangePinName(CONN122, 2, 2)
+
 # Start of element TP109
 ChangePinName(TP109, 1, 1)
 
