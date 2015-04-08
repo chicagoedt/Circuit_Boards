@@ -6,7 +6,7 @@ FileVersion[20070407]
 PCB["" 475000 325000]
 
 Grid[10.0 0 0 0]
-Cursor[284930 190720 0.000000]
+Cursor[139040 57590 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[700 1000 700 500 800 500]
@@ -835,6 +835,7 @@ Via[384111 305409 8559 3200 0 4484 "" ""]
 Via[456300 309660 18843 2000 0 11965 "" "hole"]
 Via[18642 309699 18843 2000 0 11965 "" "hole"]
 Via[193245 170040 3977 1600 0 1772 "" ""]
+Via[368700 16790 8559 3200 0 4484 "" "thermal(5X)"]
 
 Element["" "SIP9" "J101" "CC3000 Header" 207500 40000 -9031 -11852 0 100 ""]
 (
@@ -1040,24 +1041,6 @@ Element["" "TQFP44_10" "U109" "unknown" 233204 189725 2950 -35118 0 100 ""]
 
 	)
 
-Element["" "SOT23-95P-280L1-6N__LTC_S6_Package" "U111" "unknown" 178813 102175 13735 -12240 3 100 ""]
-(
-	Pad[3950 3700 6350 3700 2400 2000 4400 "" "1" "square,edge2"]
-	Pad[3950 0 6350 0 2400 2000 4400 "" "2" "square,edge2"]
-	Pad[3950 -3700 6350 -3700 2400 2000 4400 "" "3" "square,edge2"]
-	Pad[-6350 -3700 -3950 -3700 2400 2000 4400 "" "4" "square"]
-	Pad[-6350 0 -3950 0 2400 2000 4400 "" "5" "square"]
-	Pad[-6350 3700 -3950 3700 2400 2000 4400 "" "6" "square"]
-	ElementLine [1750 2200 1750 4875 1000]
-	ElementLine [1750 4875 525 6100 1000]
-	ElementLine [-1750 6100 525 6100 1000]
-	ElementLine [-1750 2200 -1750 6100 1000]
-	ElementLine [1750 -6100 1750 -2200 1000]
-	ElementLine [-1750 -6100 1750 -6100 1000]
-	ElementLine [-1750 -6100 -1750 -2200 1000]
-
-	)
-
 Element["" "HC49" "U101" "16MHz" 158420 177999 -17788 7415 0 100 ""]
 (
 	Attribute("device" "CRYSTAL")
@@ -1132,7 +1115,7 @@ Element["" "1206" "LED103" "Power_LED" 299770 205413 -8308 3920 0 100 ""]
 
 Element["" "HEADER4_1" "CONN120" "Change_this_later_on" 52970 269693 -6521 -11474 0 100 ""]
 (
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,thermal(0X,5X)"]
 	Pin[0 10000 6000 3000 6600 3800 "2" "2" ""]
 	Pin[10000 10000 6000 3000 6600 3800 "3" "3" ""]
 	Pin[10000 0 6000 3000 6600 3800 "4" "4" ""]
@@ -1737,7 +1720,7 @@ Element["" "CON_TP__Keystone_5000" "TP103" "unknown" 169299 155220 -162 5179 0 1
 
 	)
 
-Element["" "CON_TP__Keystone_5000" "TP102" "unknown" 311220 58188 -7806 5335 0 100 ""]
+Element["" "CON_TP__Keystone_5000" "TP102" "unknown" 448280 35970 -7806 5335 0 100 ""]
 (
 	Pin[0 0 6500 2000 8500 4600 "" "1" "thermal(5X)"]
 	ElementArc [0 0 5000 5000 0 360 1000]
@@ -1748,6 +1731,29 @@ Element["" "CON_TP__Keystone_5000" "TP101" "unknown" 310830 38337 -6675 -11825 0
 (
 	Pin[0 0 6500 2000 8500 4600 "" "1" ""]
 	ElementArc [0 0 5000 5000 0 360 1000]
+
+	)
+
+Element["" "SOT23-95P-280L1-6N__LTC_S6_Package" "U111" "unknown" 179150 102210 -4720 6280 0 100 ""]
+(
+	Attribute("device" "unknown")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[3950 3700 6350 3700 2400 2000 4400 "BE" "1" "square,edge2"]
+	Pad[3950 0 6350 0 2400 2000 4400 "Vcc" "2" "square,edge2"]
+	Pad[3950 -3700 6350 -3700 2400 2000 4400 "GND" "3" "square,edge2"]
+	Pad[-6350 -3700 -3950 -3700 2400 2000 4400 "B" "4" "square"]
+	Pad[-6350 0 -3950 0 2400 2000 4400 "C" "5" "square"]
+	Pad[-6350 3700 -3950 3700 2400 2000 4400 "A" "6" "square"]
+	ElementLine [1750 2200 1750 4875 1000]
+	ElementLine [1750 4875 525 6100 1000]
+	ElementLine [-1750 6100 525 6100 1000]
+	ElementLine [-1750 2200 -1750 6100 1000]
+	ElementLine [1750 -6100 1750 -2200 1000]
+	ElementLine [-1750 -6100 1750 -6100 1000]
+	ElementLine [-1750 -6100 -1750 -2200 1000]
 
 	)
 Layer(1 "Power_Top")
@@ -1850,9 +1856,6 @@ Layer(2 "GND_Top")
 	Line[77071 125892 77071 116734 1585 2400 "clearline"]
 	Line[77071 116734 75075 114738 1585 2400 "clearline"]
 	Line[443859 62603 443904 62648 5000 6000 ""]
-	Line[362381 17043 433290 17043 5000 6000 ""]
-	Line[433290 17043 443742 27495 5000 6000 ""]
-	Line[443742 27495 443742 62478 5000 6000 ""]
 	Line[443742 62478 443738 62482 5000 6000 ""]
 	Line[183963 98475 183963 82017 1585 2400 "clearline"]
 	Line[183963 82017 183885 81939 1585 2400 "clearline"]
@@ -1860,6 +1863,9 @@ Layer(2 "GND_Top")
 	Line[183885 54320 184158 54047 1585 2400 "clearline"]
 	Line[184158 54047 162325 54047 1585 2400 "clearline"]
 	Line[162325 54047 156526 59846 1585 2400 "clearline"]
+	Line[362381 17043 368447 17043 3878 3200 ""]
+	Line[368447 17043 368700 16790 3878 3200 ""]
+	Line[361890 17043 368447 17043 5000 6000 ""]
 )
 Layer(3 "Signal_Top")
 (
@@ -2323,7 +2329,7 @@ Layer(8 "silk")
 	Text[10062 243126 0 130 "Molex Connector" "clearline"]
 	Text[41145 25506 0 130 "USB" "clearline"]
 	Text[124605 37908 0 130 "FTDI" "clearline"]
-	Text[167778 87360 0 120 "MUX" "clearline"]
+	Text[165038 84080 0 120 "MUX" "clearline"]
 	Text[262704 162903 0 120 "ATmega32U4" "clearline"]
 	Text[93950 143688 0 120 "RS-232 Lvl Shifter" "clearline"]
 	Text[315978 176709 0 80 "Power LED" "clearline"]
@@ -2364,6 +2370,7 @@ NetList()
 		Connect("C119-1")
 		Connect("CONN115-5")
 		Connect("CONN116-2")
+		Connect("CONN120-1")
 		Connect("CONN121-6")
 		Connect("J101-9")
 		Connect("R101-1")
