@@ -6,11 +6,11 @@ FileVersion[20070407]
 PCB["" 475000 325000]
 
 Grid[10.0 0 0 0]
-Cursor[114030 163520 0.000000]
+Cursor[169299 155220 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[700 1000 700 500 800 500]
-Flags("nameonpcb,clearnew,snappin")
+Flags("nameonpcb,snappin")
 Groups("1,2,3,4,c:5:6,s:s:c")
 Styles["Signal,1585,4978,2591,1200:Power,3878,8559,4484,1600:Fat,5000,15843,11965,3000:Skinny,1387,3977,1772,800"]
 
@@ -816,8 +816,8 @@ Via[183807 273897 3977 1600 0 1772 "" ""]
 Via[193830 274014 3977 1600 0 1772 "" ""]
 Via[183885 81939 3977 1600 0 1772 "" "thermal(5X)"]
 Via[165711 69069 3977 1600 0 1772 "" ""]
-Via[18096 14469 18843 2000 0 11965 "" ""]
-Via[460668 15093 18843 2000 0 11965 "" ""]
+Via[18096 14469 18843 2000 0 11965 "" "hole"]
+Via[460668 15093 18843 2000 0 11965 "" "hole"]
 Via[76986 52962 3977 1600 0 1772 "" ""]
 Via[98241 53859 3977 1600 0 1772 "" ""]
 Via[69615 48282 3977 1600 0 1772 "" ""]
@@ -832,8 +832,8 @@ Via[148161 93054 3977 1600 0 1772 "" "thermal(5X)"]
 Via[75114 114816 3977 1600 0 1772 "" "thermal(5X)"]
 Via[64116 111657 3977 1600 0 1772 "" ""]
 Via[384111 305409 8559 3200 0 4484 "" ""]
-Via[456300 309660 18843 2000 0 11965 "" ""]
-Via[18642 309699 18843 2000 0 11965 "" ""]
+Via[456300 309660 18843 2000 0 11965 "" "hole"]
+Via[18642 309699 18843 2000 0 11965 "" "hole"]
 Via[193245 170040 3977 1600 0 1772 "" ""]
 
 Element["" "SIP9" "J101" "CC3000 Header" 207500 40000 -9031 -11852 0 100 ""]
@@ -860,7 +860,7 @@ Element["" "SIP9" "J101" "CC3000 Header" 207500 40000 -9031 -11852 0 100 ""]
 
 	)
 
-Element["" "CON_USB_MINI_B__Molex_67503-1020" "CONN115" "Mini USB B Female" 30493 57500 5404 10134 1 100 ""]
+Element["" "CON_USB_MINI_B__Molex_67503-1020" "CONN115" "Mini USB B Female" 30493 57500 1293 24427 0 100 ""]
 (
 	Attribute("device" "CONNECTOR_5")
 	Attribute("manufacturer" "unknown")
@@ -897,7 +897,7 @@ Element["" "CON_USB_MINI_B__Molex_67503-1020" "CONN115" "Mini USB B Female" 3049
 
 	)
 
-Element["" "SSOP28" "U108" "FT232RL" 145941 81801 -19980 -25639 0 100 ""]
+Element["" "SSOP28" "U108" "FT232RL" 145941 81801 -16280 3021 0 100 ""]
 (
 	Attribute("device" "FT232R")
 	Attribute("manufacturer" "unknown")
@@ -941,7 +941,7 @@ Element["" "SSOP28" "U108" "FT232RL" 145941 81801 -19980 -25639 0 100 ""]
 
 	)
 
-Element["" "CONNECTOR-3-2" "CONN121" "unknown" 30000 107500 7636 -1412 3 100 ""]
+Element["" "CONNECTOR-3-2" "CONN121" "unknown" 30000 107500 -5354 -622 3 100 ""]
 (
 	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
 	Pin[10000 0 6000 3000 6600 3800 "2" "2" ""]
@@ -958,7 +958,7 @@ Element["" "CONNECTOR-3-2" "CONN121" "unknown" 30000 107500 7636 -1412 3 100 ""]
 
 	)
 
-Element["" "MOLEX1720640006" "CONN116" "unknown" 37500 210000 -31431 -3750 0 100 ""]
+Element["" "MOLEX1720640006" "CONN116" "unknown" 37500 210000 -3581 -38250 0 100 ""]
 (
 	Attribute("device" "CONNECTOR_6")
 	Attribute("manufacturer" "unknown")
@@ -980,7 +980,7 @@ Element["" "MOLEX1720640006" "CONN116" "unknown" 37500 210000 -31431 -3750 0 100
 
 	)
 
-Element["" "TQFP44_10" "U109" "unknown" 233204 189725 4870 -14008 0 100 ""]
+Element["" "TQFP44_10" "U109" "unknown" 233204 189725 2950 -35118 0 100 ""]
 (
 	Attribute("device" "Atmega16U4/Atmega32U4")
 	Attribute("manufacturer" "unknown")
@@ -1058,7 +1058,7 @@ Element["" "SOT23-95P-280L1-6N__LTC_S6_Package" "U111" "unknown" 178813 102175 1
 
 	)
 
-Element["" "HC49" "U101" "16MHz" 158420 177999 3206 4243 3 100 ""]
+Element["" "HC49" "U101" "16MHz" 158420 177999 -17788 7415 0 100 ""]
 (
 	Attribute("device" "CRYSTAL")
 	Attribute("manufacturer" "unknown")
@@ -1074,7 +1074,7 @@ Element["" "HC49" "U101" "16MHz" 158420 177999 3206 4243 3 100 ""]
 
 	)
 
-Element["onsolder" "1206" "C102" "22pF" 130015 177999 -3150 3150 0 100 "auto"]
+Element["onsolder" "1206" "C102" "22pF" 130015 177999 6300 -11088 2 100 "auto"]
 (
 	Attribute("device" "CAPACITOR")
 	Attribute("manufacturer" "unknown")
@@ -1088,7 +1088,7 @@ Element["onsolder" "1206" "C102" "22pF" 130015 177999 -3150 3150 0 100 "auto"]
 
 	)
 
-Element["onsolder" "1206" "C101" "22pF" 129818 197625 3150 -3150 2 100 "auto"]
+Element["onsolder" "1206" "C101" "22pF" 129818 197625 7860 4830 2 100 "auto"]
 (
 	Attribute("device" "CAPACITOR")
 	Attribute("manufacturer" "unknown")
@@ -1102,7 +1102,7 @@ Element["onsolder" "1206" "C101" "22pF" 129818 197625 3150 -3150 2 100 "auto"]
 
 	)
 
-Element["" "1206" "C114" "0.1_uF" 184158 48142 3150 -3150 3 100 ""]
+Element["" "1206" "C114" "0.1_uF" 184158 48142 10060 -5670 3 100 ""]
 (
 	Attribute("device" "CAPACITOR")
 	Attribute("manufacturer" "unknown")
@@ -1116,7 +1116,7 @@ Element["" "1206" "C114" "0.1_uF" 184158 48142 3150 -3150 3 100 ""]
 
 	)
 
-Element["" "1206" "LED103" "Power_LED" 299770 205413 -7128 -3150 0 100 ""]
+Element["" "1206" "LED103" "Power_LED" 299770 205413 -8308 3920 0 100 ""]
 (
 	Attribute("device" "LED")
 	Attribute("manufacturer" "unknown")
@@ -1163,7 +1163,7 @@ Element["" "HEADER2_1" "CONN105" "Energy Analysis Micro" 158457 219453 -11513 14
 
 	)
 
-Element["" "1206" "LED104" "Status_LED_0" 299770 222144 -7128 -3150 0 100 ""]
+Element["" "1206" "LED104" "Status_LED_0" 299770 222144 -8178 3940 0 100 ""]
 (
 	Attribute("device" "LED")
 	Attribute("manufacturer" "unknown")
@@ -1177,7 +1177,7 @@ Element["" "1206" "LED104" "Status_LED_0" 299770 222144 -7128 -3150 0 100 ""]
 
 	)
 
-Element["onsolder" "1206" "R101" "1M" 287118 111446 3150 3150 3 100 "auto"]
+Element["onsolder" "1206" "R101" "1M" 287118 111446 10770 4620 3 100 "auto"]
 (
 	Attribute("device" "RESISTOR")
 	Attribute("manufacturer" "unknown")
@@ -1191,7 +1191,7 @@ Element["onsolder" "1206" "R101" "1M" 287118 111446 3150 3150 3 100 "auto"]
 
 	)
 
-Element["" "HEADER2_1" "CONN109" "unknown" 330213 187239 -15374 -2449 0 100 ""]
+Element["" "HEADER2_1" "CONN109" "unknown" 330213 187239 -15544 5871 0 100 ""]
 (
 	Attribute("device" "CONNECTOR_2")
 	Attribute("manufacturer" "unknown")
@@ -1209,7 +1209,7 @@ Element["" "HEADER2_1" "CONN109" "unknown" 330213 187239 -15374 -2449 0 100 ""]
 
 	)
 
-Element["onsolder" "1206" "R104" "330" 348637 205374 -3150 3150 0 100 "auto"]
+Element["onsolder" "1206" "R104" "330" 348637 205374 -4630 -4760 0 100 "auto"]
 (
 	Attribute("device" "RESISTOR")
 	Attribute("manufacturer" "unknown")
@@ -1223,7 +1223,7 @@ Element["onsolder" "1206" "R104" "330" 348637 205374 -3150 3150 0 100 "auto"]
 
 	)
 
-Element["onsolder" "1206" "R105" "330" 348793 221696 -3150 3150 0 100 "auto"]
+Element["onsolder" "1206" "R105" "330" 348793 221696 -3480 10920 0 100 "auto"]
 (
 	Attribute("device" "RESISTOR")
 	Attribute("manufacturer" "unknown")
@@ -1237,7 +1237,7 @@ Element["onsolder" "1206" "R105" "330" 348793 221696 -3150 3150 0 100 "auto"]
 
 	)
 
-Element["" "HEADER2_1" "CONN110" "unknown" 330291 240435 -14906 -2956 0 100 ""]
+Element["" "HEADER2_1" "CONN110" "unknown" 330291 240435 -15086 -11476 0 100 ""]
 (
 	Attribute("device" "CONNECTOR_2")
 	Attribute("manufacturer" "unknown")
@@ -1255,7 +1255,7 @@ Element["" "HEADER2_1" "CONN110" "unknown" 330291 240435 -14906 -2956 0 100 ""]
 
 	)
 
-Element["" "1206" "LED102" "WLAN_Init_LED" 275496 249304 3072 -7096 3 100 ""]
+Element["" "1206" "LED102" "WLAN_Init_LED" 275496 249304 -3778 -7436 3 100 ""]
 (
 	Attribute("device" "LED")
 	Attribute("manufacturer" "unknown")
@@ -1269,7 +1269,7 @@ Element["" "1206" "LED102" "WLAN_Init_LED" 275496 249304 3072 -7096 3 100 ""]
 
 	)
 
-Element["" "1206" "LED101" "DHCP_Complete_LED" 285207 249343 2994 -7564 3 100 ""]
+Element["" "1206" "LED101" "DHCP_Complete_LED" 285207 249343 9954 -7504 3 100 ""]
 (
 	Attribute("device" "LED")
 	Attribute("manufacturer" "unknown")
@@ -1283,7 +1283,7 @@ Element["" "1206" "LED101" "DHCP_Complete_LED" 285207 249343 2994 -7564 3 100 ""
 
 	)
 
-Element["onsolder" "1206" "R103" "330" 275652 293140 -2916 -3579 1 100 "auto"]
+Element["onsolder" "1206" "R103" "330" 275652 293140 -10846 -3299 1 100 "auto"]
 (
 	Attribute("device" "RESISTOR")
 	Attribute("manufacturer" "unknown")
@@ -1297,7 +1297,7 @@ Element["onsolder" "1206" "R103" "330" 275652 293140 -2916 -3579 1 100 "auto"]
 
 	)
 
-Element["onsolder" "1206" "R102" "330" 285207 293140 -3150 -3150 1 100 "auto"]
+Element["onsolder" "1206" "R102" "330" 285207 293140 4860 -3780 1 100 "auto"]
 (
 	Attribute("device" "RESISTOR")
 	Attribute("manufacturer" "unknown")
@@ -1311,7 +1311,7 @@ Element["onsolder" "1206" "R102" "330" 285207 293140 -3150 -3150 1 100 "auto"]
 
 	)
 
-Element["" "1206" "LED106" "unknown" 193830 249460 2955 -7479 3 100 ""]
+Element["" "1206" "LED106" "unknown" 193830 249460 10275 -8039 3 100 ""]
 (
 	Attribute("device" "LED")
 	Attribute("manufacturer" "unknown")
@@ -1325,7 +1325,7 @@ Element["" "1206" "LED106" "unknown" 193830 249460 2955 -7479 3 100 ""]
 
 	)
 
-Element["" "1206" "LED105" "unknown" 183807 249460 2955 -7284 3 100 ""]
+Element["" "1206" "LED105" "unknown" 183807 249460 -3715 -7984 3 100 ""]
 (
 	Attribute("device" "LED")
 	Attribute("manufacturer" "unknown")
@@ -1339,7 +1339,7 @@ Element["" "1206" "LED105" "unknown" 183807 249460 2955 -7284 3 100 ""]
 
 	)
 
-Element["" "1206" "C113" "0.01_uF" 81877 81705 -3150 -3150 0 100 ""]
+Element["" "1206" "C113" "0.01_uF" 81877 81705 -5040 -9850 0 100 ""]
 (
 	Attribute("device" "CAPACITOR")
 	Attribute("manufacturer" "unknown")
@@ -1353,7 +1353,7 @@ Element["" "1206" "C113" "0.01_uF" 81877 81705 -3150 -3150 0 100 ""]
 
 	)
 
-Element["onsolder" "1206" "R108" "330" 193869 292984 -3150 -3150 1 100 "auto"]
+Element["onsolder" "1206" "R108" "330" 193869 292984 4940 -3840 1 100 "auto"]
 (
 	Attribute("device" "RESISTOR")
 	Attribute("manufacturer" "unknown")
@@ -1367,7 +1367,7 @@ Element["onsolder" "1206" "R108" "330" 193869 292984 -3150 -3150 1 100 "auto"]
 
 	)
 
-Element["onsolder" "1206" "R109" "330" 183807 293101 -3150 -3150 1 100 "auto"]
+Element["onsolder" "1206" "R109" "330" 183807 293101 -10960 -3290 1 100 "auto"]
 (
 	Attribute("device" "RESISTOR")
 	Attribute("manufacturer" "unknown")
@@ -1484,7 +1484,7 @@ Element["" "HEADER2_1" "CONN108" "unknown" 312702 273858 -13447 5562 0 100 ""]
 
 	)
 
-Element["" "1206" "R115" "27 Ohm" 186836 28248 -5412 -3228 0 100 ""]
+Element["" "1206" "R115" "27 Ohm" 186836 28248 -5482 3792 0 100 ""]
 (
 	Attribute("device" "RESISTOR")
 	Attribute("manufacturer" "unknown")
@@ -1498,7 +1498,7 @@ Element["" "1206" "R115" "27 Ohm" 186836 28248 -5412 -3228 0 100 ""]
 
 	)
 
-Element["" "1206" "LED112" "TX LED" 164440 28275 -8174 -3033 0 100 ""]
+Element["" "1206" "LED112" "TX LED" 164440 28275 -8454 3847 0 100 ""]
 (
 	Attribute("device" "LED")
 	Attribute("manufacturer" "unknown")
@@ -1512,7 +1512,7 @@ Element["" "1206" "LED112" "TX LED" 164440 28275 -8174 -3033 0 100 ""]
 
 	)
 
-Element["" "1206" "R114" "27 Ohm" 186858 17043 -5529 -2994 0 100 ""]
+Element["" "1206" "R114" "27 Ohm" 186858 17043 -5099 -9804 0 100 ""]
 (
 	Attribute("device" "RESISTOR")
 	Attribute("manufacturer" "unknown")
@@ -1526,7 +1526,7 @@ Element["" "1206" "R114" "27 Ohm" 186858 17043 -5529 -2994 0 100 ""]
 
 	)
 
-Element["" "1206" "LED111" "RX LED" 164362 16965 -8096 -3501 0 100 ""]
+Element["" "1206" "LED111" "RX LED" 164362 16965 -8166 -9891 0 100 ""]
 (
 	Attribute("device" "LED")
 	Attribute("manufacturer" "unknown")
@@ -1540,7 +1540,7 @@ Element["" "1206" "LED111" "RX LED" 164362 16965 -8096 -3501 0 100 ""]
 
 	)
 
-Element["" "1206" "C119" "0.68_uF" 128950 98865 -3150 -3150 0 100 ""]
+Element["" "1206" "C119" "0.68_uF" 128950 98865 -4910 4080 0 100 ""]
 (
 	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
 	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
@@ -1549,7 +1549,7 @@ Element["" "1206" "C119" "0.68_uF" 128950 98865 -3150 -3150 0 100 ""]
 
 	)
 
-Element["" "1206" "C118" "2.2_uF" 82976 125892 -5653 -3150 0 100 ""]
+Element["" "1206" "C118" "2.2_uF" 82976 125892 -6093 -10030 0 100 ""]
 (
 	Pad[5905 -1181 5905 1181 5118 2000 5718 "1" "1" "square"]
 	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "2" "2" "square"]
@@ -1558,7 +1558,7 @@ Element["" "1206" "C118" "2.2_uF" 82976 125892 -5653 -3150 0 100 ""]
 
 	)
 
-Element["" "1206" "C117" "0.1_uF" 148434 105511 3150 -3150 3 100 ""]
+Element["" "1206" "C117" "0.1_uF" 148434 105511 10060 -4950 3 100 ""]
 (
 	Pad[-1181 -5905 1181 -5905 5118 2000 5718 "1" "1" "square"]
 	Pad[-1181 5905 1181 5905 5118 2000 5718 "2" "2" "square"]
@@ -1567,7 +1567,7 @@ Element["" "1206" "C117" "0.1_uF" 148434 105511 3150 -3150 3 100 ""]
 
 	)
 
-Element["" "1206" "C116" "0.68_uF" 82072 96681 -3150 -3150 0 100 ""]
+Element["" "1206" "C116" "0.68_uF" 82072 96681 -4980 3940 0 100 ""]
 (
 	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
 	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
@@ -1576,7 +1576,7 @@ Element["" "1206" "C116" "0.68_uF" 82072 96681 -3150 -3150 0 100 ""]
 
 	)
 
-Element["" "1206" "C115" "0.1_uF" 101845 96681 -3150 -3150 0 100 ""]
+Element["" "1206" "C115" "0.1_uF" 101845 96681 -5470 3870 0 100 ""]
 (
 	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
 	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
@@ -1585,7 +1585,7 @@ Element["" "1206" "C115" "0.1_uF" 101845 96681 -3150 -3150 0 100 ""]
 
 	)
 
-Element["onsolder" "EHHD_HZ" "U112" "unknown" 414495 157805 6404 -2393 2 100 "auto"]
+Element["onsolder" "EHHD_HZ" "U112" "unknown" 414495 157805 -48676 -2423 2 100 "auto"]
 (
 	Pin[29409 104843 12600 2000 13200 6300 "" "1" ""]
 	Pin[-591 104843 12600 2000 13200 6300 "" "2" ""]
@@ -1679,7 +1679,7 @@ Element["" "1206" "R116" "330 Ohm" 356476 17043 -5951 -10443 0 100 ""]
 
 	)
 
-Element["" "1206" "LED113" "Switching_Regulator_LED" 333349 17004 -7479 -2916 0 100 ""]
+Element["" "1206" "LED113" "Switching_Regulator_LED" 333349 17004 -8199 3914 0 100 ""]
 (
 	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
 	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
@@ -2324,25 +2324,31 @@ Layer(8 "silk")
 	Text[124605 37908 0 130 "FTDI" "clearline"]
 	Text[167778 87360 0 120 "MUX" "clearline"]
 	Text[262704 162903 0 120 "ATmega32U4" "clearline"]
-	Text[65130 139698 0 120 "RS-232 Lvl Shifter" "clearline"]
+	Text[93950 143688 0 120 "RS-232 Lvl Shifter" "clearline"]
 	Text[315978 176709 0 80 "Power LED" "clearline"]
 	Text[316329 246207 0 80 "Safe Mode" "clearline"]
 	Text[151554 250848 0 80 "Auto Mode" "clearline"]
-	Text[205452 250637 0 80 "Manual Mode" "clearline"]
-	Text[252645 251750 0 80 "WLAN" "clearline"]
-	Text[297464 252468 0 80 "DHCP" "clearline"]
-	Text[21645 153582 0 120 "Programmer" "clearline"]
+	Text[205182 253377 0 80 "Manual Mode" "clearline"]
+	Text[243865 253420 0 80 "WLAN" "clearline"]
+	Text[307994 253348 0 80 "DHCP" "clearline"]
 	Text[120510 327990 0 5743 "Engineered by Chicago EDT" "clearline"]
 	Text[136851 317460 0 5743 "Engineered by Chicago EDT" "clearline"]
 	Text[335010 146562 0 230 "Engineered in Chicago" "clearline"]
-	Text[162194 32643 0 90 "TX" "clearline"]
-	Text[161492 7566 0 90 "RX" "clearline"]
+	Text[149774 25833 0 90 "TX" "clearline"]
+	Text[149212 15076 0 90 "RX" "clearline"]
 	Text[370974 34730 0 130 "Switching Regulator" "clearline"]
 	Text[348036 115323 0 340 "Sigmux 4.2.3" "clearline"]
 	Text[359151 75465 0 350 "Chicago" "clearline"]
 	Text[372060 96369 0 340 "EDT" "clearline"]
 	Text[398034 185406 0 220 "\"Tick Tock\"" "clearline"]
 	Text[329589 5343 0 100 "5V" "clearline"]
+	Text[152350 260160 0 125 "+" "clearline"]
+	Text[240320 260310 0 125 "+" "clearline"]
+	Text[225250 260180 0 125 "+" "clearline"]
+	Text[319280 260120 0 125 "+" "clearline"]
+	Text[311250 237260 0 125 "+" "clearline"]
+	Text[311130 183330 0 125 "+" "clearline"]
+	Text[28290 132770 0 125 "ISP" "clearline"]
 )
 NetList()
 (
