@@ -1,6 +1,50 @@
 # Pin name action command file
 
+# Start of element LED113
+ChangePinName(LED113, 2, K)
+ChangePinName(LED113, 1, A)
+
+# Start of element C119
+ChangePinName(C119, 2, 2)
+ChangePinName(C119, 1, 1)
+
+# Start of element C118
+ChangePinName(C118, 2, 2)
+ChangePinName(C118, 1, 1)
+
+# Start of element C117
+ChangePinName(C117, 2, 2)
+ChangePinName(C117, 1, 1)
+
+# Start of element C116
+ChangePinName(C116, 2, 2)
+ChangePinName(C116, 1, 1)
+
+# Start of element C115
+ChangePinName(C115, 2, 2)
+ChangePinName(C115, 1, 1)
+
 # Start of element U110
+ChangePinName(U110, 11, INVALID)
+ChangePinName(U110, 12, T2in)
+ChangePinName(U110, 13, T1in)
+ChangePinName(U110, 14, FORCEON)
+ChangePinName(U110, 15, R1out)
+ChangePinName(U110, 16, R1in)
+ChangePinName(U110, 17, T1out)
+ChangePinName(U110, 18, GND)
+ChangePinName(U110, 19, Vcc)
+ChangePinName(U110, 20, FORCEOFF)
+ChangePinName(U110, 10, R2out)
+ChangePinName(U110, 9, R2in)
+ChangePinName(U110, 8, T2out)
+ChangePinName(U110, 7, V-)
+ChangePinName(U110, 6, C2-)
+ChangePinName(U110, 5, C2+)
+ChangePinName(U110, 4, C1-)
+ChangePinName(U110, 3, V+)
+ChangePinName(U110, 2, C1+)
+ChangePinName(U110, 1, EN)
 ChangePinName(U110, 11, INVALID)
 ChangePinName(U110, 12, T2in)
 ChangePinName(U110, 13, T1in)
@@ -23,6 +67,12 @@ ChangePinName(U110, 2, C1+)
 ChangePinName(U110, 1, EN)
 
 # Start of element U111
+ChangePinName(U111, 4, B)
+ChangePinName(U111, 5, C)
+ChangePinName(U111, 6, A)
+ChangePinName(U111, 3, GND)
+ChangePinName(U111, 2, Vcc)
+ChangePinName(U111, 1, BE)
 ChangePinName(U111, 4, B)
 ChangePinName(U111, 5, C)
 ChangePinName(U111, 6, A)
@@ -162,10 +212,6 @@ ChangePinName(CONN115, 2, 2)
 # Start of element R116
 ChangePinName(R116, 1, 1)
 ChangePinName(R116, 2, 2)
-
-# Start of element D101
-ChangePinName(D101, 2, 2)
-ChangePinName(D101, 1, 1)
 
 # Start of element CONN118
 ChangePinName(CONN118, 1, 1)
