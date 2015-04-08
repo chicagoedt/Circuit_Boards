@@ -1,5 +1,14 @@
 # Pin name action command file
 
+# Start of element TP103
+ChangePinName(TP103, 1, 1)
+
+# Start of element TP102
+ChangePinName(TP102, 1, 1)
+
+# Start of element TP101
+ChangePinName(TP101, 1, 1)
+
 # Start of element C104
 ChangePinName(C104, 2, 2)
 ChangePinName(C104, 1, 1)
