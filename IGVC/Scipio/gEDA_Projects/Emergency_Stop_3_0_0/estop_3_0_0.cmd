@@ -1,5 +1,46 @@
 # Pin name action command file
 
+# Start of element TP103
+ChangePinName(TP103, 1, 1)
+
+# Start of element TP102
+ChangePinName(TP102, 1, 1)
+
+# Start of element TP101
+ChangePinName(TP101, 1, 1)
+
+# Start of element C104
+ChangePinName(C104, 2, 2)
+ChangePinName(C104, 1, 1)
+
+# Start of element C103
+ChangePinName(C103, 2, 2)
+ChangePinName(C103, 1, 1)
+
+# Start of element U102
+ChangePinName(U102, 2, 2)
+ChangePinName(U102, 1, 1)
+
+# Start of element CONN103
+ChangePinName(CONN103, 9, 9)
+ChangePinName(CONN103, 10, 10)
+ChangePinName(CONN103, 7, 7)
+ChangePinName(CONN103, 5, 5)
+ChangePinName(CONN103, 3, 3)
+ChangePinName(CONN103, 1, 1)
+ChangePinName(CONN103, 8, 8)
+ChangePinName(CONN103, 6, 6)
+ChangePinName(CONN103, 4, 4)
+ChangePinName(CONN103, 2, 2)
+
+# Start of element C102
+ChangePinName(C102, 2, -)
+ChangePinName(C102, 1, +)
+
+# Start of element R102
+ChangePinName(R102, 1, 1)
+ChangePinName(R102, 2, 2)
+
 # Start of element C101
 ChangePinName(C101, 7, +Vout)
 ChangePinName(C101, 6, TRM)
