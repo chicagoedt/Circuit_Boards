@@ -840,226 +840,14 @@ Via[500000 110000 31496 2000 16348 15748 "" "hole"]
 Via[348000 173000 7000 2000 0 4500 "" ""]
 Via[513500 77500 7000 2000 0 3500 "" ""]
 
-Element["" "HEADER6_2" "CONN125" "qq" 42000 577000 -5000 -21000 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_6")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[0 -10000 6000 3000 6600 3800 "2" "2" "edge2"]
-	Pin[10000 0 6000 3000 6600 3800 "3" "3" "edge2"]
-	Pin[10000 -10000 6000 3000 6600 3800 "4" "4" "edge2"]
-	Pin[20000 0 6000 3000 6600 3800 "5" "5" "edge2"]
-	Pin[20000 -10000 6000 3000 6600 3800 "6" "6" "edge2"]
-	ElementLine [-5000 5000 25000 5000 1000]
-	ElementLine [25000 -15000 25000 5000 1000]
-	ElementLine [-5000 -15000 25000 -15000 1000]
-	ElementLine [-5000 -15000 -5000 5000 1000]
-	ElementLine [5000 -5000 5000 5000 1000]
-	ElementLine [-5000 -5000 5000 -5000 1000]
 
-	)
 
-Element["" "HEADER2_1" "CONN171" "to red switch" 199000 41000 -16000 -11500 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[-10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	ElementLine [5000 -5000 5000 5000 1000]
-	ElementLine [-15000 -5000 5000 -5000 1000]
-	ElementLine [-15000 -5000 -15000 5000 1000]
-	ElementLine [-15000 5000 5000 5000 1000]
-	ElementLine [-5000 -5000 5000 -5000 1000]
-	ElementLine [-5000 -5000 -5000 5000 1000]
 
-	)
 
-Element["" "SIP10" "CONN108" "g" 57000 350000 13100 -3500 3 100 ""]
-(
-	Attribute("device" "CONNECTOR_10")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 2800 "1" "1" "square"]
-	Pin[0 10000 6000 3000 6600 2800 "2" "2" ""]
-	Pin[0 20000 6000 3000 6600 2800 "3" "3" ""]
-	Pin[0 30000 6000 3000 6600 2800 "4" "4" ""]
-	Pin[0 40000 6000 3000 6600 2800 "5" "5" ""]
-	Pin[0 50000 6000 3000 6600 2800 "6" "6" ""]
-	Pin[0 60000 6000 3000 6600 2800 "7" "7" ""]
-	Pin[0 70000 6000 3000 6600 2800 "8" "8" ""]
-	Pin[0 80000 6000 3000 6600 2800 "9" "9" ""]
-	Pin[0 90000 6000 3000 6600 2800 "10" "10" ""]
-	ElementLine [-5000 0 -5000 90000 2000]
-	ElementLine [5000 0 5000 90000 2000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementArc [0 0 5000 5000 180 180 2000]
-	ElementArc [0 90000 5000 5000 0 180 2000]
 
-	)
 
-Element["" "SIP10" "CONN112" "g" 47000 250000 -8500 -1500 3 100 ""]
-(
-	Attribute("device" "CONNECTOR_10")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 2800 "1" "1" "square"]
-	Pin[0 10000 6000 3000 6600 2800 "2" "2" ""]
-	Pin[0 20000 6000 3000 6600 2800 "3" "3" ""]
-	Pin[0 30000 6000 3000 6600 2800 "4" "4" ""]
-	Pin[0 40000 6000 3000 6600 2800 "5" "5" ""]
-	Pin[0 50000 6000 3000 6600 2800 "6" "6" ""]
-	Pin[0 60000 6000 3000 6600 2800 "7" "7" ""]
-	Pin[0 70000 6000 3000 6600 2800 "8" "8" ""]
-	Pin[0 80000 6000 3000 6600 2800 "9" "9" ""]
-	Pin[0 90000 6000 3000 6600 2800 "10" "10" ""]
-	ElementLine [-5000 0 -5000 90000 2000]
-	ElementLine [5000 0 5000 90000 2000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementArc [0 0 5000 5000 180 180 2000]
-	ElementArc [0 90000 5000 5000 0 180 2000]
 
-	)
 
-Element["" "SIP10" "CONN107" "g" 57000 250000 13500 -4000 3 100 ""]
-(
-	Attribute("device" "CONNECTOR_10")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 2800 "1" "1" "square"]
-	Pin[0 10000 6000 3000 6600 2800 "2" "2" ""]
-	Pin[0 20000 6000 3000 6600 2800 "3" "3" ""]
-	Pin[0 30000 6000 3000 6600 2800 "4" "4" ""]
-	Pin[0 40000 6000 3000 6600 2800 "5" "5" ""]
-	Pin[0 50000 6000 3000 6600 2800 "6" "6" ""]
-	Pin[0 60000 6000 3000 6600 2800 "7" "7" ""]
-	Pin[0 70000 6000 3000 6600 2800 "8" "8" ""]
-	Pin[0 80000 6000 3000 6600 2800 "9" "9" ""]
-	Pin[0 90000 6000 3000 6600 2800 "10" "10" ""]
-	ElementLine [-5000 0 -5000 90000 2000]
-	ElementLine [5000 0 5000 90000 2000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementArc [0 0 5000 5000 180 180 2000]
-	ElementArc [0 90000 5000 5000 0 180 2000]
-
-	)
-
-Element["" "SIP10" "CONN110" "g" 47000 450000 -8000 -3000 3 100 ""]
-(
-	Attribute("device" "CONNECTOR_10")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 2800 "1" "1" "square"]
-	Pin[0 10000 6000 3000 6600 2800 "2" "2" ""]
-	Pin[0 20000 6000 3000 6600 2800 "3" "3" ""]
-	Pin[0 30000 6000 3000 6600 2800 "4" "4" ""]
-	Pin[0 40000 6000 3000 6600 2800 "5" "5" ""]
-	Pin[0 50000 6000 3000 6600 2800 "6" "6" ""]
-	Pin[0 60000 6000 3000 6600 2800 "7" "7" ""]
-	Pin[0 70000 6000 3000 6600 2800 "8" "8" ""]
-	Pin[0 80000 6000 3000 6600 2800 "9" "9" ""]
-	Pin[0 90000 6000 3000 6600 2800 "10" "10" ""]
-	ElementLine [-5000 0 -5000 90000 2000]
-	ElementLine [5000 0 5000 90000 2000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementArc [0 0 5000 5000 180 180 2000]
-	ElementArc [0 90000 5000 5000 0 180 2000]
-
-	)
-
-Element["" "SIP10" "CONN109" "g" 57000 450000 12700 -2000 3 100 ""]
-(
-	Attribute("device" "CONNECTOR_10")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 2800 "1" "1" "square"]
-	Pin[0 10000 6000 3000 6600 2800 "2" "2" ""]
-	Pin[0 20000 6000 3000 6600 2800 "3" "3" ""]
-	Pin[0 30000 6000 3000 6600 2800 "4" "4" ""]
-	Pin[0 40000 6000 3000 6600 2800 "5" "5" ""]
-	Pin[0 50000 6000 3000 6600 2800 "6" "6" ""]
-	Pin[0 60000 6000 3000 6600 2800 "7" "7" ""]
-	Pin[0 70000 6000 3000 6600 2800 "8" "8" ""]
-	Pin[0 80000 6000 3000 6600 2800 "9" "9" ""]
-	Pin[0 90000 6000 3000 6600 2800 "10" "10" ""]
-	ElementLine [-5000 0 -5000 90000 2000]
-	ElementLine [5000 0 5000 90000 2000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementArc [0 0 5000 5000 180 180 2000]
-	ElementArc [0 90000 5000 5000 0 180 2000]
-
-	)
-
-Element["" "JUMPER12" "CONN148" "qwhj" 22500 26500 11000 -5000 3 100 ""]
-(
-	Attribute("device" "CONNECTOR_12")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
-	Pin[0 10000 6000 3000 6600 3800 "2" "2" ""]
-	Pin[0 20000 6000 3000 6600 3800 "3" "3" ""]
-	Pin[0 30000 6000 3000 6600 3800 "4" "4" ""]
-	Pin[0 40000 6000 3000 6600 3800 "5" "5" ""]
-	Pin[0 50000 6000 3000 6600 3800 "6" "6" ""]
-	Pin[0 60000 6000 3000 6600 3800 "7" "7" ""]
-	Pin[0 70000 6000 3000 6600 3800 "8" "8" ""]
-	Pin[0 80000 6000 3000 6600 3800 "9" "9" ""]
-	Pin[0 90000 6000 3000 6600 3800 "10" "10" ""]
-	Pin[0 100000 6000 3000 6600 3800 "11" "11" ""]
-	Pin[0 110000 6000 3000 6600 3800 "12" "12" ""]
-	ElementLine [-5000 -5000 -5000 115000 1000]
-	ElementLine [-5000 115000 5000 115000 1000]
-	ElementLine [5000 115000 5000 -5000 1000]
-	ElementLine [5000 -5000 -5000 -5000 1000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementLine [5000 5000 5000 -5000 1000]
-
-	)
-
-Element["" "JUMPER12" "CONN149" "qwhj" 161000 26500 -6000 -4000 3 100 ""]
-(
-	Attribute("device" "CONNECTOR_12")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
-	Pin[0 10000 6000 3000 6600 3800 "2" "2" ""]
-	Pin[0 20000 6000 3000 6600 3800 "3" "3" ""]
-	Pin[0 30000 6000 3000 6600 3800 "4" "4" ""]
-	Pin[0 40000 6000 3000 6600 3800 "5" "5" ""]
-	Pin[0 50000 6000 3000 6600 3800 "6" "6" ""]
-	Pin[0 60000 6000 3000 6600 3800 "7" "7" ""]
-	Pin[0 70000 6000 3000 6600 3800 "8" "8" ""]
-	Pin[0 80000 6000 3000 6600 3800 "9" "9" ""]
-	Pin[0 90000 6000 3000 6600 3800 "10" "10" ""]
-	Pin[0 100000 6000 3000 6600 3800 "11" "11" ""]
-	Pin[0 110000 6000 3000 6600 3800 "12" "12" ""]
-	ElementLine [-5000 -5000 -5000 115000 1000]
-	ElementLine [-5000 115000 5000 115000 1000]
-	ElementLine [5000 115000 5000 -5000 1000]
-	ElementLine [5000 -5000 -5000 -5000 1000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementLine [5000 5000 5000 -5000 1000]
-
-	)
 
 Element["" "1206" "R102" "10K" 97500 72595 3150 11040 3 100 ""]
 (
@@ -1117,216 +905,14 @@ Element["" "1206" "R104" "330" 513500 49095 -4350 -6960 3 100 ""]
 
 	)
 
-Element["" "SIP10" "CONN111" "g" 47000 350000 -8000 -3000 3 100 ""]
-(
-	Attribute("device" "CONNECTOR_10")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 2800 "1" "1" "square"]
-	Pin[0 10000 6000 3000 6600 2800 "2" "2" ""]
-	Pin[0 20000 6000 3000 6600 2800 "3" "3" ""]
-	Pin[0 30000 6000 3000 6600 2800 "4" "4" ""]
-	Pin[0 40000 6000 3000 6600 2800 "5" "5" ""]
-	Pin[0 50000 6000 3000 6600 2800 "6" "6" ""]
-	Pin[0 60000 6000 3000 6600 2800 "7" "7" ""]
-	Pin[0 70000 6000 3000 6600 2800 "8" "8" ""]
-	Pin[0 80000 6000 3000 6600 2800 "9" "9" ""]
-	Pin[0 90000 6000 3000 6600 2800 "10" "10" ""]
-	ElementLine [-5000 0 -5000 90000 2000]
-	ElementLine [5000 0 5000 90000 2000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementArc [0 0 5000 5000 180 180 2000]
-	ElementArc [0 90000 5000 5000 0 180 2000]
 
-	)
 
-Element["" "HEADER2_1" "CONN173" "Spare 5V" 468500 23500 -16000 6000 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[-10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	ElementLine [5000 -5000 5000 5000 1000]
-	ElementLine [-15000 -5000 5000 -5000 1000]
-	ElementLine [-15000 -5000 -15000 5000 1000]
-	ElementLine [-15000 5000 5000 5000 1000]
-	ElementLine [-5000 -5000 5000 -5000 1000]
-	ElementLine [-5000 -5000 -5000 5000 1000]
 
-	)
 
-Element["" "SIP10" "CONN115" "g" 175000 250000 13400 -4800 3 100 ""]
-(
-	Attribute("device" "CONNECTOR_10")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 2800 "1" "1" "square"]
-	Pin[0 10000 6000 3000 6600 2800 "2" "2" ""]
-	Pin[0 20000 6000 3000 6600 2800 "3" "3" ""]
-	Pin[0 30000 6000 3000 6600 2800 "4" "4" ""]
-	Pin[0 40000 6000 3000 6600 2800 "5" "5" ""]
-	Pin[0 50000 6000 3000 6600 2800 "6" "6" ""]
-	Pin[0 60000 6000 3000 6600 2800 "7" "7" ""]
-	Pin[0 70000 6000 3000 6600 2800 "8" "8" ""]
-	Pin[0 80000 6000 3000 6600 2800 "9" "9" ""]
-	Pin[0 90000 6000 3000 6600 2800 "10" "10" ""]
-	ElementLine [-5000 0 -5000 90000 2000]
-	ElementLine [5000 0 5000 90000 2000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementArc [0 0 5000 5000 180 180 2000]
-	ElementArc [0 90000 5000 5000 0 180 2000]
 
-	)
 
-Element["" "SIP10" "CONN117" "g" 165000 350000 -6000 -3000 3 100 ""]
-(
-	Attribute("device" "CONNECTOR_10")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 2800 "1" "1" "square"]
-	Pin[0 10000 6000 3000 6600 2800 "2" "2" ""]
-	Pin[0 20000 6000 3000 6600 2800 "3" "3" ""]
-	Pin[0 30000 6000 3000 6600 2800 "4" "4" ""]
-	Pin[0 40000 6000 3000 6600 2800 "5" "5" ""]
-	Pin[0 50000 6000 3000 6600 2800 "6" "6" ""]
-	Pin[0 60000 6000 3000 6600 2800 "7" "7" ""]
-	Pin[0 70000 6000 3000 6600 2800 "8" "8" ""]
-	Pin[0 80000 6000 3000 6600 2800 "9" "9" ""]
-	Pin[0 90000 6000 3000 6600 2800 "10" "10" ""]
-	ElementLine [-5000 0 -5000 90000 2000]
-	ElementLine [5000 0 5000 90000 2000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementArc [0 0 5000 5000 180 180 2000]
-	ElementArc [0 90000 5000 5000 0 180 2000]
 
-	)
 
-Element["" "SIP10" "CONN113" "g" 175000 450000 13300 -1200 3 100 ""]
-(
-	Attribute("device" "CONNECTOR_10")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 2800 "1" "1" "square"]
-	Pin[0 10000 6000 3000 6600 2800 "2" "2" ""]
-	Pin[0 20000 6000 3000 6600 2800 "3" "3" ""]
-	Pin[0 30000 6000 3000 6600 2800 "4" "4" ""]
-	Pin[0 40000 6000 3000 6600 2800 "5" "5" ""]
-	Pin[0 50000 6000 3000 6600 2800 "6" "6" ""]
-	Pin[0 60000 6000 3000 6600 2800 "7" "7" ""]
-	Pin[0 70000 6000 3000 6600 2800 "8" "8" ""]
-	Pin[0 80000 6000 3000 6600 2800 "9" "9" ""]
-	Pin[0 90000 6000 3000 6600 2800 "10" "10" ""]
-	ElementLine [-5000 0 -5000 90000 2000]
-	ElementLine [5000 0 5000 90000 2000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementArc [0 0 5000 5000 180 180 2000]
-	ElementArc [0 90000 5000 5000 0 180 2000]
-
-	)
-
-Element["" "SIP10" "CONN114" "g" 175000 350000 12300 -300 3 100 ""]
-(
-	Attribute("device" "CONNECTOR_10")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 2800 "1" "1" "square"]
-	Pin[0 10000 6000 3000 6600 2800 "2" "2" ""]
-	Pin[0 20000 6000 3000 6600 2800 "3" "3" ""]
-	Pin[0 30000 6000 3000 6600 2800 "4" "4" ""]
-	Pin[0 40000 6000 3000 6600 2800 "5" "5" ""]
-	Pin[0 50000 6000 3000 6600 2800 "6" "6" ""]
-	Pin[0 60000 6000 3000 6600 2800 "7" "7" ""]
-	Pin[0 70000 6000 3000 6600 2800 "8" "8" ""]
-	Pin[0 80000 6000 3000 6600 2800 "9" "9" ""]
-	Pin[0 90000 6000 3000 6600 2800 "10" "10" ""]
-	ElementLine [-5000 0 -5000 90000 2000]
-	ElementLine [5000 0 5000 90000 2000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementArc [0 0 5000 5000 180 180 2000]
-	ElementArc [0 90000 5000 5000 0 180 2000]
-
-	)
-
-Element["" "SIP10" "CONN116" "g" 165000 250000 -8000 -5000 3 100 ""]
-(
-	Attribute("device" "CONNECTOR_10")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 2800 "1" "1" "square"]
-	Pin[0 10000 6000 3000 6600 2800 "2" "2" ""]
-	Pin[0 20000 6000 3000 6600 2800 "3" "3" ""]
-	Pin[0 30000 6000 3000 6600 2800 "4" "4" ""]
-	Pin[0 40000 6000 3000 6600 2800 "5" "5" ""]
-	Pin[0 50000 6000 3000 6600 2800 "6" "6" ""]
-	Pin[0 60000 6000 3000 6600 2800 "7" "7" ""]
-	Pin[0 70000 6000 3000 6600 2800 "8" "8" ""]
-	Pin[0 80000 6000 3000 6600 2800 "9" "9" ""]
-	Pin[0 90000 6000 3000 6600 2800 "10" "10" ""]
-	ElementLine [-5000 0 -5000 90000 2000]
-	ElementLine [5000 0 5000 90000 2000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementArc [0 0 5000 5000 180 180 2000]
-	ElementArc [0 90000 5000 5000 0 180 2000]
-
-	)
-
-Element["" "SIP10" "CONN118" "g" 165000 450000 -6000 -4000 3 100 ""]
-(
-	Attribute("device" "CONNECTOR_10")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 2800 "1" "1" "square"]
-	Pin[0 10000 6000 3000 6600 2800 "2" "2" ""]
-	Pin[0 20000 6000 3000 6600 2800 "3" "3" ""]
-	Pin[0 30000 6000 3000 6600 2800 "4" "4" ""]
-	Pin[0 40000 6000 3000 6600 2800 "5" "5" ""]
-	Pin[0 50000 6000 3000 6600 2800 "6" "6" ""]
-	Pin[0 60000 6000 3000 6600 2800 "7" "7" ""]
-	Pin[0 70000 6000 3000 6600 2800 "8" "8" ""]
-	Pin[0 80000 6000 3000 6600 2800 "9" "9" ""]
-	Pin[0 90000 6000 3000 6600 2800 "10" "10" ""]
-	ElementLine [-5000 0 -5000 90000 2000]
-	ElementLine [5000 0 5000 90000 2000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementArc [0 0 5000 5000 180 180 2000]
-	ElementArc [0 90000 5000 5000 0 180 2000]
-
-	)
-
-Element["" "HEADER2_1" "CONN181" "to relay" 244000 30000 -15000 -12500 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[-10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	ElementLine [5000 -5000 5000 5000 1000]
-	ElementLine [-15000 -5000 5000 -5000 1000]
-	ElementLine [-15000 -5000 -15000 5000 1000]
-	ElementLine [-15000 5000 5000 5000 1000]
-	ElementLine [-5000 -5000 5000 -5000 1000]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-
-	)
 
 Element["onsolder" "1206" "D110" "1N4004" 239405 97500 -6150 11150 0 100 "auto"]
 (
@@ -1342,77 +928,9 @@ Element["onsolder" "1206" "D110" "1N4004" 239405 97500 -6150 11150 0 100 "auto"]
 
 	)
 
-Element["" "HEADER2_1" "CONN170" "to relay" 244000 76000 -15500 -12000 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[-10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	ElementLine [5000 -5000 5000 5000 1000]
-	ElementLine [-15000 -5000 5000 -5000 1000]
-	ElementLine [-15000 -5000 -15000 5000 1000]
-	ElementLine [-15000 5000 5000 5000 1000]
-	ElementLine [-5000 -5000 5000 -5000 1000]
-	ElementLine [-5000 -5000 -5000 5000 1000]
 
-	)
 
-Element["" "HEADER2_1" "CONN159" "using SAFETY" 178000 186000 2000 18000 3 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
-	Pin[0 10000 6000 3000 6600 3800 "2" "2" ""]
-	ElementLine [-5000 -5000 5000 -5000 1000]
-	ElementLine [-5000 -5000 -5000 15000 1000]
-	ElementLine [-5000 15000 5000 15000 1000]
-	ElementLine [5000 -5000 5000 15000 1000]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-	ElementLine [-5000 5000 5000 5000 1000]
 
-	)
-
-Element["" "HEADER2_1" "CONN158" "using RC" 188000 186000 4000 18000 3 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
-	Pin[0 10000 6000 3000 6600 3800 "2" "2" ""]
-	ElementLine [-5000 -5000 5000 -5000 1000]
-	ElementLine [-5000 -5000 -5000 15000 1000]
-	ElementLine [-5000 15000 5000 15000 1000]
-	ElementLine [5000 -5000 5000 15000 1000]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-	ElementLine [-5000 5000 5000 5000 1000]
-
-	)
-
-Element["" "HEADER2_1" "CONN157" "using AUTO" 198000 186000 5000 18000 3 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
-	Pin[0 10000 6000 3000 6600 3800 "2" "2" ""]
-	ElementLine [-5000 -5000 5000 -5000 1000]
-	ElementLine [-5000 -5000 -5000 15000 1000]
-	ElementLine [-5000 15000 5000 15000 1000]
-	ElementLine [5000 -5000 5000 15000 1000]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-	ElementLine [-5000 5000 5000 5000 1000]
-
-	)
 
 Element["" "1206" "R108" "1k" 135095 270000 -6340 -10150 0 100 ""]
 (
@@ -1428,7 +946,7 @@ Element["" "1206" "R108" "1k" 135095 270000 -6340 -10150 0 100 ""]
 
 	)
 
-Element["" "1206" "D107" "gkj" 135000 254000 -5935 -12150 0 100 ""]
+Element["" "1206" "D107" "Using_Auto" 135000 254000 -5935 -12150 0 100 ""]
 (
 	Attribute("device" "LED")
 	Attribute("manufacturer" "unknown")
@@ -1456,7 +974,7 @@ Element["" "1206" "R109" "1k" 135095 302000 -7340 -3150 0 100 ""]
 
 	)
 
-Element["" "1206" "D106" "gkj" 135000 289000 -5530 -11150 0 100 ""]
+Element["" "1206" "D106" "Using_RC" 135000 289000 -5530 -11150 0 100 ""]
 (
 	Attribute("device" "LED")
 	Attribute("manufacturer" "unknown")
@@ -1484,7 +1002,7 @@ Element["" "1206" "R110" "1k" 134095 341000 -5530 4850 0 100 ""]
 
 	)
 
-Element["" "1206" "D105" "gkj" 134000 326000 -4960 -11150 0 100 ""]
+Element["" "1206" "D105" "Using_Safety" 134000 326000 -4960 -11150 0 100 ""]
 (
 	Attribute("device" "LED")
 	Attribute("manufacturer" "unknown")
@@ -1498,24 +1016,6 @@ Element["" "1206" "D105" "gkj" 134000 326000 -4960 -11150 0 100 ""]
 
 	)
 
-Element["" "JUMPER3" "CONN147" "sd" 102000 577000 -20500 -12000 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_3")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[-10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	Pin[-20000 0 6000 3000 6600 3800 "3" "3" "edge2"]
-	ElementLine [-25000 -5000 5000 -5000 1000]
-	ElementLine [-25000 -5000 -25000 5000 1000]
-	ElementLine [-25000 5000 5000 5000 1000]
-	ElementLine [5000 -5000 5000 5000 1000]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-	ElementLine [-5000 5000 5000 5000 1000]
-
-	)
 
 Element["" "1206" "R107" "10k" 301000 95095 -10150 6150 1 100 ""]
 (
@@ -1559,131 +1059,12 @@ Element["" "1206" "R105" "10k" 320000 96095 -11150 5150 1 100 ""]
 
 	)
 
-Element["" "HEADER2_1" "CONN176" "Auto" 301000 152000 -3000 30000 1 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
-	Pin[0 -10000 6000 3000 6600 3800 "2" "2" ""]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementLine [5000 -15000 5000 5000 1000]
-	ElementLine [-5000 -15000 5000 -15000 1000]
-	ElementLine [-5000 -15000 -5000 5000 1000]
-	ElementLine [5000 -5000 5000 5000 1000]
-	ElementLine [-5000 -5000 5000 -5000 1000]
 
-	)
 
-Element["" "HEADER2_1" "CONN175" "RC" 310000 152000 -2000 30000 1 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
-	Pin[0 -10000 6000 3000 6600 3800 "2" "2" ""]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementLine [5000 -15000 5000 5000 1000]
-	ElementLine [-5000 -15000 5000 -15000 1000]
-	ElementLine [-5000 -15000 -5000 5000 1000]
-	ElementLine [5000 -5000 5000 5000 1000]
-	ElementLine [-5000 -5000 5000 -5000 1000]
 
-	)
 
-Element["" "HEADER2_1" "CONN174" "Safety" 320000 152000 -3000 30000 1 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
-	Pin[0 -10000 6000 3000 6600 3800 "2" "2" ""]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementLine [5000 -15000 5000 5000 1000]
-	ElementLine [-5000 -15000 5000 -15000 1000]
-	ElementLine [-5000 -15000 -5000 5000 1000]
-	ElementLine [5000 -5000 5000 5000 1000]
-	ElementLine [-5000 -5000 5000 -5000 1000]
 
-	)
 
-Element["" "HEADER2_1" "CONN188" "Spare 3.3V" 575000 79500 -16000 7000 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[-10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	ElementLine [5000 -5000 5000 5000 1000]
-	ElementLine [-15000 -5000 5000 -5000 1000]
-	ElementLine [-15000 -5000 -15000 5000 1000]
-	ElementLine [-15000 5000 5000 5000 1000]
-	ElementLine [-5000 -5000 5000 -5000 1000]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-
-	)
-
-Element["" "HEADER2_1" "CONN187" "12v Power Switch" 560000 149000 16500 -4000 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-	ElementLine [-5000 5000 15000 5000 1000]
-	ElementLine [15000 5000 15000 -5000 1000]
-	ElementLine [15000 -5000 -5000 -5000 1000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementLine [5000 5000 5000 -5000 1000]
-
-	)
-
-Element["" "HEADER2_1" "CONN185" "5v Power Switch" 560000 159500 16500 -3000 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-	ElementLine [-5000 5000 15000 5000 1000]
-	ElementLine [15000 5000 15000 -5000 1000]
-	ElementLine [15000 -5000 -5000 -5000 1000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementLine [5000 5000 5000 -5000 1000]
-
-	)
-
-Element["" "HEADER2_1" "CONN183" "3.3v Power Switch" 560000 170000 16500 -3000 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-	ElementLine [-5000 5000 15000 5000 1000]
-	ElementLine [15000 5000 15000 -5000 1000]
-	ElementLine [15000 -5000 -5000 -5000 1000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementLine [5000 5000 5000 -5000 1000]
-
-	)
 
 Element["" "1206" "D111" "Blue LED" 543500 27500 -5350 -5650 3 100 ""]
 (
@@ -1741,137 +1122,12 @@ Element["" "1206" "R111" "150" 573500 49000 -4350 -7150 3 100 ""]
 
 	)
 
-Element["" "CUI_PYB15" "CONN184" "5v" 480000 345000 -10000 -17500 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_6")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[-40000 -10000 6600 2000 8600 4600 "1" "1" "edge2"]
-	Pin[-40000 -40000 6600 2000 8600 4600 "6" "6" "edge2"]
-	Pin[-40000 10000 6600 2000 8600 4600 "2" "2" "edge2"]
-	Pin[40000 0 6600 2000 8600 4600 "4" "4" "edge2"]
-	Pin[40000 -40000 6600 2000 8600 4600 "5" "5" "edge2"]
-	Pin[40000 40000 6600 2000 8600 4600 "3" "3" "edge2"]
-	ElementLine [-99500 49500 99500 49500 1000]
-	ElementLine [99500 -49500 99500 49500 1000]
-	ElementLine [-71500 -49500 99500 -49500 1000]
-	ElementLine [-99500 -49500 -70500 -49500 1000]
-	ElementLine [-99500 -49500 -99500 49500 1000]
 
-	)
 
-Element["" "HEADER2_1" "CONN156" "conn" 358000 152500 -16500 -12500 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[-10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	ElementLine [5000 -5000 5000 5000 1000]
-	ElementLine [-15000 -5000 5000 -5000 1000]
-	ElementLine [-15000 -5000 -15000 5000 1000]
-	ElementLine [-15000 5000 5000 5000 1000]
-	ElementLine [-5000 -5000 5000 -5000 1000]
-	ElementLine [-5000 -5000 -5000 5000 1000]
 
-	)
 
-Element["" "CUI_PYB15" "CONN182" "3.3v" 480000 450000 -11000 -19500 0 110 ""]
-(
-	Attribute("device" "CONNECTOR_6")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[-40000 -10000 6600 2000 8600 4600 "1" "1" "edge2"]
-	Pin[-40000 -40000 6600 2000 8600 4600 "6" "6" "edge2"]
-	Pin[-40000 10000 6600 2000 8600 4600 "2" "2" "edge2"]
-	Pin[40000 0 6600 2000 8600 4600 "4" "4" "edge2"]
-	Pin[40000 -40000 6600 2000 8600 4600 "5" "5" "edge2"]
-	Pin[40000 40000 6600 2000 8600 4600 "3" "3" "edge2"]
-	ElementLine [-99500 49500 99500 49500 1000]
-	ElementLine [99500 -49500 99500 49500 1000]
-	ElementLine [-71500 -49500 99500 -49500 1000]
-	ElementLine [-99500 -49500 -70500 -49500 1000]
-	ElementLine [-99500 -49500 -99500 49500 1000]
 
-	)
 
-Element["" "HEADER2_1" "CONN189" "Spare 12V" 428000 23500 -6000 6000 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-	ElementLine [-5000 5000 15000 5000 1000]
-	ElementLine [15000 -5000 15000 5000 1000]
-	ElementLine [-5000 -5000 15000 -5000 1000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementLine [5000 -5000 5000 5000 1000]
-
-	)
-
-Element["" "HEADER2_1" "CONN193" "Spare 5V" 468500 64000 -16000 6000 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[-10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	ElementLine [5000 -5000 5000 5000 1000]
-	ElementLine [-15000 -5000 5000 -5000 1000]
-	ElementLine [-15000 -5000 -15000 5000 1000]
-	ElementLine [-15000 5000 5000 5000 1000]
-	ElementLine [-5000 -5000 5000 -5000 1000]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-
-	)
-
-Element["" "HEADER2_1" "CONN192" "Spare 5V" 468500 44000 -16000 6500 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[-10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	ElementLine [5000 -5000 5000 5000 1000]
-	ElementLine [-15000 -5000 5000 -5000 1000]
-	ElementLine [-15000 -5000 -15000 5000 1000]
-	ElementLine [-15000 5000 5000 5000 1000]
-	ElementLine [-5000 -5000 5000 -5000 1000]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-
-	)
-
-Element["" "HEADER2_1" "CONN191" "Spare 12V" 428000 64000 -5500 6500 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-	ElementLine [-5000 5000 15000 5000 1000]
-	ElementLine [15000 5000 15000 -5000 1000]
-	ElementLine [15000 -5000 -5000 -5000 1000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementLine [5000 5000 5000 -5000 1000]
-
-	)
 
 Element["" "mos" "Q101" "wer" 215500 119500 -5971 281 3 100 ""]
 (
@@ -1886,100 +1142,10 @@ Element["" "mos" "Q101" "wer" 215500 119500 -5971 281 3 100 ""]
 
 	)
 
-Element["" "CUI_PYB15" "CONN186" "12v" 480000 240000 -11000 -15000 0 110 ""]
-(
-	Attribute("device" "CONNECTOR_6")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[-40000 -10000 6600 2000 8600 4600 "1" "1" "edge2"]
-	Pin[-40000 -40000 6600 2000 8600 4600 "6" "6" "edge2"]
-	Pin[-40000 10000 6600 2000 8600 4600 "2" "2" "edge2"]
-	Pin[40000 0 6600 2000 8600 4600 "4" "4" "edge2"]
-	Pin[40000 -40000 6600 2000 8600 4600 "5" "5" "edge2"]
-	Pin[40000 40000 6600 2000 8600 4600 "3" "3" "edge2"]
-	ElementLine [-99500 49500 99500 49500 1000]
-	ElementLine [99500 -49500 99500 49500 1000]
-	ElementLine [-71500 -49500 99500 -49500 1000]
-	ElementLine [-99500 -49500 -70500 -49500 1000]
-	ElementLine [-99500 -49500 -99500 49500 1000]
 
-	)
 
-Element["" "HEADER2_1" "CONN190" "Spare 12V" 428000 44000 -6000 6500 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-	ElementLine [-5000 5000 15000 5000 1000]
-	ElementLine [15000 5000 15000 -5000 1000]
-	ElementLine [15000 -5000 -5000 -5000 1000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementLine [5000 5000 5000 -5000 1000]
 
-	)
 
-Element["" "HEADER2_1" "CONN194" "Spare 3.3V" 574500 99500 -15500 7000 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[-10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	ElementLine [5000 -5000 5000 5000 1000]
-	ElementLine [-15000 -5000 5000 -5000 1000]
-	ElementLine [-15000 -5000 -15000 5000 1000]
-	ElementLine [-15000 5000 5000 5000 1000]
-	ElementLine [-5000 -5000 5000 -5000 1000]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-
-	)
-
-Element["" "4PINMOLEX" "CONN168" "SAMTEC PES-04-02-L-VT" 568750 552150 -5000 -36500 3 100 ""]
-(
-	Attribute("device" "CONNECTOR_4")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[1230 -30150 12000 2000 12600 6500 "1" "1" ""]
-	Pin[1250 -10150 12000 2000 12600 6500 "2" "2" ""]
-	Pin[1250 9850 12000 2000 12600 6500 "3" "3" ""]
-	Pin[1250 29850 12000 2000 12600 6500 "4" "4" ""]
-	ElementLine [-15171 38238 16500 38238 1000]
-	ElementLine [-15171 -39500 -15162 38228 1000]
-	ElementLine [16500 -39500 16500 38240 1000]
-	ElementLine [-15122 -39500 16469 -39500 1000]
-
-	)
-
-Element["" "CON_HDR-254P-6C-1R-6N__Mill-Max_800-Series" "J1" "toRoboteq" 295000 42000 32500 -3000 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_6")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[25000 0 6600 2000 8600 4600 "1" "1" "square,edge2"]
-	Pin[15000 0 6600 2000 8600 4600 "2" "2" "edge2"]
-	Pin[5000 0 6600 2000 8600 4600 "3" "3" "edge2"]
-	Pin[-5000 0 6600 2000 8600 4600 "4" "4" "edge2"]
-	Pin[-15000 0 6600 2000 8600 4600 "5" "5" "edge2"]
-	Pin[-25000 0 6600 2000 8600 4600 "6" "6" "edge2"]
-	ElementLine [30000 -5500 30000 5500 1000]
-	ElementLine [-30000 5500 30000 5500 1000]
-	ElementLine [-30000 -5500 -30000 5500 1000]
-	ElementLine [-30000 -5500 30000 -5500 1000]
-
-	)
 Rat[82000 400000 1 175000 400000 1  ""]
 Rat[175000 250000 1 158500 263000 0  ""]
 Rat[139905 324819 0 175000 360000 1  ""]
