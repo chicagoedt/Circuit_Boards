@@ -6,7 +6,7 @@ FileVersion[20070407]
 PCB["" 380000 180000]
 
 Grid[500.0 0 0 0]
-Cursor[0 0 0.000000]
+Cursor[99000 68000 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[700 1000 700 500 800 500]
@@ -1225,20 +1225,6 @@ Element["" "1206" "D105" "RC LED" 23500 89500 -21898 -3074 0 100 ""]
 
 	)
 
-Element["" "20mm fuse set" "F101" "1A" 348342 108870 0 0 1 100 ""]
-(
-	Attribute("device" "FUSE")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[9842 30000 9724 0 9724 3937 "1" "1" ""]
-	Pin[9842 -39370 9724 0 9724 3937 "2" "2" ""]
-	Pin[-9842 30000 9724 0 9724 3937 "3" "3" ""]
-	Pin[-9842 -39370 9724 0 9724 3937 "4" "4" ""]
-
-	)
-
 Element["" "1206" "D104" "Autonomous LED" 23500 106000 -22150 -3150 0 100 ""]
 (
 	Attribute("device" "LED")
@@ -1264,6 +1250,20 @@ Element["" "1206" "R113" "330" 50905 105500 -5270 -10650 0 100 ""]
 	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
 	ElementLine [-2362 -3740 2362 -3740 800]
 	ElementLine [-2362 3740 2362 3740 800]
+
+	)
+
+Element["" "20mm fuse set" "F101" "1A" 348342 108370 0 0 1 100 ""]
+(
+	Attribute("device" "FUSE")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[9842 30000 9724 0 9724 3937 "1" "1" ""]
+	Pin[9842 -39370 9724 0 9724 3937 "2" "2" ""]
+	Pin[-9842 30000 9724 0 9724 3937 "3" "3" ""]
+	Pin[-9842 -39370 9724 0 9724 3937 "4" "4" ""]
 
 	)
 Layer(1 "component")
@@ -1454,10 +1454,6 @@ Layer(2 "solder")
 	Line[260326 94174 289500 65000 7000 2000 "clearline"]
 	Line[254896 48550 306769 48550 1500 2000 "clearline"]
 	Line[306769 48550 313052 54833 1500 2000 "clearline"]
-	Line[313052 54833 313052 98996 1500 2000 "clearline"]
-	Line[313052 98996 305805 106243 1500 2000 "clearline"]
-	Line[305805 106243 251098 106243 1500 2000 "clearline"]
-	Line[251098 106243 250966 106111 1500 2000 "clearline"]
 	Line[213000 159500 213163 159500 1500 2000 "clearline"]
 	Line[330027 14165 338665 14165 1500 2000 "clearline"]
 	Line[338665 14165 343500 19000 1500 2000 "clearline"]
@@ -1506,8 +1502,6 @@ Layer(2 "solder")
 	Line[23690 28500 23500 28310 1500 2000 "clearline"]
 	Line[51000 7000 33000 7000 1500 2000 "clearline"]
 	Line[33000 7000 23500 16500 1500 2000 "clearline"]
-	Line[252000 106243 216257 106243 1500 2000 "clearline"]
-	Line[216257 106243 163000 159500 1500 2000 "clearline"]
 	Line[358184 69500 358184 83874 1500 2000 "clearline"]
 	Line[358184 83874 358310 84000 1500 2000 "clearline"]
 	Line[346500 84000 334552 84000 1500 2000 "clearline"]
@@ -1529,6 +1523,7 @@ Layer(2 "solder")
 	Line[83250 120763 84000 121513 7000 2000 "clearline"]
 	Line[83250 65000 83250 121500 8000 2000 "clearline"]
 	Line[83250 121500 83263 121513 8000 2000 "clearline"]
+	Line[313052 62500 313052 54833 1500 2000 "clearline"]
 )
 Layer(3 "outline")
 (
@@ -1575,7 +1570,6 @@ NetList()
 		Connect("C101-1")
 		Connect("C102-2")
 		Connect("C104-1")
-		Connect("CONN102-6")
 		Connect("CONN106-10")
 		Connect("D102-2")
 		Connect("Q101-3")
@@ -1607,71 +1601,67 @@ NetList()
 	)
 	Net("unnamed_net5" "(unknown)")
 	(
-		Connect("CONN103-5")
-	)
-	Net("unnamed_net6" "(unknown)")
-	(
 		Connect("CONN102-10")
 		Connect("R110-2")
 		Connect("R111-2")
 	)
-	Net("unnamed_net7" "(unknown)")
+	Net("unnamed_net6" "(unknown)")
 	(
 		Connect("CONN101-1")
 		Connect("F101-1")
 	)
-	Net("unnamed_net8" "(unknown)")
+	Net("unnamed_net7" "(unknown)")
 	(
 		Connect("CONN101-3")
 		Connect("CONN104-3")
 		Connect("R115-2")
 	)
-	Net("unnamed_net9" "(unknown)")
+	Net("unnamed_net8" "(unknown)")
 	(
 		Connect("D102-1")
 		Connect("R101-2")
 	)
-	Net("unnamed_net10" "(unknown)")
+	Net("unnamed_net9" "(unknown)")
 	(
 		Connect("U101-3")
 		Connect("U102-1")
 	)
-	Net("unnamed_net11" "(unknown)")
+	Net("unnamed_net10" "(unknown)")
 	(
 		Connect("C102-1")
 		Connect("U101-5")
 	)
-	Net("unnamed_net12" "(unknown)")
+	Net("unnamed_net11" "(unknown)")
 	(
 		Connect("C101-2")
 		Connect("R106-1")
 		Connect("U101-2")
 		Connect("U101-6")
 	)
-	Net("unnamed_net13" "(unknown)")
+	Net("unnamed_net12" "(unknown)")
 	(
 		Connect("R106-2")
 		Connect("R107-2")
 		Connect("U101-7")
 	)
-	Net("unnamed_net14" "(unknown)")
+	Net("unnamed_net13" "(unknown)")
 	(
 		Connect("Q101-1")
 		Connect("U102-3")
 	)
-	Net("unnamed_net15" "(unknown)")
+	Net("unnamed_net14" "(unknown)")
 	(
 		Connect("D103-2")
 		Connect("Q101-2")
 		Connect("R110-1")
 		Connect("R111-1")
 	)
-	Net("unnamed_net16" "(unknown)")
+	Net("unnamed_net15" "(unknown)")
 	(
 		Connect("D103-1")
 		Connect("R112-1")
 	)
-	Net("unnamed_net17" "(unknown)")
+	Net("unnamed_net16" "(unknown)")
 	(
 		Connect("D106-2")
 		Connect("R115-1")
