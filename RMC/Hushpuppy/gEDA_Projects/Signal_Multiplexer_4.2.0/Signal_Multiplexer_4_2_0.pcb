@@ -6,7 +6,7 @@ FileVersion[20070407]
 PCB["" 475000 325000]
 
 Grid[10.0 0 0 0]
-Cursor[230820 0 0.000000]
+Cursor[475000 142760 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[700 1000 700 500 800 500]
@@ -861,7 +861,7 @@ Element["" "SIP9" "J101" "CC3000 Header" 207500 40000 -9031 -11852 0 100 ""]
 
 	)
 
-Element["" "CON_USB_MINI_B__Molex_67503-1020" "CONN115" "Mini USB B Female" 30493 57500 1293 24427 0 100 ""]
+Element["" "CON_USB_MINI_B__Molex_67503-1020" "CONN115" "Mini USB B Female" 10876 57491 6653 25147 0 100 ""]
 (
 	Attribute("device" "CONNECTOR_5")
 	Attribute("manufacturer" "unknown")
@@ -1757,7 +1757,7 @@ Element["" "SOT23-95P-280L1-6N__LTC_S6_Package" "U111" "unknown" 179150 102210 -
 
 	)
 
-Element["" "HEADER2_1" "CONN124" "unknown" 287350 17000 -11590 8820 1 100 ""]
+Element["" "HEADER2_1" "CONN124" "unknown" 286530 17140 -11300 6610 1 100 ""]
 (
 	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
 	Pin[0 -10000 6000 3000 6600 3800 "2" "2" "thermal(5X)"]
@@ -1770,7 +1770,7 @@ Element["" "HEADER2_1" "CONN124" "unknown" 287350 17000 -11590 8820 1 100 ""]
 
 	)
 
-Element["" "HEADER2_1" "CONN123" "unknown" 307050 17330 -11590 7420 1 100 ""]
+Element["" "HEADER2_1" "CONN123" "unknown" 307930 17220 -11650 6030 1 100 ""]
 (
 	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
 	Pin[0 -10000 6000 3000 6600 3800 "2" "2" "thermal(5X)"]
@@ -1783,7 +1783,7 @@ Element["" "HEADER2_1" "CONN123" "unknown" 307050 17330 -11590 7420 1 100 ""]
 
 	)
 
-Element["" "HEADER2_1" "CONN122" "unknown" 266170 16910 -11570 8630 1 100 ""]
+Element["" "HEADER2_1" "CONN122" "unknown" 266170 16910 -11430 6840 1 100 ""]
 (
 	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
 	Pin[0 -10000 6000 3000 6600 3800 "2" "2" "thermal(5X)"]
@@ -1824,8 +1824,6 @@ Layer(1 "Power_Top")
 	Line[217074 180276 220605 183807 1585 2400 "clearline"]
 	Line[258258 205473 224175 205473 1585 2400 "clearline"]
 	Line[224175 205473 220605 201903 1585 2400 "clearline"]
-	Line[55000 51201 66774 51201 1585 2400 "clearline"]
-	Line[66774 51201 69615 48360 1585 2400 "clearline"]
 	Line[117241 61201 90626 61201 1585 2400 "clearline"]
 	Line[90626 61201 87789 64038 1585 2400 "clearline"]
 	Line[87789 64038 87789 73554 1585 2400 "clearline"]
@@ -1846,6 +1844,8 @@ Layer(1 "Power_Top")
 	Line[351521 62648 327171 38298 5000 6000 "clearline"]
 	Line[327171 38298 310986 38298 5000 6000 "clearline"]
 	Line[327444 17004 327444 38571 5000 6000 "clearline"]
+	Line[35383 51192 66705 51192 1585 2400 ""]
+	Line[66705 51192 69615 48282 1585 2400 ""]
 )
 Layer(2 "GND_Top")
 (
@@ -1905,6 +1905,8 @@ Layer(2 "GND_Top")
 	Line[362381 17043 368447 17043 3878 3200 ""]
 	Line[368447 17043 368700 16790 3878 3200 ""]
 	Line[361890 17043 368447 17043 5000 6000 ""]
+	Line[35383 63790 54961 63790 1585 2400 ""]
+	Line[54961 63790 54970 63799 1585 2400 ""]
 )
 Layer(3 "Signal_Top")
 (
@@ -2059,8 +2061,6 @@ Layer(3 "Signal_Top")
 	Line[90209 48401 90207 48399 1585 2400 "clearline"]
 	Line[117241 51001 101216 51001 1585 2400 "clearline"]
 	Line[101216 51001 98241 53976 1585 2400 "clearline"]
-	Line[55000 54351 75636 54351 1585 2400 "clearline"]
-	Line[75636 54351 76908 53079 1585 2400 "clearline"]
 	Line[117241 66301 94966 66301 1585 2400 "clearline"]
 	Line[94966 66301 94965 66300 1585 2400 "clearline"]
 	Line[117241 68901 107145 68901 1585 2400 "clearline"]
@@ -2157,6 +2157,10 @@ Layer(3 "Signal_Top")
 	Line[159460 90004 166296 96840 1387 1600 "clearline"]
 	Line[413904 262648 443904 262648 5000 6000 ""]
 	Line[417250 289302 443961 262591 5000 6000 ""]
+	Line[35383 54342 75606 54342 1585 2400 ""]
+	Line[75606 54342 76986 52962 1585 2400 ""]
+	Line[35383 57491 54921 57491 1585 2400 ""]
+	Line[54921 57491 54930 57500 1585 2400 ""]
 	Text[98202 333723 0 5744 "Engineered by Chicago EDT" "clearline"]
 )
 Layer(4 "Top")
@@ -2366,7 +2370,7 @@ Layer(8 "silk")
 	Text[256084 169199 0 60 "44" "clearline"]
 	Text[207451 169194 0 60 "12" "clearline"]
 	Text[10062 243126 0 130 "Molex Connector" "clearline"]
-	Text[41145 25506 0 130 "USB" "clearline"]
+	Text[21685 25506 0 130 "USB" "clearline"]
 	Text[124605 37908 0 130 "FTDI" "clearline"]
 	Text[165038 84080 0 120 "MUX" "clearline"]
 	Text[262704 162903 0 120 "ATmega32U4" "clearline"]
@@ -2738,4 +2742,3 @@ NetList()
 		Connect("U112-4")
 	)
 )
-
