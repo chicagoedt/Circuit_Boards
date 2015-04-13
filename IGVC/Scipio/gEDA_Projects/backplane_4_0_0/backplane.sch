@@ -58,7 +58,7 @@ device=CONNECTOR_2
 T 57100 45100 5 10 1 1 0 0 1
 refdes=CONN103
 T 57100 44300 5 10 0 1 0 0 1
-footprint=HEADER2_1
+footprint=MTA_156 2
 T 57100 44300 5 10 0 1 0 0 1
 value=conn
 }
@@ -280,19 +280,6 @@ C 74500 46700 1 0 0 vcc-1.sym
 N 74400 46700 74700 46700 4
 C 70600 37700 1 0 0 gnd-1.sym
 N 70700 38000 71000 38000 4
-C 43500 67900 1 0 0 header20-2.sym
-{
-T 43750 67650 5 10 0 1 0 0 1
-device=HEADER20
-T 44100 72000 5 10 1 1 0 0 1
-refdes=J101
-T 43500 67900 5 10 0 0 0 0 1
-value=IPL1-110-02-L-D-K
-T 43500 67900 5 10 0 0 0 0 1
-documentation=http://www.samtec.com/technical-specifications/Default.aspx?SeriesMaster=IPL1
-T 43500 67900 5 10 0 0 0 0 1
-footprint=IPL1-110-02-L-D-K.fp
-}
 C 43800 66500 1 0 0 connector2-1.sym
 {
 T 44000 67500 5 10 0 0 0 0 1
@@ -729,8 +716,8 @@ T 91100 54100 5 10 1 1 0 6 1
 refdes=CONN120
 T 91100 53000 5 10 0 1 0 6 1
 footprint=JUMPER3
-T 91100 53000 5 10 0 1 0 6 1
-value=sd
+T 91200 52800 5 10 1 1 0 6 1
+value=I2C Header
 }
 C 89300 52900 1 0 1 ground.sym
 N 89400 53200 89100 53200 4
@@ -1139,3 +1126,16 @@ value=Ambient Temperature Sensor 0
 }
 N 33900 76100 34400 76100 4
 N 33900 75800 34400 75800 4
+C 43500 67900 1 0 0 header20-4.sym
+{
+T 43400 72900 5 10 0 1 0 0 1
+device=HEADER20
+T 44100 72000 5 10 1 1 0 0 1
+refdes=J101
+T 43500 67900 5 10 0 0 0 0 1
+documentation=http://www.samtec.com/technical-specifications/Default.aspx?SeriesMaster=IPL1
+T 43500 67900 5 10 0 0 0 0 1
+footprint=IPL1-110-02-L-D-K.fp
+T 43500 67900 5 10 0 0 0 0 1
+value=IPL1-110-02-L-D-K
+}
