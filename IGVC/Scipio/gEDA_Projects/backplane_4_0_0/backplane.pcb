@@ -3,15 +3,15 @@
 # To read pcb files, the pcb version (or the git source date) must be >= the file version
 FileVersion[20070407]
 
-PCB["" 1200000 1000000]
+PCB["" 1200000 580000]
 
-Grid[500.0 0 0 0]
-Cursor[0 174000 0.000000]
+Grid[100.0 0 0 1]
+Cursor[259400 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[1000 1000 1000 1000 1500 1000]
-Flags("nameonpcb,snappin")
-Groups("1,2,3,c:4,5,s:6,7,8:9,10")
+Flags("nameonpcb,clearnew,snappin")
+Groups("1,2,3,c:4,5,s:6,7,8:9,10,11,12")
 Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
 Symbol[' ' 1800]
@@ -794,16 +794,69 @@ Via[500000 110000 31496 2000 16348 15748 "" "hole"]
 Via[193500 322000 31496 2000 16348 15748 "" "hole"]
 Via[331000 323000 31496 2000 16348 15748 "" "hole"]
 Via[451000 324000 31496 2000 16348 15748 "" "hole"]
-Via[587000 537000 31496 2000 16348 15748 "" "hole,warn"]
+Via[587000 537000 31496 2000 16348 15748 "" "hole"]
 Via[437000 467000 31496 2000 16348 15748 "" "hole"]
 Via[333000 467000 31496 2000 16348 15748 "" "hole"]
 Via[201000 467000 31496 2000 16348 15748 "" "hole"]
 Via[190500 66500 6000 2000 0 3500 "" ""]
 Via[190500 36500 6000 2000 0 3500 "" ""]
-Via[84000 383000 6000 2000 0 3500 "" ""]
-Via[37500 383000 6000 2000 0 3500 "" ""]
+Via[352000 34500 6000 2000 0 3500 "" "thermal(9X)"]
+Via[412000 34500 6000 2000 0 3500 "" "thermal(9X)"]
+Via[292000 81500 6000 2000 0 3500 "" "thermal(9X,13X)"]
+Via[902500 407000 6000 2000 0 3500 "" "thermal(1X,5X)"]
+Via[857000 407000 6000 2000 0 3500 "" "thermal(9X)"]
+Via[8000 417000 3600 2000 0 2000 "" ""]
+Via[45500 337000 3600 2000 0 2000 "" ""]
+Via[40000 347000 3600 2000 0 2000 "" ""]
+Via[35500 357000 3600 2000 0 2000 "" ""]
+Via[30500 367000 3600 2000 0 2000 "" ""]
+Via[26000 377000 3600 2000 0 2000 "" ""]
+Via[21500 387000 3600 2000 0 2000 "" ""]
+Via[17500 397000 3600 2000 0 2000 "" ""]
+Via[12000 407000 3600 2000 0 2000 "" ""]
+Via[93500 337000 6000 2000 0 3500 "" "thermal(9X)"]
+Via[93500 347000 6000 2000 0 3500 "" "thermal(9X)"]
+Via[93500 357000 6000 2000 0 3500 "" "thermal(6X)"]
+Via[855500 263000 6000 2000 0 3500 "" ""]
+Via[900500 263000 6000 2000 0 3500 "" ""]
+Via[77000 519190 6000 2000 0 3500 "" ""]
+Via[67000 215500 6000 2000 0 3500 "" "thermal(9X)"]
+Via[236158 58000 3600 6000 0 2000 "" ""]
+Via[236158 67842 3600 6000 0 2000 "" ""]
+Via[382500 34500 6000 2000 0 3500 "" ""]
+Via[402000 34500 6000 2000 0 3500 "" ""]
+Via[108500 432000 6000 2000 0 3500 "" ""]
+Via[93500 367000 6000 2000 0 3500 "" ""]
+Via[77000 463000 6000 2000 0 3500 "" ""]
+Via[342000 34500 6000 2000 0 3500 "" ""]
+Via[332000 34500 6000 2000 0 3500 "" ""]
+Via[322000 34000 6000 2000 0 3500 "" ""]
+Via[336600 100500 6000 2000 0 3500 "" ""]
+Via[347100 91700 6000 2000 0 3500 "" ""]
+Via[357100 84400 6000 2000 0 3500 "" ""]
+Via[302100 81600 3600 2000 0 2000 "" ""]
+Via[209300 250300 3600 2000 0 2000 "" ""]
+Via[228800 250200 3600 2000 0 2000 "" ""]
+Via[67100 259500 6000 2000 0 3500 "" "thermal(9X)"]
+Via[66800 303600 6000 2000 0 3500 "" "thermal(9X)"]
+Via[271700 81500 3600 2000 0 2000 "" ""]
+Via[312000 81700 6000 2000 0 3500 "" ""]
+Via[282200 81400 6000 2000 0 3500 "" ""]
+Via[362000 34500 6000 2000 0 3500 "" ""]
+Via[211200 150500 6000 2000 0 3500 "" ""]
+Via[211100 159100 6000 2000 0 3500 "" ""]
+Via[211200 166500 6000 2000 0 3500 "" ""]
+Via[62000 187200 6000 2000 0 3500 "" ""]
+Via[62100 233400 6000 2000 0 3500 "" ""]
+Via[61900 276500 6000 2000 0 3500 "" ""]
+Via[282000 34100 6000 2000 0 3500 "" "thermal(1X,9X)"]
+Via[272100 34200 3600 2000 0 2000 "" ""]
+Via[389900 23300 6000 2000 0 3500 "" ""]
+Via[392000 34600 6000 2000 0 3500 "" ""]
+Via[838200 35400 6000 2000 0 3500 "" ""]
+Via[877700 35600 6000 2000 0 3500 "" ""]
 
-Element["" "USB-B-VRT.fp" "CONN122" "USB B Vertial Connection" 755185 66941 -22244 -35236 0 105 ""]
+Element["" "USB-B-VRT.fp" "CONN122" "USB B Vertial Connection" 500028 52433 -22244 -35236 0 105 ""]
 (
 	Attribute("device" "CONNECTOR_4")
 	Attribute("manufacturer" "unknown")
@@ -825,7 +878,7 @@ Element["" "USB-B-VRT.fp" "CONN122" "USB B Vertial Connection" 755185 66941 -222
 
 	)
 
-Element["" "IPL1-116-02-L-D-K.fp" "J102" "unknown" 618500 65000 -4100 21300 0 100 ""]
+Element["" "IPL1-116-02-L-D-K.fp" "J102" "unknown" 342000 58000 -4100 21300 0 100 ""]
 (
 	Attribute("device" "header32")
 	Attribute("manufacturer" "unknown")
@@ -867,7 +920,7 @@ Element["" "IPL1-116-02-L-D-K.fp" "J102" "unknown" 618500 65000 -4100 21300 0 10
 
 	)
 
-Element["" "IPL1-110-02-L-D-K.fp" "J101" "IPL1-110-02-L-D-K" 60750 428000 -3950 52950 0 100 ""]
+Element["" "IPL1-110-02-L-D-K.fp" "J101" "IPL1-110-02-L-D-K" 70250 382000 -3950 52950 0 100 ""]
 (
 	Attribute("device" "HEADER20")
 	Attribute("manufacturer" "unknown")
@@ -897,58 +950,17 @@ Element["" "IPL1-110-02-L-D-K.fp" "J101" "IPL1-110-02-L-D-K" 60750 428000 -3950 
 
 	)
 
-Element["" "1206" "R106" "10k" 136405 188500 -5750 4550 0 100 ""]
+Element["" "1206" "R105" "10k" 58095 215500 -5940 4250 0 100 ""]
 (
 	Attribute("device" "RESISTOR")
 	Attribute("manufacturer" "unknown")
 	Attribute("manufacturer_part_number" "unknown")
 	Attribute("vendor" "unknown")
 	Attribute("vendor_part_number" "unknown")
-	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
-	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
-	ElementLine [-2362 -3740 2362 -3740 800]
+	Pad[5905 -1181 5905 1181 5118 2000 5718 "1" "1" "square"]
+	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "2" "2" "square"]
 	ElementLine [-2362 3740 2362 3740 800]
-
-	)
-
-Element["" "1206" "R105" "10k" 92800 213195 4250 5750 1 100 ""]
-(
-	Attribute("device" "RESISTOR")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-1181 5905 1181 5905 5118 2000 5718 "1" "1" "square"]
-	Pad[-1181 -5905 1181 -5905 5118 2000 5718 "2" "2" "square"]
-	ElementLine [-3740 -2362 -3740 2362 800]
-	ElementLine [3740 -2362 3740 2362 800]
-
-	)
-
-Element["" "1206" "R103" "330" 561005 410000 -5950 4450 0 100 ""]
-(
-	Attribute("device" "RESISTOR")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
-	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
 	ElementLine [-2362 -3740 2362 -3740 800]
-	ElementLine [-2362 3740 2362 3740 800]
-
-	)
-
-Element["" "mos" "Q101" "wer" 462500 53500 8902 3071 1 100 ""]
-(
-	Attribute("device" "IRF520")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 9842 7800 0 7800 4646 "G" "1" ""]
-	Pin[0 0 7800 0 7800 4646 "D" "2" ""]
-	Pin[0 -9842 7800 0 7800 4646 "S" "3" ""]
 
 	)
 
@@ -1023,38 +1035,6 @@ Element["" "1206" "R102" "10K" 179000 36500 -6089 5009 0 100 ""]
 	)
 
 Element["" "1206" "R101" "10K" 179000 66500 -5250 4650 0 100 ""]
-(
-	Attribute("device" "RESISTOR")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
-	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
-	ElementLine [-2362 -3740 2362 -3740 800]
-	ElementLine [-2362 3740 2362 3740 800]
-
-	)
-
-Element["" "HEADER2_1" "CONN118" "to red switch" 219000 24000 -5000 -12000 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-	ElementLine [-5000 5000 15000 5000 1000]
-	ElementLine [15000 5000 15000 -5000 1000]
-	ElementLine [15000 -5000 -5000 -5000 1000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementLine [5000 5000 5000 -5000 1000]
-
-	)
-
-Element["" "1206" "R107" "10k" 165505 209300 -5650 4250 0 100 ""]
 (
 	Attribute("device" "RESISTOR")
 	Attribute("manufacturer" "unknown")
@@ -1256,7 +1236,7 @@ Element["" "DIP60.fp" "CONN114" "Energy Monitor" 134000 237000 0 -10000 0 100 ""
 
 	)
 
-Element["" "DIP60.fp" "CONN115" "Blinker/Sigmux" 512000 239000 0 -10000 0 100 ""]
+Element["" "DIP60.fp" "CONN115" "Blinker/Sigmux" 512000 237000 0 -10000 0 100 ""]
 (
 	Attribute("device" "unknown")
 	Attribute("manufacturer" "unknown")
@@ -1444,43 +1424,21 @@ Element["" "DIP60.fp" "CONN116" "Emergnecy Stop" 252000 237000 0 -10000 0 100 ""
 
 	)
 
-Element["" "HEADER6_2" "CONN119" "qq" 249000 564000 -5000 -21000 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_6")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[0 -10000 6000 3000 6600 3800 "2" "2" "edge2"]
-	Pin[10000 0 6000 3000 6600 3800 "3" "3" "edge2"]
-	Pin[10000 -10000 6000 3000 6600 3800 "4" "4" "edge2"]
-	Pin[20000 0 6000 3000 6600 3800 "5" "5" "edge2"]
-	Pin[20000 -10000 6000 3000 6600 3800 "6" "6" "edge2"]
-	ElementLine [-5000 5000 25000 5000 1000]
-	ElementLine [25000 -15000 25000 5000 1000]
-	ElementLine [-5000 -15000 25000 -15000 1000]
-	ElementLine [-5000 -15000 -5000 5000 1000]
-	ElementLine [5000 -5000 5000 5000 1000]
-	ElementLine [-5000 -5000 5000 -5000 1000]
-
-	)
-
-Element["" "1206" "R108" "1k" 31905 266500 -5550 3650 0 100 ""]
+Element["" "1206" "R110" "1k" 53310 187000 -5660 4060 0 100 ""]
 (
 	Attribute("device" "RESISTOR")
 	Attribute("manufacturer" "unknown")
 	Attribute("manufacturer_part_number" "unknown")
 	Attribute("vendor" "unknown")
 	Attribute("vendor_part_number" "unknown")
-	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
-	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
-	ElementLine [-2362 -3740 2362 -3740 800]
+	Pad[5905 -1181 5905 1181 5118 2000 5718 "1" "1" "square"]
+	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "2" "2" "square"]
 	ElementLine [-2362 3740 2362 3740 800]
+	ElementLine [-2362 -3740 2362 -3740 800]
 
 	)
 
-Element["" "1206" "D107" "Using Auto" 53105 266500 -5550 3650 0 100 ""]
+Element["" "1206" "D105" "Using Safety" 34000 187000 -5550 3750 0 100 ""]
 (
 	Attribute("device" "LED")
 	Attribute("manufacturer" "unknown")
@@ -1494,435 +1452,17 @@ Element["" "1206" "D107" "Using Auto" 53105 266500 -5550 3650 0 100 ""]
 
 	)
 
-Element["" "1206" "R109" "1k" 32205 223900 -5850 3650 0 100 ""]
-(
-	Attribute("device" "RESISTOR")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
-	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
-	ElementLine [-2362 -3740 2362 -3740 800]
-	ElementLine [-2362 3740 2362 3740 800]
-
-	)
-
-Element["" "1206" "D106" "Using RC" 53805 223800 -5450 3650 0 100 ""]
-(
-	Attribute("device" "LED")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
-	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
-	ElementLine [-2362 -3740 2362 -3740 800]
-	ElementLine [-2362 3740 2362 3740 800]
-
-	)
-
-Element["" "1206" "R110" "1k" 36100 184705 -3750 -4850 3 100 ""]
-(
-	Attribute("device" "RESISTOR")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-1181 -5905 1181 -5905 5118 2000 5718 "1" "1" "square"]
-	Pad[-1181 5905 1181 5905 5118 2000 5718 "2" "2" "square"]
-	ElementLine [3740 -2362 3740 2362 800]
-	ElementLine [-3740 -2362 -3740 2362 800]
-
-	)
-
-Element["" "1206" "D105" "Using Safety" 15900 198700 -5550 3750 0 100 ""]
-(
-	Attribute("device" "LED")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
-	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
-	ElementLine [-2362 -3740 2362 -3740 800]
-	ElementLine [-2362 3740 2362 3740 800]
-
-	)
-
-Element["" "1206" "D113" "White LED" 687905 362900 -5050 4650 0 100 ""]
-(
-	Attribute("device" "LED")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
-	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
-	ElementLine [-2362 -3740 2362 -3740 800]
-	ElementLine [-2362 3740 2362 3740 800]
-
-	)
-
-Element["" "1206" "R111" "150" 600805 362200 -4750 4550 0 100 ""]
-(
-	Attribute("device" "RESISTOR")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
-	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
-	ElementLine [-2362 -3740 2362 -3740 800]
-	ElementLine [-2362 3740 2362 3740 800]
-
-	)
-
-Element["" "1206" "R104" "330" 733805 362200 -6644 4659 0 100 ""]
-(
-	Attribute("device" "RESISTOR")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
-	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
-	ElementLine [-2362 -3740 2362 -3740 800]
-	ElementLine [-2362 3740 2362 3740 800]
-
-	)
-
-Element["" "1206" "D110" "1N4004" 629695 391600 -5250 4250 0 100 ""]
+Element["" "1206" "D110" "1N4004" 398405 23100 -5240 -10350 0 100 ""]
 (
 	Attribute("device" "DIODE")
 	Attribute("manufacturer" "unknown")
 	Attribute("manufacturer_part_number" "unknown")
 	Attribute("vendor" "unknown")
 	Attribute("vendor_part_number" "unknown")
-	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
-	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
-	ElementLine [-2362 -3740 2362 -3740 800]
+	Pad[5905 -1181 5905 1181 5118 2000 5718 "1" "1" "square"]
+	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "2" "2" "square"]
 	ElementLine [-2362 3740 2362 3740 800]
-
-	)
-
-Element["" "1206" "D111" "Blue LED" 739195 389100 -4650 4150 0 100 ""]
-(
-	Attribute("device" "LED")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
-	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
 	ElementLine [-2362 -3740 2362 -3740 800]
-	ElementLine [-2362 3740 2362 3740 800]
-
-	)
-
-Element["" "1206" "D112" "Purple LED" 715295 391000 -5350 4350 0 100 ""]
-(
-	Attribute("device" "LED")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
-	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
-	ElementLine [-2362 -3740 2362 -3740 800]
-	ElementLine [-2362 3740 2362 3740 800]
-
-	)
-
-Element["" "1206" "R113" "3K" 586195 391300 -4850 4450 0 100 ""]
-(
-	Attribute("device" "RESISTOR")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
-	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
-	ElementLine [-2362 -3740 2362 -3740 800]
-	ElementLine [-2362 3740 2362 3740 800]
-
-	)
-
-Element["" "1206" "R114" "7K" 608595 390500 -5450 4050 0 100 ""]
-(
-	Attribute("device" "RESISTOR")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
-	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
-	ElementLine [-2362 -3740 2362 -3740 800]
-	ElementLine [-2362 3740 2362 3740 800]
-
-	)
-
-Element["" "MTA_156 2" "CONN126" "Ambient Temperature Sensor 0" 553451 477751 0 14000 0 150 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 10000 3000 10600 7000 "1" "1" "square,edge2"]
-	Pin[15600 0 10000 3000 10600 7000 "2" "2" "edge2"]
-	ElementLine [-7800 12000 23400 12000 1000]
-	ElementLine [23400 12000 23400 -18000 1000]
-	ElementLine [23400 -18000 -7800 -18000 1000]
-	ElementLine [23400 -8000 -7800 -8000 1000]
-	ElementLine [-7800 -18000 -7800 12000 1000]
-
-	)
-
-Element["" "CONNECTOR 2 2" "CONN125" "Safe Mode Button/LED" 37000 210500 -5500 6500 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_4")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
-	Pin[0 -10000 6000 3000 6600 3800 "2" "2" ""]
-	Pin[10000 0 6000 3000 6600 3800 "3" "3" ""]
-	Pin[10000 -10000 6000 3000 6600 3800 "4" "4" ""]
-	ElementLine [-5000 5000 15000 5000 1000]
-	ElementLine [15000 -15000 15000 5000 1000]
-	ElementLine [-5000 -15000 15000 -15000 1000]
-	ElementLine [-5000 -15000 -5000 5000 1000]
-	ElementLine [5000 -5000 5000 5000 1000]
-	ElementLine [-5000 -5000 5000 -5000 1000]
-
-	)
-
-Element["" "CONNECTOR 2 2" "CONN124" "RC Mode Button/LED" 29025 240811 -6000 -5500 3 100 ""]
-(
-	Attribute("device" "CONNECTOR_4")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
-	Pin[10000 0 6000 3000 6600 3800 "2" "2" ""]
-	Pin[0 10000 6000 3000 6600 3800 "3" "3" ""]
-	Pin[10000 10000 6000 3000 6600 3800 "4" "4" ""]
-	ElementLine [-5000 -5000 -5000 15000 1000]
-	ElementLine [-5000 15000 15000 15000 1000]
-	ElementLine [15000 15000 15000 -5000 1000]
-	ElementLine [15000 -5000 -5000 -5000 1000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementLine [5000 5000 5000 -5000 1000]
-
-	)
-
-Element["" "CONNECTOR 2 2" "CONN123" "AUTONOMOUS Mode Button/LED" 29611 283186 -5500 -6500 3 100 ""]
-(
-	Attribute("device" "CONNECTOR_4")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
-	Pin[10000 0 6000 3000 6600 3800 "2" "2" ""]
-	Pin[0 10000 6000 3000 6600 3800 "3" "3" ""]
-	Pin[10000 10000 6000 3000 6600 3800 "4" "4" ""]
-	ElementLine [-5000 -5000 -5000 15000 1000]
-	ElementLine [-5000 15000 15000 15000 1000]
-	ElementLine [15000 15000 15000 -5000 1000]
-	ElementLine [15000 -5000 -5000 -5000 1000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementLine [5000 5000 5000 -5000 1000]
-
-	)
-
-Element["" "MTA_156 2" "CONN117" "Spare 3.3V" 602101 541825 0 14000 0 150 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 10000 3000 10600 7000 "1" "1" "square,edge2"]
-	Pin[15600 0 10000 3000 10600 7000 "2" "2" "edge2"]
-	ElementLine [-7800 12000 23400 12000 1000]
-	ElementLine [23400 12000 23400 -18000 1000]
-	ElementLine [23400 -18000 -7800 -18000 1000]
-	ElementLine [23400 -8000 -7800 -8000 1000]
-	ElementLine [-7800 -18000 -7800 12000 1000]
-
-	)
-
-Element["" "MTA_156 2" "CONN113" "unknown" 628088 419562 0 14000 0 150 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 10000 3000 10600 7000 "1" "1" "square,edge2"]
-	Pin[15600 0 10000 3000 10600 7000 "2" "2" "edge2"]
-	ElementLine [-7800 12000 23400 12000 1000]
-	ElementLine [23400 12000 23400 -18000 1000]
-	ElementLine [23400 -18000 -7800 -18000 1000]
-	ElementLine [23400 -8000 -7800 -8000 1000]
-	ElementLine [-7800 -18000 -7800 12000 1000]
-
-	)
-
-Element["" "MTA_156 2" "CONN111" "Spare 3.3V" 698306 431928 0 14000 0 150 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 10000 3000 10600 7000 "1" "1" "square,edge2"]
-	Pin[15600 0 10000 3000 10600 7000 "2" "2" "edge2"]
-	ElementLine [-7800 12000 23400 12000 1000]
-	ElementLine [23400 12000 23400 -18000 1000]
-	ElementLine [23400 -18000 -7800 -18000 1000]
-	ElementLine [23400 -8000 -7800 -8000 1000]
-	ElementLine [-7800 -18000 -7800 12000 1000]
-
-	)
-
-Element["" "MTA_156 2" "CONN110" "Spare 5V" 597144 579589 0 14000 0 150 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 10000 3000 10600 7000 "1" "1" "square,edge2"]
-	Pin[15600 0 10000 3000 10600 7000 "2" "2" "edge2"]
-	ElementLine [-7800 12000 23400 12000 1000]
-	ElementLine [23400 12000 23400 -18000 1000]
-	ElementLine [23400 -18000 -7800 -18000 1000]
-	ElementLine [23400 -8000 -7800 -8000 1000]
-	ElementLine [-7800 -18000 -7800 12000 1000]
-
-	)
-
-Element["" "MTA_156 2" "CONN109" "Spare 5V" 568408 455400 0 14000 0 150 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 10000 3000 10600 7000 "1" "1" "square,edge2"]
-	Pin[15600 0 10000 3000 10600 7000 "2" "2" "edge2"]
-	ElementLine [-7800 12000 23400 12000 1000]
-	ElementLine [23400 12000 23400 -18000 1000]
-	ElementLine [23400 -18000 -7800 -18000 1000]
-	ElementLine [23400 -8000 -7800 -8000 1000]
-	ElementLine [-7800 -18000 -7800 12000 1000]
-
-	)
-
-Element["" "MTA_156 2" "CONN108" "Spare 12V" 589114 425453 0 14000 0 150 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 10000 3000 10600 7000 "1" "1" "square,edge2"]
-	Pin[15600 0 10000 3000 10600 7000 "2" "2" "edge2"]
-	ElementLine [-7800 12000 23400 12000 1000]
-	ElementLine [23400 12000 23400 -18000 1000]
-	ElementLine [23400 -18000 -7800 -18000 1000]
-	ElementLine [23400 -8000 -7800 -8000 1000]
-	ElementLine [-7800 -18000 -7800 12000 1000]
-
-	)
-
-Element["" "MTA_156 2" "CONN107" "Spare 12V" 588017 468365 0 14000 0 150 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 10000 3000 10600 7000 "1" "1" "square,edge2"]
-	Pin[15600 0 10000 3000 10600 7000 "2" "2" "edge2"]
-	ElementLine [-7800 12000 23400 12000 1000]
-	ElementLine [23400 12000 23400 -18000 1000]
-	ElementLine [23400 -18000 -7800 -18000 1000]
-	ElementLine [23400 -8000 -7800 -8000 1000]
-	ElementLine [-7800 -18000 -7800 12000 1000]
-
-	)
-
-Element["" "MTA_156 2" "CONN106" "Spare 12V" 639641 559547 0 14000 0 150 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 10000 3000 10600 7000 "1" "1" "square,edge2"]
-	Pin[15600 0 10000 3000 10600 7000 "2" "2" "edge2"]
-	ElementLine [-7800 12000 23400 12000 1000]
-	ElementLine [23400 12000 23400 -18000 1000]
-	ElementLine [23400 -18000 -7800 -18000 1000]
-	ElementLine [23400 -8000 -7800 -8000 1000]
-	ElementLine [-7800 -18000 -7800 12000 1000]
-
-	)
-
-Element["" "MTA_156 2" "CONN105" "Spare 3.3V" 626736 503106 0 14000 0 150 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 10000 3000 10600 7000 "1" "1" "square,edge2"]
-	Pin[15600 0 10000 3000 10600 7000 "2" "2" "edge2"]
-	ElementLine [-7800 12000 23400 12000 1000]
-	ElementLine [23400 12000 23400 -18000 1000]
-	ElementLine [23400 -18000 -7800 -18000 1000]
-	ElementLine [23400 -8000 -7800 -8000 1000]
-	ElementLine [-7800 -18000 -7800 12000 1000]
-
-	)
-
-Element["" "MTA_156 2" "CONN104" "Spare 5V" 684947 486296 0 14000 0 150 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 10000 3000 10600 7000 "1" "1" "square,edge2"]
-	Pin[15600 0 10000 3000 10600 7000 "2" "2" "edge2"]
-	ElementLine [-7800 12000 23400 12000 1000]
-	ElementLine [23400 12000 23400 -18000 1000]
-	ElementLine [23400 -18000 -7800 -18000 1000]
-	ElementLine [23400 -8000 -7800 -8000 1000]
-	ElementLine [-7800 -18000 -7800 12000 1000]
-
-	)
-
-Element["" "MTA_156 2" "CONN103" "conn" 527000 571500 0 14000 0 150 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 10000 3000 10600 7000 "1" "1" "square,edge2"]
-	Pin[15600 0 10000 3000 10600 7000 "2" "2" "edge2"]
-	ElementLine [-7800 12000 23400 12000 1000]
-	ElementLine [23400 12000 23400 -18000 1000]
-	ElementLine [23400 -18000 -7800 -18000 1000]
-	ElementLine [23400 -8000 -7800 -8000 1000]
-	ElementLine [-7800 -18000 -7800 12000 1000]
 
 	)
 
@@ -2198,7 +1738,7 @@ Element["" "MOLEX0428202213" "CONN121" "Molex 42820-2213" 1145500 474000 -57400 
 
 	)
 
-Element["" "JUMPER3" "CONN120" "sd" 308000 554500 -5000 -11000 0 100 ""]
+Element["" "JUMPER3" "CONN120" "I2C Header" 326000 555500 -24000 -12000 0 100 ""]
 (
 	Attribute("device" "CONNECTOR_3")
 	Attribute("manufacturer" "unknown")
@@ -2206,159 +1746,779 @@ Element["" "JUMPER3" "CONN120" "sd" 308000 554500 -5000 -11000 0 100 ""]
 	Attribute("vendor" "unknown")
 	Attribute("vendor_part_number" "unknown")
 	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	Pin[20000 0 6000 3000 6600 3800 "3" "3" "edge2"]
-	ElementLine [-5000 5000 25000 5000 1000]
-	ElementLine [25000 -5000 25000 5000 1000]
-	ElementLine [-5000 -5000 25000 -5000 1000]
+	Pin[-10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
+	Pin[-20000 0 6000 3000 6600 3800 "3" "3" "edge2,thermal(9X)"]
+	ElementLine [-25000 -5000 5000 -5000 1000]
+	ElementLine [-25000 -5000 -25000 5000 1000]
+	ElementLine [-25000 5000 5000 5000 1000]
+	ElementLine [5000 -5000 5000 5000 1000]
 	ElementLine [-5000 -5000 -5000 5000 1000]
+	ElementLine [-5000 5000 5000 5000 1000]
+
+	)
+
+Element["" "1206" "D113" "White LED" 890005 407000 -5560 -9850 0 100 ""]
+(
+	Attribute("device" "LED")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[5905 -1181 5905 1181 5118 2000 5718 "1" "1" "square"]
+	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-2362 3740 2362 3740 800]
+	ElementLine [-2362 -3740 2362 -3740 800]
+
+	)
+
+Element["" "1206" "R111" "150" 869195 407000 -4640 -9950 0 100 ""]
+(
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[5905 -1181 5905 1181 5118 2000 5718 "1" "1" "square"]
+	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-2362 3740 2362 3740 800]
+	ElementLine [-2362 -3740 2362 -3740 800]
+
+	)
+
+Element["" "1206" "R103" "330" 868000 263000 -5440 -10550 0 100 ""]
+(
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[5905 -1181 5905 1181 5118 2000 5718 "1" "1" "square"]
+	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-2362 3740 2362 3740 800]
+	ElementLine [-2362 -3740 2362 -3740 800]
+
+	)
+
+Element["" "1206" "D111" "Blue LED" 888500 263000 -5660 -10150 0 100 ""]
+(
+	Attribute("device" "LED")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[5905 -1181 5905 1181 5118 2000 5718 "1" "1" "square"]
+	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-2362 3740 2362 3740 800]
+	ElementLine [-2362 -3740 2362 -3740 800]
+
+	)
+
+Element["" "1206" "R113" "3K" 77000 475595 5245 -2955 0 100 ""]
+(
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-1181 5905 1181 5905 5118 2000 5718 "1" "1" "square"]
+	Pad[-1181 -5905 1181 -5905 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-3740 -2362 -3740 2362 800]
+	ElementLine [3740 -2362 3740 2362 800]
+
+	)
+
+Element["" "1206" "R114" "7K" 77000 507190 5765 -3355 0 100 ""]
+(
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-1181 5905 1181 5905 5118 2000 5718 "1" "1" "square"]
+	Pad[-1181 -5905 1181 -5905 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-3740 -2362 -3740 2362 800]
+	ElementLine [3740 -2362 3740 2362 800]
+
+	)
+
+Element["" "POT__Bourns_3299W-Series" "R112" "10K" 46481 550228 -15000 -17000 0 100 ""]
+(
+	Attribute("device" "VARIABLE_RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[-10000 -4500 5000 2000 7000 2900 "1" "1" "edge2"]
+	Pin[0 -4500 5000 2000 7000 2900 "2" "2" "edge2"]
+	Pin[10000 -4500 5000 2000 7000 2900 "3" "3" "edge2"]
+	ElementLine [-18250 -11500 -18250 11500 1000]
+	ElementLine [-18250 11500 18250 11500 1000]
+	ElementLine [18250 11500 18250 -11500 1000]
+	ElementLine [18250 -11500 18250 -10000 1000]
+	ElementLine [18250 -10000 -18250 -10000 1000]
+	ElementLine [-17750 -11500 -17750 11500 1000]
+	ElementLine [17750 -11500 17750 11500 1000]
+	ElementLine [-18000 -11500 -18000 11500 1000]
+	ElementLine [18000 -11500 18000 11500 1000]
+	ElementLine [-14300 9200 -14300 6200 1000]
+	ElementArc [-14300 7700 2000 2000 0 360 1000]
+
+	)
+
+Element["" "mos" "Q101" "wer" 236158 58000 -4410 14832 0 100 ""]
+(
+	Attribute("device" "IRF520")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 9842 7800 0 7800 4646 "G" "1" ""]
+	Pin[0 0 7800 0 7800 4646 "D" "2" ""]
+	Pin[0 -9842 7800 0 7800 4646 "S" "3" ""]
+
+	)
+
+Element["" "HEADER2_1" "CONN118" "to red switch" 221000 20500 -15500 -11500 0 100 ""]
+(
+	Attribute("device" "CONNECTOR_2")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
+	Pin[-10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
+	ElementLine [5000 -5000 5000 5000 1000]
+	ElementLine [-15000 -5000 5000 -5000 1000]
+	ElementLine [-15000 -5000 -15000 5000 1000]
+	ElementLine [-15000 5000 5000 5000 1000]
+	ElementLine [-5000 -5000 5000 -5000 1000]
+	ElementLine [-5000 -5000 -5000 5000 1000]
+
+	)
+
+Element["" "HEADER6_2" "CONN119" "qq" 249000 564000 -5000 -21000 0 100 ""]
+(
+	Attribute("device" "CONNECTOR_6")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
+	Pin[0 -10000 6000 3000 6600 3800 "2" "2" "edge2"]
+	Pin[10000 0 6000 3000 6600 3800 "3" "3" "edge2"]
+	Pin[10000 -10000 6000 3000 6600 3800 "4" "4" "edge2"]
+	Pin[20000 0 6000 3000 6600 3800 "5" "5" "edge2"]
+	Pin[20000 -10000 6000 3000 6600 3800 "6" "6" "edge2,thermal(9X)"]
+	ElementLine [-5000 5000 25000 5000 1000]
+	ElementLine [25000 -15000 25000 5000 1000]
+	ElementLine [-5000 -15000 25000 -15000 1000]
+	ElementLine [-5000 -15000 -5000 5000 1000]
 	ElementLine [5000 -5000 5000 5000 1000]
 	ElementLine [-5000 -5000 5000 -5000 1000]
 
 	)
-Rat[626736 503106 1 602101 541825 1  ""]
-Rat[626736 503106 1 698306 431928 1  ""]
-Rat[698306 431928 1 682000 361719 0  ""]
-Rat[682000 361719 0 931843 306909 1  ""]
-Rat[639641 559547 1 588017 468365 1  ""]
-Rat[588017 468365 1 589114 425453 1  ""]
-Rat[589114 425453 1 635600 390419 0  ""]
-Rat[635600 390419 0 709390 389819 0  ""]
-Rat[589114 425453 1 262000 327000 1  ""]
-Rat[635600 390419 0 648600 47600 0  ""]
-Rat[648600 47600 0 668600 47600 0  ""]
-Rat[668600 47600 0 932500 90000 1  ""]
-Rat[144000 257000 1 134000 257000 1  ""]
-Rat[144000 257000 1 1079000 492000 0  ""]
-Rat[144000 287000 1 134000 287000 1  ""]
-Rat[144000 287000 1 1090700 454900 1  ""]
-Rat[84000 383000 1 0 0 3  "via"]
-Rat[37500 383000 1 0 0 3  "via"]
-Rat[558600 47600 0 0 0 3  "via"]
-Rat[628600 47600 0 0 0 3  "via"]
-Rat[328000 554500 1 0 0 3  "via"]
-Rat[269000 554000 1 0 0 3  "via"]
-Rat[617701 541825 1 0 0 3  "via"]
-Rat[688600 47600 0 0 0 3  "via"]
-Rat[262000 477000 1 0 0 3  "via"]
-Rat[262000 387000 1 0 0 3  "via"]
-Rat[568600 82600 0 0 0 3  "via"]
-Rat[566910 408819 0 0 0 3  "via"]
-Rat[643688 419562 1 0 0 3  "via"]
-Rat[739710 361019 0 0 0 3  "via"]
-Rat[713906 431928 1 0 0 3  "via"]
-Rat[584008 455400 1 0 0 3  "via"]
-Rat[604714 425453 1 0 0 3  "via"]
-Rat[603617 468365 1 0 0 3  "via"]
-Rat[642336 503106 1 0 0 3  "via"]
-Rat[700547 486296 1 0 0 3  "via"]
-Rat[91619 219100 0 0 0 3  "via"]
-Rat[130500 187319 0 0 0 3  "via"]
-Rat[159600 208119 0 0 0 3  "via"]
-Rat[606710 361019 0 0 0 3  "via"]
-Rat[602690 389319 0 0 0 3  "via"]
-Rat[617701 541825 1 612744 579589 1  ""]
-Rat[617701 541825 1 655241 559547 1  ""]
-Rat[161000 46500 1 252000 237000 1  ""]
-Rat[542600 571500 1 512000 429000 1  ""]
-Rat[623790 390419 0 0 0 3  "via"]
-Rat[678600 47600 0 0 0 3  "via"]
-Rat[658600 47600 0 0 0 3  "via"]
-Rat[252000 327000 1 0 0 3  "via"]
-Rat[745100 387919 0 555100 408819 0  ""]
-Rat[721200 389819 0 727900 361019 0  ""]
-Rat[693810 361719 0 594900 361019 0  ""]
-Rat[397000 277000 1 548600 47600 0  ""]
-Rat[628088 419562 1 614500 389319 0  ""]
-Rat[614500 389319 0 580290 390119 0  ""]
-Rat[134000 317000 1 578600 82600 0  ""]
-Rat[134000 397000 1 78250 413000 0  ""]
-Rat[134000 407000 1 43250 413000 0  ""]
-Rat[134000 417000 1 78250 423000 0  ""]
-Rat[134000 427000 1 43250 423000 0  ""]
-Rat[134000 387000 1 43250 403000 0  ""]
-Rat[134000 447000 1 43250 433000 0  ""]
-Rat[134000 457000 1 78250 443000 0  ""]
-Rat[134000 467000 1 43250 443000 0  ""]
-Rat[134000 477000 1 78250 453000 0  ""]
-Rat[134000 437000 1 78250 433000 0  ""]
-Rat[134000 497000 1 78250 463000 0  ""]
-Rat[134000 507000 1 43250 463000 0  ""]
-Rat[134000 517000 1 78250 473000 0  ""]
-Rat[134000 487000 1 43250 453000 0  ""]
-Rat[144000 327000 1 569051 477751 1  ""]
-Rat[144000 337000 1 553451 477751 1  ""]
-Rat[522000 259000 1 512000 259000 1  ""]
-Rat[522000 259000 1 618600 47600 0  ""]
-Rat[512000 259000 1 37281 178800 0  ""]
-Rat[522000 269000 1 512000 269000 1  ""]
-Rat[522000 269000 1 608600 47600 0  ""]
-Rat[512000 269000 1 26300 222719 0  ""]
-Rat[522000 279000 1 512000 279000 1  ""]
-Rat[522000 279000 1 598600 47600 0  ""]
-Rat[512000 279000 1 26000 265319 0  ""]
-Rat[262000 277000 1 229000 24000 1  ""]
-Rat[262000 287000 1 219000 24000 1  ""]
-Rat[262000 357000 1 259000 564000 1  ""]
-Rat[262000 367000 1 259000 554000 1  ""]
-Rat[262000 377000 1 269000 564000 1  ""]
-Rat[262000 337000 1 249000 564000 1  ""]
-Rat[262000 447000 1 318000 554500 1  ""]
-Rat[262000 437000 1 308000 554500 1  ""]
-Rat[39025 250811 1 142310 187319 0  ""]
-Rat[142310 187319 0 578600 47600 0  ""]
-Rat[39611 293186 1 171410 208119 0  ""]
-Rat[171410 208119 0 568600 47600 0  ""]
-Rat[47000 200500 1 91619 207290 0  ""]
-Rat[91619 207290 0 588600 47600 0  ""]
-Rat[750657 69500 1 698600 47600 0  ""]
-Rat[750657 56508 1 548600 82600 0  ""]
-Rat[39611 283186 1 37810 265319 0  ""]
-Rat[37810 265319 0 59010 265319 0  ""]
-Rat[39025 240811 1 38110 222719 0  ""]
-Rat[38110 222719 0 59710 222619 0  ""]
-Rat[37000 200500 1 37281 190610 0  ""]
-Rat[37281 190610 0 21805 197519 0  ""]
-Rat[161000 26500 1 184905 35319 0  ""]
-Rat[184905 36500 0 184905 65319 0  ""]
-Rat[184905 66500 0 144000 237000 1  ""]
-Rat[144000 237000 1 47900 222619 0  ""]
-Rat[47900 222619 0 47000 210500 1  ""]
-Rat[47000 210500 1 37000 210500 1  ""]
-Rat[37000 210500 1 9995 197519 0  ""]
-Rat[47900 222619 0 29025 240811 1  ""]
-Rat[29025 240811 1 29025 250811 1  ""]
-Rat[29025 250811 1 47200 265319 0  ""]
-Rat[47200 265319 0 29611 283186 1  ""]
-Rat[29611 283186 1 29611 293186 1  ""]
-Rat[29611 293186 1 78250 393000 0  ""]
-Rat[144000 237000 1 262000 237000 1  ""]
-Rat[262000 237000 1 262000 347000 1  ""]
-Rat[262000 237000 1 397000 237000 1  ""]
-Rat[397000 237000 1 522000 239000 1  ""]
-Rat[522000 239000 1 558600 82600 0  ""]
-Rat[558600 82600 0 588600 82600 0  ""]
-Rat[588600 82600 0 638600 47600 0  ""]
-Rat[638600 47600 0 760500 56508 1  ""]
-Rat[522000 239000 1 592100 390119 0  ""]
-Rat[592100 390119 0 568408 455400 1  ""]
-Rat[568408 455400 1 684947 486296 1  ""]
-Rat[684947 486296 1 733290 387919 0  ""]
-Rat[568408 455400 1 527000 571500 1  ""]
-Rat[527000 571500 1 597144 579589 1  ""]
-Rat[262000 347000 1 249000 554000 1  ""]
-Rat[760500 56508 1 932343 199909 1  ""]
+
+Element["" "HEADER2_1" "CONN126" "Ambient Temperature Sensor 0" 160000 337000 -9000 6500 0 100 ""]
+(
+	Attribute("device" "CONNECTOR_2")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
+	Pin[0 -10000 6000 3000 6600 3800 "2" "2" ""]
+	ElementLine [-5000 5000 5000 5000 1000]
+	ElementLine [5000 -15000 5000 5000 1000]
+	ElementLine [-5000 -15000 5000 -15000 1000]
+	ElementLine [-5000 -15000 -5000 5000 1000]
+	ElementLine [5000 -5000 5000 5000 1000]
+	ElementLine [-5000 -5000 5000 -5000 1000]
+
+	)
+
+Element["" "CONNECTOR 2 2" "CONN125" "Safe Mode Button/LED" 30000 205500 -6000 15500 0 100 ""]
+(
+	Attribute("device" "CONNECTOR_4")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
+	Pin[10000 0 6000 3000 6600 3800 "2" "2" ""]
+	Pin[0 10000 6000 3000 6600 3800 "3" "3" ""]
+	Pin[10000 10000 6000 3000 6600 3800 "4" "4" ""]
+	ElementLine [-5000 -5000 -5000 15000 1000]
+	ElementLine [-5000 15000 15000 15000 1000]
+	ElementLine [15000 15000 15000 -5000 1000]
+	ElementLine [15000 -5000 -5000 -5000 1000]
+	ElementLine [-5000 5000 5000 5000 1000]
+	ElementLine [5000 5000 5000 -5000 1000]
+
+	)
+
+Element["" "HEADER2_1" "CONN113" "unknown" 42000 498500 5000 21000 2 100 ""]
+(
+	Attribute("device" "CONNECTOR_2")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
+	Pin[0 10000 6000 3000 6600 3800 "2" "2" ""]
+	ElementLine [-5000 -5000 5000 -5000 1000]
+	ElementLine [-5000 -5000 -5000 15000 1000]
+	ElementLine [-5000 15000 5000 15000 1000]
+	ElementLine [5000 -5000 5000 15000 1000]
+	ElementLine [-5000 -5000 -5000 5000 1000]
+	ElementLine [-5000 5000 5000 5000 1000]
+
+	)
+
+Element["" "HEADER2_1" "CONN105" "Spare 3.3V" 894900 458000 -5600 6000 0 100 ""]
+(
+	Attribute("device" "CONNECTOR_2")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
+	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
+	ElementLine [-5000 -5000 -5000 5000 1000]
+	ElementLine [-5000 5000 15000 5000 1000]
+	ElementLine [15000 5000 15000 -5000 1000]
+	ElementLine [15000 -5000 -5000 -5000 1000]
+	ElementLine [-5000 5000 5000 5000 1000]
+	ElementLine [5000 5000 5000 -5000 1000]
+
+	)
+
+Element["" "HEADER2_1" "CONN117" "Spare 3.3V" 894900 510800 -6000 5400 0 100 ""]
+(
+	Attribute("device" "CONNECTOR_2")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
+	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
+	ElementLine [-5000 -5000 -5000 5000 1000]
+	ElementLine [-5000 5000 15000 5000 1000]
+	ElementLine [15000 5000 15000 -5000 1000]
+	ElementLine [15000 -5000 -5000 -5000 1000]
+	ElementLine [-5000 5000 5000 5000 1000]
+	ElementLine [5000 5000 5000 -5000 1000]
+
+	)
+
+Element["" "HEADER2_1" "CONN111" "Spare 3.3V" 894900 485100 -5200 5400 0 100 ""]
+(
+	Attribute("device" "CONNECTOR_2")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
+	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
+	ElementLine [-5000 -5000 -5000 5000 1000]
+	ElementLine [-5000 5000 15000 5000 1000]
+	ElementLine [15000 5000 15000 -5000 1000]
+	ElementLine [15000 -5000 -5000 -5000 1000]
+	ElementLine [-5000 5000 5000 5000 1000]
+	ElementLine [5000 5000 5000 -5000 1000]
+
+	)
+
+Element["" "1206" "R106" "10k" 58100 259500 -5750 4050 0 100 ""]
+(
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[5905 -1181 5905 1181 5118 2000 5718 "1" "1" "square"]
+	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-2362 3740 2362 3740 800]
+	ElementLine [-2362 -3740 2362 -3740 800]
+
+	)
+
+Element["" "1206" "R109" "1k" 53600 233000 -5940 3950 0 100 ""]
+(
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[5905 -1181 5905 1181 5118 2000 5718 "1" "1" "square"]
+	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-2362 3740 2362 3740 800]
+	ElementLine [-2362 -3740 2362 -3740 800]
+
+	)
+
+Element["" "1206" "D106" "Using RC" 34100 233000 -5450 3650 0 100 ""]
+(
+	Attribute("device" "LED")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
+	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-2362 -3740 2362 -3740 800]
+	ElementLine [-2362 3740 2362 3740 800]
+
+	)
+
+Element["" "CONNECTOR 2 2" "CONN124" "RC Mode Button/LED" 30100 249500 -6500 15500 0 100 ""]
+(
+	Attribute("device" "CONNECTOR_4")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
+	Pin[10000 0 6000 3000 6600 3800 "2" "2" ""]
+	Pin[0 10000 6000 3000 6600 3800 "3" "3" ""]
+	Pin[10000 10000 6000 3000 6600 3800 "4" "4" ""]
+	ElementLine [-5000 -5000 -5000 15000 1000]
+	ElementLine [-5000 15000 15000 15000 1000]
+	ElementLine [15000 15000 15000 -5000 1000]
+	ElementLine [15000 -5000 -5000 -5000 1000]
+	ElementLine [-5000 5000 5000 5000 1000]
+	ElementLine [5000 5000 5000 -5000 1000]
+
+	)
+
+Element["" "1206" "R107" "10k" 57800 303600 -6140 3850 0 100 ""]
+(
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[5905 -1181 5905 1181 5118 2000 5718 "1" "1" "square"]
+	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-2362 3740 2362 3740 800]
+	ElementLine [-2362 -3740 2362 -3740 800]
+
+	)
+
+Element["" "1206" "R108" "1k" 53300 276600 -5240 4150 0 100 ""]
+(
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[5905 -1181 5905 1181 5118 2000 5718 "1" "1" "square"]
+	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-2362 3740 2362 3740 800]
+	ElementLine [-2362 -3740 2362 -3740 800]
+
+	)
+
+Element["" "1206" "D107" "Using Auto" 33800 276600 -5550 3650 0 100 ""]
+(
+	Attribute("device" "LED")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
+	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-2362 -3740 2362 -3740 800]
+	ElementLine [-2362 3740 2362 3740 800]
+
+	)
+
+Element["" "CONNECTOR 2 2" "CONN123" "AUTONOMOUS Mode Button/LED" 29800 293600 -5500 15500 0 100 ""]
+(
+	Attribute("device" "CONNECTOR_4")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square"]
+	Pin[10000 0 6000 3000 6600 3800 "2" "2" ""]
+	Pin[0 10000 6000 3000 6600 3800 "3" "3" ""]
+	Pin[10000 10000 6000 3000 6600 3800 "4" "4" ""]
+	ElementLine [-5000 -5000 -5000 15000 1000]
+	ElementLine [-5000 15000 15000 15000 1000]
+	ElementLine [15000 15000 15000 -5000 1000]
+	ElementLine [15000 -5000 -5000 -5000 1000]
+	ElementLine [-5000 5000 5000 5000 1000]
+	ElementLine [5000 5000 5000 -5000 1000]
+
+	)
+
+Element["" "HEADER2_1" "CONN103" "conn" 567200 47900 -15900 5700 0 100 ""]
+(
+	Attribute("device" "CONNECTOR_2")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
+	Pin[-10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
+	ElementLine [5000 -5000 5000 5000 1000]
+	ElementLine [-15000 -5000 5000 -5000 1000]
+	ElementLine [-15000 -5000 -15000 5000 1000]
+	ElementLine [-15000 5000 5000 5000 1000]
+	ElementLine [-5000 -5000 5000 -5000 1000]
+	ElementLine [-5000 -5000 -5000 5000 1000]
+
+	)
+
+Element["" "HEADER2_1" "CONN108" "Spare 12V" 882900 14700 -6300 5500 0 100 ""]
+(
+	Attribute("device" "CONNECTOR_2")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
+	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
+	ElementLine [-5000 -5000 -5000 5000 1000]
+	ElementLine [-5000 5000 15000 5000 1000]
+	ElementLine [15000 5000 15000 -5000 1000]
+	ElementLine [15000 -5000 -5000 -5000 1000]
+	ElementLine [-5000 5000 5000 5000 1000]
+	ElementLine [5000 5000 5000 -5000 1000]
+
+	)
+
+Element["" "HEADER2_1" "CONN107" "Spare 12V" 850600 14700 -5900 5300 0 100 ""]
+(
+	Attribute("device" "CONNECTOR_2")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
+	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
+	ElementLine [-5000 -5000 -5000 5000 1000]
+	ElementLine [-5000 5000 15000 5000 1000]
+	ElementLine [15000 5000 15000 -5000 1000]
+	ElementLine [15000 -5000 -5000 -5000 1000]
+	ElementLine [-5000 5000 5000 5000 1000]
+	ElementLine [5000 5000 5000 -5000 1000]
+
+	)
+
+Element["" "HEADER2_1" "CONN106" "Spare 12V" 815000 14600 -5900 5900 0 100 ""]
+(
+	Attribute("device" "CONNECTOR_2")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
+	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
+	ElementLine [-5000 -5000 -5000 5000 1000]
+	ElementLine [-5000 5000 15000 5000 1000]
+	ElementLine [15000 5000 15000 -5000 1000]
+	ElementLine [15000 -5000 -5000 -5000 1000]
+	ElementLine [-5000 5000 5000 5000 1000]
+	ElementLine [5000 5000 5000 -5000 1000]
+
+	)
+
+Element["" "1206" "R104" "330" 846805 35200 -7034 -9941 0 100 ""]
+(
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[5905 -1181 5905 1181 5118 2000 5718 "1" "1" "square"]
+	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-2362 3740 2362 3740 800]
+	ElementLine [-2362 -3740 2362 -3740 800]
+
+	)
+
+Element["" "1206" "D112" "Purple LED" 868995 35200 -6040 -10150 0 100 ""]
+(
+	Attribute("device" "LED")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[5905 -1181 5905 1181 5118 2000 5718 "1" "1" "square"]
+	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-2362 3740 2362 3740 800]
+	ElementLine [-2362 -3740 2362 -3740 800]
+
+	)
+
+Element["" "HEADER2_1" "CONN110" "Spare 5V" 745300 194900 -6100 5300 0 100 ""]
+(
+	Attribute("device" "CONNECTOR_2")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
+	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
+	ElementLine [-5000 -5000 -5000 5000 1000]
+	ElementLine [-5000 5000 15000 5000 1000]
+	ElementLine [15000 5000 15000 -5000 1000]
+	ElementLine [15000 -5000 -5000 -5000 1000]
+	ElementLine [-5000 5000 5000 5000 1000]
+	ElementLine [5000 5000 5000 -5000 1000]
+
+	)
+
+Element["" "HEADER2_1" "CONN104" "Spare 5V" 745700 147400 -6300 5600 0 100 ""]
+(
+	Attribute("device" "CONNECTOR_2")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
+	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
+	ElementLine [-5000 -5000 -5000 5000 1000]
+	ElementLine [-5000 5000 15000 5000 1000]
+	ElementLine [15000 5000 15000 -5000 1000]
+	ElementLine [15000 -5000 -5000 -5000 1000]
+	ElementLine [-5000 5000 5000 5000 1000]
+	ElementLine [5000 5000 5000 -5000 1000]
+
+	)
+
+Element["" "HEADER2_1" "CONN109" "Spare 5V" 745700 170600 -5700 5500 0 100 ""]
+(
+	Attribute("device" "CONNECTOR_2")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
+	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
+	ElementLine [-5000 -5000 -5000 5000 1000]
+	ElementLine [-5000 5000 15000 5000 1000]
+	ElementLine [15000 5000 15000 -5000 1000]
+	ElementLine [15000 -5000 -5000 -5000 1000]
+	ElementLine [-5000 5000 5000 5000 1000]
+	ElementLine [5000 5000 5000 -5000 1000]
+
+	)
+Rat[894900 458000 1 894900 485100 1  ""]
+Rat[894900 485100 1 894900 510800 1  ""]
+Rat[894900 458000 1 895910 407000 0  ""]
+Rat[815000 14600 1 850600 14700 1  ""]
+Rat[850600 14700 1 874900 34019 0  ""]
+Rat[874900 34019 0 882900 14700 1  ""]
+Rat[877700 35600 1 932500 90000 1  ""]
+Rat[815000 14600 1 708800 98000 2  ""]
+Rat[460000 98000 2 573900 243700 2  ""]
+Rat[1128500 454000 3 1122000 49000 0  "via"]
+Rat[838200 35400 1 0 0 3  "via"]
+Rat[855500 263000 1 0 0 3  "via"]
+Rat[860600 14700 1 0 0 3  "via"]
+Rat[825000 14600 1 0 0 3  "via"]
+Rat[904900 458000 1 0 0 3  "via"]
+Rat[755700 147400 1 0 0 3  "via"]
+Rat[755300 194900 1 0 0 3  "via"]
+Rat[904900 485100 1 0 0 3  "via"]
+Rat[904900 510800 1 0 0 3  "via"]
+Rat[892900 14700 1 0 0 3  "via"]
+Rat[755700 170600 1 0 0 3  "via"]
+Rat[562000 199909 2 745300 194900 1  ""]
+Rat[745300 194900 1 745700 170600 1  ""]
+Rat[745700 170600 1 745700 147400 1  ""]
+Rat[745300 194900 1 894405 261819 0  ""]
+Rat[901000 263000 0 927000 205500 2  ""]
 Layer(1 "Top Signal 1")
 (
 	Line[161000 36500 173095 36500 4000 2000 ""]
 	Line[161000 66500 173095 66500 4000 2000 ""]
 	Line[184905 36500 188500 36500 4000 2000 ""]
 	Line[184905 66500 188500 66500 4000 2000 ""]
+	Line[82500 387000 134000 387000 1000 2000 ""]
+	Line[82500 397000 134000 397000 1000 2000 ""]
+	Line[82500 407000 134000 407000 1000 2000 ""]
+	Line[82500 417000 134000 417000 1000 2000 ""]
+	Line[82500 427000 134000 427000 1000 2000 ""]
+	Line[58000 417000 8000 417000 1000 2000 ""]
+	Line[12000 407000 58000 407000 1000 2000 ""]
+	Line[17500 397000 58000 397000 1000 2000 ""]
+	Line[21500 387000 58000 387000 1000 2000 ""]
+	Line[26000 377000 58000 377000 1000 2000 ""]
+	Line[30500 367000 58000 367000 1000 2000 ""]
+	Line[35500 357000 58000 357000 1000 2000 ""]
+	Line[40000 347000 58000 347000 1000 2000 ""]
+	Line[45500 337000 58000 337000 1000 2000 ""]
+	Line[39905 187000 47405 187000 4000 2000 ""]
+	Line[41000 187000 41000 204500 4000 2000 ""]
+	Line[41000 204500 40000 205500 4000 2000 ""]
+	Line[47595 233000 39905 233000 4000 2000 ""]
+	Line[39500 233000 39500 249500 4000 2000 ""]
+	Line[39500 249500 40000 250000 4000 2000 ""]
+	Line[39905 277000 47595 277000 4000 2000 ""]
+	Line[39500 277000 39500 293000 4000 2000 ""]
+	Line[39500 293000 40000 293500 4000 2000 ""]
+	Line[52095 303500 40000 303500 4000 2000 ""]
+	Line[52095 260000 40000 260000 4000 2000 ""]
+	Line[52190 215500 40000 215500 4000 2000 ""]
+	Line[262000 337000 261000 337000 1000 2000 ""]
+	Line[261000 337000 261000 337500 1000 2000 ""]
+	Line[262000 337000 257000 342000 1000 2000 ""]
+	Line[257000 342000 244000 342000 1000 2000 ""]
+	Line[244000 342000 242000 344000 1000 2000 ""]
+	Line[242000 344000 242000 557000 1000 2000 ""]
+	Line[262000 367000 259000 367000 1000 2000 ""]
+	Line[259000 367000 257500 368500 1000 2000 ""]
+	Line[257500 368500 257500 552500 1000 2000 ""]
+	Line[262000 377000 266500 381500 1000 2000 ""]
+	Line[266500 381500 266500 543000 1000 2000 ""]
+	Line[262000 327000 263000 327000 1000 2000 "clearline"]
+	Line[46481 545728 46481 541519 2500 2000 ""]
+	Line[46481 541519 57500 530500 2500 2000 ""]
+	Line[57500 530500 78000 530500 2500 2000 ""]
+	Line[78000 530500 86000 522500 2500 2000 ""]
+	Line[86000 522500 86000 460000 2500 2000 ""]
+	Line[86000 460000 68500 442500 2500 2000 ""]
+	Line[68500 442500 68500 387000 2500 2000 ""]
+	Line[68500 442500 68500 380500 2500 2000 ""]
+	Line[68500 380500 72000 377000 2500 2000 ""]
+	Line[72000 377000 82500 377000 2500 2000 ""]
+	Line[56481 545728 89772 545728 2500 2000 ""]
+	Line[89772 545728 108500 527000 2500 2000 ""]
+	Line[108500 527000 108500 432000 2500 2000 ""]
+	Line[264000 559000 269000 564000 1000 2000 ""]
+	Line[264000 545500 264000 559000 1000 2000 ""]
+	Line[266500 543000 264000 545500 1000 2000 ""]
+	Line[257500 552500 259000 554000 1000 2000 ""]
+	Line[242000 557000 249000 564000 1000 2000 ""]
+	Line[93500 367000 82500 367000 2500 2000 "clearline"]
+	Line[160000 337000 144000 337000 4000 2000 ""]
+	Line[160000 327000 144000 327000 4000 2000 ""]
+	Line[322000 34000 322000 45750 2500 2000 ""]
+	Line[322000 45750 322100 45850 2500 2000 ""]
+	Line[332000 34500 332000 45750 2500 2000 ""]
+	Line[332000 45750 332100 45850 2500 2000 ""]
+	Line[342100 35500 342100 45850 2500 2000 ""]
+	Line[302100 70350 302100 81500 1000 2000 ""]
+	Line[209300 250300 228700 250300 1000 2000 ""]
+	Line[228700 250300 228800 250200 1000 2000 ""]
+	Line[271700 81500 271700 70750 1000 2000 "clearline"]
+	Line[271700 70750 272100 70350 1000 2000 "clearline"]
+	Line[495500 54992 495500 54700 1000 2000 "clearline"]
+	Line[495500 54700 477900 37100 1000 2000 "clearline"]
+	Line[477900 37100 430850 37100 1000 2000 "clearline"]
+	Line[430850 37100 422100 45850 1000 2000 "clearline"]
+	Line[357100 84400 323100 84400 2500 2000 "clearline"]
+	Line[323100 84400 295500 112000 2500 2000 "clearline"]
+	Line[295500 112000 295500 112100 2500 2000 "clearline"]
+	Line[295500 112100 257000 150600 2500 2000 "clearline"]
+	Line[347100 91700 328300 91700 2500 2000 "clearline"]
+	Line[328300 91700 265900 154100 2500 2000 "clearline"]
+	Line[336600 100500 332600 100500 2500 2000 "clearline"]
+	Line[332600 100500 267000 166100 2500 2000 "clearline"]
+	Line[257350 150550 210450 150550 2500 2000 "clearline"]
+	Line[266350 153650 260900 159100 2500 2000 "clearline"]
+	Line[260900 159100 210600 159100 2500 2000 "clearline"]
+	Line[266700 166400 211900 166400 2500 2000 "clearline"]
+	Line[211900 166400 211800 166300 2500 2000 "clearline"]
+	Line[52190 215500 52190 210310 2500 2000 "clearline"]
+	Line[52190 210310 61500 201000 2500 2000 "clearline"]
+	Line[113700 199100 198900 113900 2500 2000 "clearline"]
+	Line[198900 113900 198900 61900 2500 2000 "clearline"]
+	Line[198900 61900 250600 10200 2500 2000 "clearline"]
+	Line[250600 10200 306900 10200 2500 2000 "clearline"]
+	Line[306900 10200 312000 15300 2500 2000 "clearline"]
+	Line[312000 15300 312000 45750 2500 2000 "clearline"]
+	Line[312000 45750 312100 45850 2500 2000 "clearline"]
+	Line[61350 201150 111650 201150 2500 2000 "clearline"]
+	Line[111650 201150 114150 198650 2500 2000 "clearline"]
+	Line[52195 259500 52195 254205 2500 2000 "clearline"]
+	Line[52195 254205 54400 252000 2500 2000 "clearline"]
+	Line[54400 252000 70900 252000 2500 2000 "clearline"]
+	Line[70900 252000 207300 115600 2500 2000 "clearline"]
+	Line[207300 115600 207300 65300 2500 2000 "clearline"]
+	Line[207300 65300 253900 18700 2500 2000 "clearline"]
+	Line[253900 18700 297200 18700 2500 2000 "clearline"]
+	Line[297200 18700 301500 23000 2500 2000 "clearline"]
+	Line[301500 23000 301500 45250 2500 2000 "clearline"]
+	Line[301500 45250 302100 45850 2500 2000 "clearline"]
+	Line[51895 303600 51895 298205 2500 2000 "clearline"]
+	Line[51895 298205 56700 293400 2500 2000 "clearline"]
+	Line[56700 293400 66500 293400 2500 2000 "clearline"]
+	Line[66500 293400 94200 265700 2500 2000 "clearline"]
+	Line[94200 265700 94200 241200 2500 2000 "clearline"]
+	Line[94200 241200 198600 136800 2500 2000 "clearline"]
+	Line[198600 136800 198700 136800 2500 2000 "clearline"]
+	Line[198700 136800 251000 84500 2500 2000 "clearline"]
+	Line[251000 84500 251000 39000 2500 2000 "clearline"]
+	Line[251000 39000 265100 24900 2500 2000 "clearline"]
+	Line[265100 24900 287100 24900 2500 2000 "clearline"]
+	Line[287100 24900 292300 30100 2500 2000 "clearline"]
+	Line[292300 30100 292300 45650 2500 2000 "clearline"]
+	Line[292300 45650 292100 45850 2500 2000 "clearline"]
+	Line[512000 257000 522000 257000 2500 2000 "clearline"]
+	Line[512000 267000 522000 267000 2500 2000 "clearline"]
+	Line[512000 277000 522000 277000 2500 2000 "clearline"]
+	Line[272100 45850 272100 34200 1000 2000 "clearline"]
+	Line[512000 427000 512000 426500 4000 2000 "clearline"]
+	Line[512000 426500 494500 409000 4000 2000 "clearline"]
+	Line[494500 409000 494500 156700 4000 2000 "clearline"]
+	Line[494500 156700 557100 94100 4000 2000 "clearline"]
+	Line[557100 94100 557100 48000 4000 2000 "clearline"]
+	Line[557100 48000 557200 47900 4000 2000 "clearline"]
 )
 Layer(2 "Top Power")
 (
-	Line[73000 383000 85000 383000 4000 2000 ""]
-	Line[48500 383000 37500 383000 4000 2000 ""]
+	Line[352100 45850 352100 33600 4000 2000 "clearline"]
+	Line[352100 33600 352000 33500 4000 2000 "clearline"]
+	Line[412100 45850 412100 33600 4000 2000 "clearline"]
+	Line[412100 33600 412000 33500 4000 2000 "clearline"]
+	Line[292000 82500 292000 70250 4000 2000 "clearline"]
+	Line[292000 70250 291900 70150 4000 2000 "clearline"]
+	Line[895910 407000 903500 407000 4000 2000 ""]
+	Line[884100 407000 875100 407000 4000 2000 ""]
+	Line[863290 407000 856000 407000 4000 2000 ""]
+	Line[93500 337000 82500 337000 4000 2000 ""]
+	Line[93500 347000 82500 347000 4000 2000 ""]
+	Line[93500 357000 82500 357000 4000 2000 ""]
+	Line[882595 263000 873905 263000 4000 2000 ""]
+	Line[862095 263000 854500 263000 4000 2000 ""]
+	Line[894405 263000 901000 263000 4000 2000 ""]
+	Line[77000 463500 77000 469690 4000 2000 ""]
+	Line[77000 519190 77000 513095 4000 2000 ""]
+	Line[77000 481500 77000 501285 4000 2000 ""]
+	Line[77000 489500 68000 498500 4000 2000 ""]
+	Line[68000 498500 42000 498500 4000 2000 ""]
+	Line[28095 187000 28095 197905 4000 2000 ""]
+	Line[28095 197905 28000 198000 4000 2000 ""]
+	Line[28000 198000 28000 203500 4000 2000 ""]
+	Line[28000 203500 30750 206250 4000 2000 ""]
+	Line[28095 233000 28095 248095 4000 2000 ""]
+	Line[28095 248095 30000 250000 4000 2000 ""]
+	Line[28095 277000 28095 291595 4000 2000 ""]
+	Line[28095 291595 30000 293500 4000 2000 ""]
+	Line[236158 58000 236158 57842 4000 2000 "clearline"]
+	Line[382500 34500 382500 45450 4000 2000 "clearline"]
+	Line[382500 45450 382100 45850 4000 2000 "clearline"]
+	Line[402000 34500 402000 45750 4000 2000 "clearline"]
+	Line[402000 45750 402100 45850 4000 2000 "clearline"]
+	Line[312000 81700 312000 70450 4000 2000 "clearline"]
+	Line[312000 70450 312100 70350 4000 2000 "clearline"]
+	Line[282100 70350 282100 82100 4000 2000 "clearline"]
+	Line[362100 45850 362100 34000 4000 2000 "clearline"]
+	Line[282100 45850 282100 34100 4000 2000 "clearline"]
+	Line[402000 34300 402000 46400 4000 2000 "clearline"]
+	Line[404310 23100 404310 32090 4000 2000 "clearline"]
+	Line[404310 32090 402000 34400 4000 2000 "clearline"]
+	Line[392000 34600 392000 45750 4000 2000 "clearline"]
+	Line[392000 45750 392100 45850 4000 2000 "clearline"]
+	Line[389900 23300 377900 23300 4000 2000 "clearline"]
+	Line[377900 23300 372300 28900 4000 2000 "clearline"]
+	Line[372300 28900 372300 45650 4000 2000 "clearline"]
+	Line[372300 45650 372100 45850 4000 2000 "clearline"]
+	Line[863090 35200 852710 35200 4000 2000 "clearline"]
 )
 Layer(3 "Battery")
 (
@@ -2368,6 +2528,15 @@ Layer(3 "Battery")
 	Line[1140000 200000 1139000 199000 28500 2000 ""]
 	Line[1154500 90000 1137500 90000 28500 2000 ""]
 	Line[1137500 90000 1137000 89500 28500 2000 ""]
+	Line[144000 287000 161500 287000 4000 2000 ""]
+	Line[161500 287000 168500 294000 4000 2000 ""]
+	Line[168500 294000 168500 564000 4000 2000 ""]
+	Line[144500 287000 134000 287000 4000 2000 ""]
+	Line[168500 566500 175500 573500 4000 2000 ""]
+	Line[175500 573500 398000 573500 4000 2000 ""]
+	Line[397000 573500 1046500 573500 4000 2000 ""]
+	Line[1046500 573500 1073500 546500 4000 2000 ""]
+	Line[168500 566500 168500 561500 4000 2000 ""]
 	Polygon("clearpoly")
 	(
 		[1122000 49000] [1200000 49000] [1200000 556500] [1122000 556500] 
@@ -2379,18 +2548,306 @@ Layer(3 "Battery")
 )
 Layer(4 "Second Signal 1")
 (
+	Line[134000 507000 133500 507000 1000 2000 ""]
+	Line[134000 517000 86000 517000 1000 2000 ""]
+	Line[86000 517000 8000 439000 1000 2000 ""]
+	Line[8000 439000 8000 418000 1000 2000 ""]
+	Line[134000 507000 87000 507000 1000 2000 ""]
+	Line[87000 507000 12000 432000 1000 2000 ""]
+	Line[12000 432000 12000 407000 1000 2000 ""]
+	Line[134000 497000 86000 497000 1000 2000 ""]
+	Line[86000 497000 17500 428500 1000 2000 ""]
+	Line[17500 428500 17500 397000 1000 2000 ""]
+	Line[134000 487000 82500 487000 1000 2000 ""]
+	Line[82500 487000 21500 426000 1000 2000 ""]
+	Line[21500 426000 21500 387000 1000 2000 ""]
+	Line[134000 477000 78500 477000 1000 2000 ""]
+	Line[78500 477000 26000 424500 1000 2000 ""]
+	Line[26000 424500 26000 377000 1000 2000 ""]
+	Line[134000 467000 75000 467000 1000 2000 ""]
+	Line[75000 467000 30500 422500 1000 2000 ""]
+	Line[30500 422500 30500 367000 1000 2000 ""]
+	Line[134000 457000 73500 457000 1000 2000 ""]
+	Line[73500 457000 35500 419000 1000 2000 ""]
+	Line[35500 419000 35500 357000 1000 2000 ""]
+	Line[134000 447000 72500 447000 1000 2000 ""]
+	Line[72500 447000 40500 415000 1000 2000 ""]
+	Line[40500 415000 40500 347000 1000 2000 ""]
+	Line[134000 437000 71500 437000 1000 2000 ""]
+	Line[71500 437000 45500 411000 1000 2000 ""]
+	Line[45500 411000 45500 337000 1000 2000 ""]
+	Line[252000 327000 224000 299000 1000 2000 "clearline"]
+	Line[224000 299000 224000 141500 1000 2000 "clearline"]
+	Line[224000 141500 236000 129500 1000 2000 "clearline"]
+	Line[236000 129500 236000 68000 1000 2000 "clearline"]
+	Line[236000 68000 236158 67842 1000 2000 "clearline"]
+	Line[221000 42000 221000 70000 1000 2000 "clearline"]
+	Line[221000 70000 233000 82000 1000 2000 "clearline"]
+	Line[233000 82000 233000 126500 1000 2000 "clearline"]
+	Line[233000 126500 219500 140000 1000 2000 "clearline"]
+	Line[219500 140000 219500 303000 1000 2000 "clearline"]
+	Line[219500 303000 248500 332000 1000 2000 "clearline"]
+	Line[248500 332000 269500 332000 1000 2000 "clearline"]
+	Line[269500 332000 272500 329000 1000 2000 "clearline"]
+	Line[272500 329000 272500 297500 1000 2000 "clearline"]
+	Line[272500 297500 262000 287000 1000 2000 "clearline"]
+	Line[221000 20500 221000 42500 1000 2000 "clearline"]
+	Line[259000 554000 259000 552000 1000 2000 ""]
+	Line[262000 357000 257000 362000 1000 2000 ""]
+	Line[257000 362000 257000 545500 1000 2000 ""]
+	Line[257000 545500 254000 548500 1000 2000 ""]
+	Line[254000 548500 254000 559000 1000 2000 ""]
+	Line[254000 559000 259000 564000 1000 2000 ""]
+	Line[262000 447000 272000 447000 1000 2000 ""]
+	Line[272000 447000 316000 491000 1000 2000 ""]
+	Line[316000 491000 316000 555500 1000 2000 ""]
+	Line[108500 432000 108500 376500 2500 2000 ""]
+	Line[108500 376500 99000 367000 2500 2000 ""]
+	Line[99000 367000 93500 367000 2500 2000 "clearline"]
+	Line[417000 164000 512000 259000 1000 2000 ""]
+	Line[342000 34500 342500 34500 2500 2000 ""]
+	Line[417000 164000 511500 258500 2500 2000 ""]
+	Line[332000 34500 334000 34500 2500 2000 ""]
+	Line[334000 34500 337000 37500 2500 2000 ""]
+	Line[337000 37500 337000 54500 2500 2000 ""]
+	Line[337000 54500 341500 59000 2500 2000 ""]
+	Line[341500 59000 344000 59000 2500 2000 ""]
+	Line[344000 59000 347000 62000 2500 2000 ""]
+	Line[347000 62000 347000 104000 2500 2000 ""]
+	Line[347000 104000 512000 269000 2500 2000 ""]
+	Line[322000 34000 323500 34000 2500 2000 ""]
+	Line[323500 34000 327000 37500 2500 2000 ""]
+	Line[327000 37500 327000 56500 2500 2000 ""]
+	Line[327000 56500 329000 58500 2500 2000 ""]
+	Line[329000 58500 334500 58500 2500 2000 ""]
+	Line[334500 58500 337000 61000 2500 2000 ""]
+	Line[337000 61000 337000 104000 2500 2000 ""]
+	Line[337000 104000 512000 279000 2500 2000 ""]
+	Line[342000 34500 344000 34500 2500 2000 ""]
+	Line[344000 34500 347000 37500 2500 2000 ""]
+	Line[347000 37500 347000 54000 2500 2000 ""]
+	Line[347000 54000 352000 59000 2500 2000 ""]
+	Line[352000 59000 354500 59000 2500 2000 ""]
+	Line[354500 59000 357000 61500 2500 2000 ""]
+	Line[357000 61500 357000 104000 2500 2000 ""]
+	Line[357000 104000 420500 167500 2500 2000 ""]
+	Line[134000 317000 134300 317000 1000 2000 ""]
+	Line[134300 317000 139100 312200 1000 2000 ""]
+	Line[139100 312200 147900 312200 1000 2000 ""]
+	Line[147900 312200 157600 302500 1000 2000 ""]
+	Line[157600 302500 157600 302100 1000 2000 ""]
+	Line[157600 302100 209400 250300 1000 2000 ""]
+	Line[228800 250200 228800 249500 1000 2000 ""]
+	Line[228800 249500 301900 176400 1000 2000 ""]
+	Line[301900 176400 301900 81800 1000 2000 ""]
+	Line[301900 81800 302100 81600 1000 2000 ""]
 )
 Layer(5 "Second Signal 2")
 (
+	Line[211000 20500 211000 26000 1000 2000 "clearline"]
+	Line[211000 26000 217000 32000 1000 2000 "clearline"]
+	Line[217000 32000 217000 72500 1000 2000 "clearline"]
+	Line[217000 72500 229500 85000 1000 2000 "clearline"]
+	Line[229500 85000 229500 126000 1000 2000 "clearline"]
+	Line[229500 126000 215500 140000 1000 2000 "clearline"]
+	Line[215500 140000 215500 310500 1000 2000 "clearline"]
+	Line[215500 310500 247000 342000 1000 2000 "clearline"]
+	Line[247000 342000 270500 342000 1000 2000 "clearline"]
+	Line[270500 342000 276000 336500 1000 2000 "clearline"]
+	Line[276000 336500 276000 291000 1000 2000 "clearline"]
+	Line[276000 291000 262000 277000 1000 2000 "clearline"]
+	Line[262000 437000 278000 437000 1000 2000 ""]
+	Line[278000 437000 326000 485000 1000 2000 ""]
+	Line[326000 485000 326000 555500 1000 2000 ""]
+	Line[62000 187200 94600 187200 2500 2000 "clearline"]
+	Line[94600 187200 131300 150500 2500 2000 "clearline"]
+	Line[131300 150500 211200 150500 2500 2000 "clearline"]
+	Line[62100 233400 62600 233400 2500 2000 "clearline"]
+	Line[62600 233400 136600 159400 2500 2000 "clearline"]
+	Line[136600 159400 210800 159400 2500 2000 "clearline"]
+	Line[210800 159400 211100 159100 2500 2000 "clearline"]
+	Line[61900 276500 62300 276500 2500 2000 "clearline"]
+	Line[62300 276500 85200 253600 2500 2000 "clearline"]
+	Line[85200 253600 85200 228400 2500 2000 "clearline"]
+	Line[85200 228400 147100 166500 2500 2000 "clearline"]
+	Line[147100 166500 211200 166500 2500 2000 "clearline"]
 )
 Layer(6 "+3.3V")
 (
+	Line[879500 288000 879500 302000 4000 2000 ""]
+	Line[879500 302000 889000 302000 4000 2000 ""]
+	Line[889000 302000 889500 301500 4000 2000 ""]
+	Line[889500 301500 889500 290000 4000 2000 ""]
+	Line[889500 290000 880500 290000 4000 2000 ""]
+	Line[880500 290000 879500 289000 4000 2000 ""]
+	Line[884600 295500 920434 295500 4000 2000 ""]
+	Line[880000 327000 880000 345500 4000 2000 ""]
+	Line[880000 342000 891000 342000 4000 2000 ""]
+	Line[891000 342000 891000 329000 4000 2000 ""]
+	Line[891000 329000 890500 328500 4000 2000 ""]
+	Line[891000 330500 880500 330500 4000 2000 ""]
+	Line[880500 330500 880000 330000 4000 2000 ""]
+	Line[879000 370000 879000 384500 4000 2000 ""]
+	Line[879000 384500 889500 384500 4000 2000 ""]
+	Line[889500 384500 889500 372000 4000 2000 ""]
+	Line[889500 372000 890000 371500 4000 2000 ""]
+	Line[890000 371500 880000 371500 4000 2000 ""]
+	Line[880000 371500 879000 372500 4000 2000 ""]
+	Line[920500 301000 927500 301000 4000 2000 ""]
+	Line[927500 301000 929500 299000 4000 2000 ""]
+	Line[929500 299000 934500 299000 4000 2000 ""]
+	Line[934500 299000 938000 302500 4000 2000 ""]
+	Line[938000 302500 938000 308000 4000 2000 ""]
+	Line[938000 308000 939500 309500 4000 2000 ""]
+	Line[939500 309500 939500 307500 4000 2000 ""]
+	Line[939500 307500 938000 306000 4000 2000 ""]
+	Line[926217 301283 926217 303783 4000 2000 ""]
+	Line[926217 303783 924000 306000 4000 2000 ""]
+	Line[924000 306000 924000 309500 4000 2000 ""]
+	Line[924000 309500 926000 311500 4000 2000 ""]
+	Line[926000 311500 938500 311500 4000 2000 ""]
+	Line[938500 311500 939500 312500 4000 2000 ""]
+	Line[939500 312500 937434 312500 4000 2000 ""]
+	Line[920434 295500 937434 312500 4000 2000 ""]
+	Line[931843 306909 931843 306157 4000 2000 ""]
+	Line[931843 306157 936750 301250 4000 2000 ""]
+	Line[936750 301250 936750 302002 4000 2000 ""]
+	Line[934500 303500 933500 303500 4000 2000 ""]
+	Line[933500 303500 929250 299250 4000 2000 ""]
+	Line[929250 299250 929250 303750 4000 2000 ""]
+	Line[929250 303750 924000 309000 4000 2000 ""]
+	Line[924000 309000 929752 309000 4000 2000 ""]
+	Line[936750 302002 929752 309000 4000 2000 ""]
+	Line[940500 313500 922000 313500 2500 2000 ""]
+	Line[922000 313500 921500 313000 2500 2000 ""]
+	Polygon("clearpoly")
+	(
+		[877000 283000] [946500 283000] [946500 315000] [877000 315000] 
+	)
+	Polygon("clearpoly")
+	(
+		[877000 303000] [923500 303000] [923500 395000] [877000 395000] 
+	)
+	Polygon("clearpoly")
+	(
+		[876500 386000] [923500 386000] [923500 419500] [876500 419500] 
+	)
 )
 Layer(7 "+5.0V")
 (
+	Line[562000 199909 434091 199909 4000 2000 "clearline"]
+	Line[434091 199909 397000 237000 4000 2000 "clearline"]
+	Line[435000 199909 299091 199909 4000 2000 "clearline"]
+	Line[299091 199909 262000 237000 4000 2000 "clearline"]
+	Line[300591 199909 181091 199909 4000 2000 "clearline"]
+	Line[181091 199909 144000 237000 4000 2000 "clearline"]
+	Line[100500 232500 133000 200000 4000 2000 "clearline"]
+	Line[181409 200000 181500 199909 4000 2000 "clearline"]
+	Line[181409 200000 101000 200000 4000 2000 "clearline"]
+	Line[912000 192500 948000 192500 4000 2000 ""]
+	Line[948000 192500 949500 194000 4000 2000 ""]
+	Line[938000 205500 938000 204500 4000 2000 ""]
+	Line[938000 204500 941000 201500 4000 2000 ""]
+	Line[941000 201500 941000 197000 4000 2000 ""]
+	Line[941000 197000 939000 195000 4000 2000 ""]
+	Line[923000 192500 923500 192500 4000 2000 ""]
+	Line[923500 192500 926000 195000 4000 2000 ""]
+	Line[926000 195000 926000 198500 4000 2000 ""]
+	Line[926000 198500 924000 200500 4000 2000 ""]
+	Line[924000 200500 924000 202500 4000 2000 ""]
+	Line[924000 202500 927000 205500 4000 2000 ""]
+	Line[927000 205500 942500 205500 4000 2000 ""]
+	Line[938000 206000 938000 194000 4000 2000 ""]
+	Line[938000 194000 936500 192500 4000 2000 ""]
+	Line[939000 195000 926000 195000 4000 2000 ""]
+	Line[926000 195000 925750 194750 4000 2000 ""]
+	Line[928000 192500 928000 204500 4000 2000 ""]
+	Line[928000 204500 927000 205500 4000 2000 ""]
+	Line[943000 203000 925500 203000 4000 2000 ""]
+	Line[925500 203000 923500 201000 4000 2000 ""]
+	Line[943500 197000 922500 197000 4000 2000 ""]
+	Line[100750 232250 100750 349750 4000 2000 ""]
+	Line[100750 349750 93500 357000 4000 2000 ""]
+	Line[100750 350000 100750 439750 4000 2000 ""]
+	Line[100750 439750 77500 463000 4000 2000 ""]
+	Line[30000 203000 33000 200000 4000 2000 ""]
+	Line[30000 203000 30000 215500 4000 2000 ""]
+	Line[101500 200000 33000 200000 4000 2000 ""]
+	Line[30000 247000 35000 242000 4000 2000 ""]
+	Line[35000 242000 96750 242000 4000 2000 ""]
+	Line[96750 242000 100750 238000 4000 2000 ""]
+	Line[30000 247000 30000 260000 4000 2000 ""]
+	Line[30000 293500 30000 303500 4000 2000 ""]
+	Line[30000 293000 30000 289500 4000 2000 ""]
+	Line[30000 289500 35000 284500 4000 2000 ""]
+	Line[35000 284500 93000 284500 4000 2000 ""]
+	Line[93000 284500 100750 276750 4000 2000 ""]
+	Line[325000 199909 325000 200000 4000 2000 "clearline"]
+	Line[100750 440000 100750 539750 4000 2000 ""]
+	Line[100750 539750 115000 554000 4000 2000 ""]
+	Line[115000 554000 249000 554000 4000 2000 ""]
+	Line[212700 199909 212609 199909 4000 2000 "clearline"]
+	Line[212609 199909 203100 190400 4000 2000 "clearline"]
+	Line[203100 190400 203100 76400 4000 2000 "clearline"]
+	Line[203100 76600 203100 37600 4000 2000 "clearline"]
+	Line[203100 37600 192000 26500 4000 2000 "clearline"]
+	Line[192000 26500 161000 26500 4000 2000 "clearline"]
+	Line[190500 36500 190500 38500 4000 2000 "clearline"]
+	Line[190500 38500 203100 51100 4000 2000 "clearline"]
+	Line[190500 66500 190500 67300 4000 2000 "clearline"]
+	Line[190500 67300 203100 79900 4000 2000 "clearline"]
+	Line[311646 81654 311700 81600 4000 2000 "clearline"]
+	Line[312000 81700 312000 192609 4000 2000 "clearline"]
+	Line[312000 192609 304700 199909 4000 2000 "clearline"]
+	Line[282200 81400 282200 91000 4000 2000 "clearline"]
+	Line[282200 91000 312000 120800 4000 2000 "clearline"]
+	Line[312000 103300 312000 100200 4000 2000 "clearline"]
+	Line[312000 100200 361900 50300 4000 2000 "clearline"]
+	Line[361900 50300 361900 34600 4000 2000 "clearline"]
+	Line[361900 34600 362000 34500 4000 2000 "clearline"]
+	Line[505343 42000 505343 25643 4000 2000 "clearline"]
+	Line[505343 25643 488100 8400 4000 2000 "clearline"]
+	Line[488100 8400 371500 8400 4000 2000 "clearline"]
+	Line[371500 8400 361800 18100 4000 2000 "clearline"]
+	Line[361800 18100 361800 34300 4000 2000 "clearline"]
+	Line[361800 34300 362000 34500 4000 2000 "clearline"]
+	Line[262000 347000 274200 359200 4000 2000 "clearline"]
+	Line[274200 359200 274200 528600 4000 2000 "clearline"]
+	Line[274200 528600 248800 554000 4000 2000 "clearline"]
+	Line[562000 199909 559091 199909 4000 2000 "clearline"]
+	Line[559091 199909 522000 237000 4000 2000 "clearline"]
+	Line[567200 47900 567200 24300 4000 2000 "clearline"]
+	Line[567200 24300 551200 8300 4000 2000 "clearline"]
+	Line[551200 8300 488000 8300 4000 2000 "clearline"]
+	Line[918800 180200 918300 179700 4000 2000 ""]
+	Polygon("clearpoly")
+	(
+		[961000 208000] [804500 208000] [804500 161000] [961000 161000] 
+	)
 )
 Layer(8 "+12V")
 (
+	Line[392000 34600 392000 25400 4000 2000 "clearline"]
+	Line[392000 25400 389900 23300 4000 2000 "clearline"]
+	Line[389900 23300 389900 17700 4000 2000 "clearline"]
+	Line[389900 17700 393200 14400 4000 2000 "clearline"]
+	Line[393200 14400 430300 14400 4000 2000 "clearline"]
+	Line[430300 14400 446400 30500 4000 2000 "clearline"]
+	Line[446400 30500 446400 80100 4000 2000 "clearline"]
+	Line[262000 327000 262300 327000 4000 2000 "clearline"]
+	Line[262300 327000 359500 424200 4000 2000 "clearline"]
+	Line[359500 424200 359500 544700 4000 2000 "clearline"]
+	Line[359500 544700 380400 565600 4000 2000 "clearline"]
+	Line[380400 565600 515800 565600 4000 2000 "clearline"]
+	Line[515800 565600 573500 507900 4000 2000 "clearline"]
+	Line[446400 79800 446400 84400 4000 2000 "clearline"]
+	Line[446400 84400 460000 98000 4000 2000 "clearline"]
+	Line[460000 98000 708800 98000 4000 2000 "clearline"]
+	Line[573900 507500 573900 243700 4000 2000 "clearline"]
+	Polygon("clearpoly")
+	(
+		[945800 98000] [713700 98000] [713700 0] [945800 0] 
+	)
 )
 Layer(9 "Battery")
 (
@@ -2407,6 +2864,14 @@ Layer(9 "Battery")
 	Line[1150000 107500 1137000 120500 28500 2000 ""]
 	Line[1136590 120090 1136590 153090 28500 2000 ""]
 	Line[1137000 153500 1138000 154500 28500 2000 ""]
+	Line[144000 257000 148500 257000 4000 2000 "clearline"]
+	Line[148500 257000 178000 286500 4000 2000 "clearline"]
+	Line[178000 286500 178000 548500 4000 2000 "clearline"]
+	Line[178000 548500 200500 571000 4000 2000 "clearline"]
+	Line[200500 571000 1041000 571000 4000 2000 "clearline"]
+	Line[1040500 571000 1047500 571000 4000 2000 ""]
+	Line[1047500 571000 1067000 551500 4000 2000 ""]
+	Line[143000 257000 134000 257000 4000 2000 ""]
 	Polygon("clearpoly")
 	(
 		[1200000 49000] [1122000 49000] [1122000 556500] [1200000 556500] 
@@ -2493,18 +2958,188 @@ Layer(10 "GND")
 	Line[920830 156680 921440 157290 4000 2000 ""]
 	Line[921440 157290 948270 157290 4000 2000 ""]
 	Line[948270 157290 948880 156680 4000 2000 ""]
+	Line[863500 385500 863500 289000 4000 2000 ""]
+	Line[863500 289000 868500 289000 4000 2000 ""]
+	Line[868500 289000 867000 289000 4000 2000 ""]
+	Line[867000 289000 863500 292500 4000 2000 ""]
+	Line[863500 292500 863500 298000 4000 2000 ""]
+	Line[863500 298000 867000 301500 4000 2000 ""]
+	Line[867000 301500 870000 301500 4000 2000 ""]
+	Line[870000 301500 875000 296500 4000 2000 ""]
+	Line[875000 296500 875000 293500 4000 2000 ""]
+	Line[875000 293500 870500 289000 4000 2000 ""]
+	Line[863500 331000 874000 331000 4000 2000 ""]
+	Line[874000 331000 874500 331500 4000 2000 ""]
+	Line[874500 331500 874500 340000 4000 2000 ""]
+	Line[874500 340000 874000 340500 4000 2000 ""]
+	Line[874000 340500 872000 340500 4000 2000 ""]
+	Line[872000 340500 870500 342000 4000 2000 ""]
+	Line[870500 342000 865000 342000 4000 2000 ""]
+	Line[865000 342000 863500 340500 4000 2000 ""]
+	Line[863500 340500 867000 340500 4000 2000 ""]
+	Line[867000 340500 868500 342000 4000 2000 ""]
+	Line[863500 374000 866500 374000 4000 2000 ""]
+	Line[866500 374000 868500 372000 4000 2000 ""]
+	Line[868500 372000 870500 372000 4000 2000 ""]
+	Line[875000 376500 870500 376500 4000 2000 ""]
+	Line[870500 376500 869000 378000 4000 2000 ""]
+	Line[869000 378000 869000 380500 4000 2000 ""]
+	Line[869000 380500 866000 383500 4000 2000 ""]
+	Line[866000 383500 866000 382000 4000 2000 ""]
+	Line[866000 382000 863500 379500 4000 2000 ""]
+	Line[863500 379500 866500 379500 4000 2000 ""]
+	Line[866500 379500 870500 383500 4000 2000 ""]
+	Line[870500 383500 870500 383000 4000 2000 ""]
+	Line[870500 383000 874500 379000 4000 2000 ""]
+	Line[874500 379000 870500 379000 4000 2000 ""]
+	Line[870500 379000 866750 382750 4000 2000 ""]
+	Line[866750 382750 869750 382750 4000 2000 ""]
+	Line[869750 382750 870500 383500 4000 2000 ""]
+	Line[870500 383500 870500 372000 4000 2000 ""]
+	Line[875000 376500 869500 371000 4000 2000 ""]
+	Line[869500 371000 869500 372000 4000 2000 ""]
+	Line[869500 372000 863500 378000 4000 2000 ""]
+	Line[34500 508000 43500 508000 4000 2000 ""]
+	Line[43500 508000 49000 513500 4000 2000 ""]
+	Line[49000 513500 49000 514500 4000 2000 ""]
+	Line[49000 514500 42500 521000 4000 2000 ""]
+	Line[42500 521000 42000 521000 4000 2000 ""]
+	Line[42000 521000 37000 516000 4000 2000 ""]
+	Line[37000 516000 37000 511000 4000 2000 ""]
+	Line[37000 511000 37500 510500 4000 2000 ""]
+	Line[37500 510500 38400 510500 4000 2000 ""]
+	Line[38400 510500 42000 514100 4000 2000 ""]
+	Line[42000 514100 45900 514100 4000 2000 ""]
+	Line[45900 514100 47750 512250 4000 2000 ""]
+	Line[47750 512250 44750 512250 4000 2000 ""]
+	Line[44750 512250 40500 508000 4000 2000 ""]
+	Line[40500 508000 40500 517000 4000 2000 ""]
+	Line[40500 517000 43500 520000 4000 2000 ""]
+	Line[71500 516500 85000 516500 4000 2000 ""]
+	Line[85000 516500 86500 518000 4000 2000 ""]
+	Line[84500 519500 69500 519500 4000 2000 ""]
+	Line[69000 523000 86000 523000 4000 2000 ""]
+	Line[86000 523000 86500 522500 4000 2000 ""]
+	Line[264500 384500 265500 385500 4000 2000 ""]
+	Line[265500 385500 265500 388500 4000 2000 ""]
+	Line[265500 388500 264000 390000 4000 2000 ""]
+	Line[264000 390000 259500 390000 4000 2000 ""]
+	Line[259500 390000 259500 385500 4000 2000 ""]
+	Line[259500 385500 258500 384500 4000 2000 ""]
+	Line[258500 384500 269500 384500 4000 2000 ""]
+	Line[264500 384500 262000 387000 4000 2000 ""]
+	Line[258500 474000 266000 474000 4000 2000 ""]
+	Line[266000 474000 266000 478500 4000 2000 ""]
+	Line[266000 478500 265000 479500 4000 2000 ""]
+	Line[265000 479500 261500 479500 4000 2000 ""]
+	Line[261500 479500 261000 480000 4000 2000 ""]
+	Line[261000 480000 260500 480000 4000 2000 ""]
+	Line[260500 480000 258500 478000 4000 2000 ""]
+	Line[258500 478000 258500 474000 4000 2000 ""]
+	Line[258500 474000 259000 474000 4000 2000 ""]
+	Line[259000 474000 262000 477000 4000 2000 ""]
+	Line[262000 477000 265500 477000 4000 2000 ""]
+	Line[265500 477000 266000 477500 4000 2000 ""]
+	Line[33000 542500 37500 542500 2500 2000 ""]
+	Line[37500 542500 39500 544500 2500 2000 ""]
+	Line[39500 544500 39500 546500 2500 2000 ""]
+	Line[39500 546500 37500 548500 2500 2000 ""]
+	Line[37500 548500 35000 548500 2500 2000 ""]
+	Line[35000 548500 34500 548000 2500 2000 ""]
+	Line[34500 548000 34500 547500 2500 2000 ""]
+	Line[34500 547500 33000 546000 2500 2000 ""]
+	Line[33000 546000 36208 546000 2500 2000 ""]
+	Line[36208 546000 36481 545728 2500 2000 ""]
+	Line[36481 545728 34728 545728 2500 2000 ""]
+	Line[34728 545728 33000 544000 2500 2000 ""]
+	Line[33000 544000 34753 544000 2500 2000 ""]
+	Line[34753 544000 36481 545728 2500 2000 ""]
+	Line[36481 545728 36481 545019 2500 2000 ""]
+	Line[36481 545019 38250 543250 2500 2000 ""]
+	Line[38250 543250 38250 544750 2500 2000 ""]
+	Line[38250 544750 37000 546000 2500 2000 ""]
+	Line[37000 546000 37000 547000 2500 2000 ""]
+	Line[37000 547000 38000 548000 2500 2000 ""]
+	Line[38000 548000 38000 547000 2500 2000 ""]
+	Line[38000 547000 40000 545000 2500 2000 ""]
+	Line[40000 545000 37500 545000 2500 2000 ""]
+	Line[37500 545000 34750 547750 2500 2000 ""]
+	Line[35000 505000 49000 505000 4000 2000 ""]
+	Line[49000 505000 51000 507000 4000 2000 ""]
+	Line[29500 507500 52500 507500 4000 2000 ""]
+	Line[52500 507500 54000 509000 4000 2000 ""]
+	Line[29000 510500 54000 510500 4000 2000 ""]
+	Line[54000 510500 54750 509750 4000 2000 ""]
 	Polygon("clearpoly")
 	(
 		[0 0] [959500 0] [959500 560000] [0 560000] 
 	)
 )
-Layer(11 "silk")
+Layer(11 "Bottom Power")
+(
+	Line[236158 58000 395000 58000 4000 2000 "clearline"]
+	Line[395000 58000 402000 51000 4000 2000 "clearline"]
+	Line[402000 51000 402000 34500 4000 2000 "clearline"]
+	Line[371000 58000 382500 46500 4000 2000 "clearline"]
+	Line[382500 46500 382500 34500 4000 2000 "clearline"]
+)
+Layer(12 "Bottom Signal")
+(
+	Line[161000 46500 194000 46500 1000 2000 "clearline"]
+	Line[194000 46500 206000 58500 1000 2000 "clearline"]
+	Line[206000 58500 206000 229500 1000 2000 "clearline"]
+	Line[206000 229500 213500 237000 1000 2000 "clearline"]
+	Line[213500 237000 252000 237000 1000 2000 "clearline"]
+	Line[271700 81400 271700 108900 1000 2000 "clearline"]
+	Line[271700 108900 274900 112100 1000 2000 "clearline"]
+	Line[274900 112100 464200 112100 1000 2000 "clearline"]
+	Line[495500 42000 491600 42000 1000 2000 "clearline"]
+	Line[491600 42000 487400 46200 1000 2000 "clearline"]
+	Line[487400 46200 487400 88700 1000 2000 "clearline"]
+	Line[487400 88700 464000 112100 1000 2000 "clearline"]
+	Line[397000 277000 396900 277000 1000 2000 "clearline"]
+	Line[396900 277000 392100 272200 1000 2000 "clearline"]
+	Line[392100 272200 381200 272200 1000 2000 "clearline"]
+	Line[378000 232500 216100 70600 1000 2000 "clearline"]
+	Line[216100 70600 216100 39100 1000 2000 "clearline"]
+	Line[216100 39100 221100 34100 1000 2000 "clearline"]
+	Line[221100 34100 272000 34100 1000 2000 "clearline"]
+	Line[272000 34100 272100 34200 1000 2000 "clearline"]
+	Line[378000 232500 378000 269100 1000 2000 "clearline"]
+	Line[378000 269100 381100 272200 1000 2000 "clearline"]
+)
+Layer(13 "silk")
 (
 )
-Layer(12 "silk")
+Layer(14 "silk")
 (
-	Text[206500 29500 0 125 "Red Switch" "clearline"]
 	Text[299500 560500 0 125 "E-Stop I2C" "clearline"]
+	Text[895000 291500 0 125 "+" "clearline"]
+	Text[855500 291500 0 125 "-" "clearline"]
+	Text[861000 414000 0 125 "+3.3V Power" "clearline"]
+	Text[862400 268500 0 125 "+5V Power" "clearline"]
+	Text[19000 206500 0 125 "+" "clearline"]
+	Text[201500 26500 0 125 "Red Switch" "clearline"]
+	Text[302500 542000 1 125 "GND" "clearline"]
+	Text[8000 562000 0 125 "Screen Contrast Control" "clearline"]
+	Text[248000 569000 0 125 "E-Stop" "clearline"]
+	Text[150500 349000 0 125 "Thermocouple" "clearline"]
+	Text[11800 201100 0 125 "LED" "clearline"]
+	Text[10500 202500 3 125 "Safe" "clearline"]
+	Text[19100 251000 0 125 "+" "clearline"]
+	Text[18800 295100 0 125 "+" "clearline"]
+	Text[10000 251000 3 125 "RC" "clearline"]
+	Text[10500 292300 3 125 "Auto" "clearline"]
+	Text[11400 245000 0 125 "LED" "clearline"]
+	Text[12100 288800 0 125 "LED" "clearline"]
+	Text[117200 536800 0 125 "Energy Monitor" "clearline"]
+	Text[366900 537600 0 125 "System Monitor" "clearline"]
+	Text[493600 537200 0 125 "Blinker/Sigmux" "clearline"]
+	Text[540800 35300 0 125 "Indicator LEDs" "clearline"]
+	Text[814100 2500 0 125 "+" "clearline"]
+	Text[849600 2500 0 125 "+" "clearline"]
+	Text[881800 2600 0 125 "+" "clearline"]
+	Text[838495 43200 0 125 "+12V Power" "clearline"]
 )
 NetList()
 (
@@ -2577,7 +3212,7 @@ NetList()
 		Connect("CONN120-3")
 		Connect("CONN122-4")
 		Connect("J101-1")
-		Connect("J101-11")
+		Connect("J101-2")
 		Connect("J102-2")
 		Connect("J102-9")
 		Connect("J102-15")
@@ -2655,12 +3290,12 @@ NetList()
 	)
 	Net("unnamed_net12" "(unknown)")
 	(
-		Connect("J101-12")
+		Connect("J101-4")
 		Connect("R112-3")
 	)
 	Net("unnamed_net13" "(unknown)")
 	(
-		Connect("J101-3")
+		Connect("J101-5")
 		Connect("R112-2")
 	)
 	Net("unnamed_net14" "(unknown)")
@@ -2671,72 +3306,72 @@ NetList()
 	Net("unnamed_net15" "(unknown)")
 	(
 		Connect("CONN114-47")
-		Connect("J101-4")
+		Connect("J101-7")
 	)
 	Net("unnamed_net16" "(unknown)")
 	(
 		Connect("CONN114-48")
-		Connect("J101-14")
+		Connect("J101-8")
 	)
 	Net("unnamed_net17" "(unknown)")
 	(
 		Connect("CONN114-49")
-		Connect("J101-5")
+		Connect("J101-9")
 	)
 	Net("unnamed_net18" "(unknown)")
 	(
 		Connect("CONN114-50")
-		Connect("J101-15")
+		Connect("J101-10")
 	)
 	Net("unnamed_net19" "(unknown)")
 	(
 		Connect("CONN114-46")
-		Connect("J101-13")
+		Connect("J101-6")
 	)
 	Net("unnamed_net20" "(unknown)")
 	(
 		Connect("CONN114-52")
-		Connect("J101-16")
+		Connect("J101-12")
 	)
 	Net("unnamed_net21" "(unknown)")
 	(
 		Connect("CONN114-53")
-		Connect("J101-7")
+		Connect("J101-13")
 	)
 	Net("unnamed_net22" "(unknown)")
 	(
 		Connect("CONN114-54")
-		Connect("J101-17")
+		Connect("J101-14")
 	)
 	Net("unnamed_net23" "(unknown)")
 	(
 		Connect("CONN114-55")
-		Connect("J101-8")
+		Connect("J101-15")
 	)
 	Net("unnamed_net24" "(unknown)")
 	(
 		Connect("CONN114-51")
-		Connect("J101-6")
+		Connect("J101-11")
 	)
 	Net("unnamed_net25" "(unknown)")
 	(
 		Connect("CONN114-57")
-		Connect("J101-9")
+		Connect("J101-17")
 	)
 	Net("unnamed_net26" "(unknown)")
 	(
 		Connect("CONN114-58")
-		Connect("J101-19")
+		Connect("J101-18")
 	)
 	Net("unnamed_net27" "(unknown)")
 	(
 		Connect("CONN114-59")
-		Connect("J101-10")
+		Connect("J101-19")
 	)
 	Net("unnamed_net28" "(unknown)")
 	(
 		Connect("CONN114-56")
-		Connect("J101-18")
+		Connect("J101-16")
 	)
 	Net("unnamed_net29" "(unknown)")
 	(
@@ -2879,7 +3514,7 @@ NetList()
 		Connect("D106-1")
 		Connect("D107-1")
 		Connect("D111-1")
-		Connect("J101-2")
+		Connect("J101-3")
 		Connect("J102-10")
 		Connect("J102-18")
 		Connect("J102-21")

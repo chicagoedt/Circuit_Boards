@@ -58,7 +58,7 @@ device=CONNECTOR_2
 T 57100 45100 5 10 1 1 0 0 1
 refdes=CONN103
 T 57100 44300 5 10 0 1 0 0 1
-footprint=MTA_156 2
+footprint=HEADER2_1
 T 57100 44300 5 10 0 1 0 0 1
 value=conn
 }
@@ -138,7 +138,7 @@ device=CONNECTOR_2
 T 13700 71800 5 10 1 1 0 0 1
 refdes=CONN104
 T 13700 71000 5 10 0 1 0 0 1
-footprint=MTA_156 2
+footprint=HEADER2_1
 T 13700 70800 5 10 1 1 0 0 1
 value=Spare 5V
 }
@@ -175,7 +175,7 @@ C 8900 71000 1 0 0 connector2-1.sym
 T 9100 72000 5 10 0 0 0 0 1
 device=CONNECTOR_2
 T 8900 71000 5 10 0 1 0 0 1
-footprint=MTA_156 2
+footprint=HEADER2_1
 T 8900 71800 5 10 1 1 0 0 1
 refdes=CONN105
 T 8900 70800 5 10 1 1 0 0 1
@@ -187,7 +187,7 @@ C 18200 71000 1 0 0 connector2-1.sym
 T 18400 72000 5 10 0 0 0 0 1
 device=CONNECTOR_2
 T 18200 71000 5 10 0 1 0 0 1
-footprint=MTA_156 2
+footprint=HEADER2_1
 T 18200 71800 5 10 1 1 0 0 1
 refdes=CONN106
 T 18200 70800 5 10 1 1 0 0 1
@@ -199,7 +199,7 @@ C 18200 69600 1 0 0 connector2-1.sym
 T 18400 70600 5 10 0 0 0 0 1
 device=CONNECTOR_2
 T 18200 69600 5 10 0 1 0 0 1
-footprint=MTA_156 2
+footprint=HEADER2_1
 T 18200 70400 5 10 1 1 0 0 1
 refdes=CONN107
 T 18200 69400 5 10 1 1 0 0 1
@@ -210,7 +210,7 @@ C 18200 68300 1 0 0 connector2-1.sym
 T 18400 69300 5 10 0 0 0 0 1
 device=CONNECTOR_2
 T 18200 68300 5 10 0 1 0 0 1
-footprint=MTA_156 2
+footprint=HEADER2_1
 T 18200 69100 5 10 1 1 0 0 1
 refdes=CONN108
 T 18200 68100 5 10 1 1 0 0 1
@@ -225,7 +225,7 @@ device=CONNECTOR_2
 T 13700 70500 5 10 1 1 0 0 1
 refdes=CONN109
 T 13700 69700 5 10 0 1 0 0 1
-footprint=MTA_156 2
+footprint=HEADER2_1
 T 13700 69500 5 10 1 1 0 0 1
 value=Spare 5V
 }
@@ -238,7 +238,7 @@ device=CONNECTOR_2
 T 13700 69300 5 10 1 1 0 0 1
 refdes=CONN110
 T 13700 68500 5 10 0 1 0 0 1
-footprint=MTA_156 2
+footprint=HEADER2_1
 T 13700 68300 5 10 1 1 0 0 1
 value=Spare 5V
 }
@@ -249,7 +249,7 @@ C 8900 69600 1 0 0 connector2-1.sym
 T 9100 70600 5 10 0 0 0 0 1
 device=CONNECTOR_2
 T 8900 69600 5 10 0 1 0 0 1
-footprint=MTA_156 2
+footprint=HEADER2_1
 T 8900 70400 5 10 1 1 0 0 1
 refdes=CONN111
 T 8900 69400 5 10 1 1 0 0 1
@@ -270,9 +270,6 @@ value=System Light Monitor
 B 61400 50900 10600 24400 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 70400 75000 9 10 1 0 0 0 1
 To Lower Assembly
-T 45300 84500 9 10 1 0 0 0 1
-To Interfaces
-B 41800 65900 12700 20300 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 42300 72500 9 10 1 0 0 0 1
 LCD Interface
 B 66500 32900 14600 16100 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
@@ -287,7 +284,7 @@ device=CONNECTOR_2
 T 43800 67300 5 10 1 1 0 0 1
 refdes=CONN113
 T 43800 66500 5 10 0 0 0 0 1
-footprint=MTA_156 2
+footprint=HEADER2_1
 }
 C 46700 70000 1 90 0 resistor-variable-1.sym
 {
@@ -297,6 +294,12 @@ T 47000 70400 5 10 1 1 180 0 1
 refdes=R112
 T 46700 70000 5 10 1 1 0 0 1
 value=10K
+T 46700 70000 5 10 0 0 0 0 1
+model=3299W-1-103LF
+T 46700 70000 5 10 0 0 0 0 1
+documentation=http://www.mouser.com/ds/2/54/3299-61160.pdf
+T 46700 70000 5 10 0 0 0 0 1
+footprint=POT__Bourns_3299W-Series
 }
 T 44600 67000 9 10 1 0 0 0 1
 A1
@@ -320,6 +323,8 @@ T 46800 67700 5 10 1 1 0 0 1
 value=3K
 T 46600 67400 5 10 0 0 0 0 1
 footprint=1206
+T 46600 67400 5 10 0 0 0 0 1
+model=ERJ-P08F3001V
 }
 C 46600 66400 1 90 0 resistor-1.sym
 {
@@ -331,6 +336,8 @@ T 46700 66700 5 10 1 1 0 0 1
 value=7K
 T 46600 66400 5 10 0 0 0 0 1
 footprint=1206
+T 46600 66400 5 10 0 0 0 0 1
+model=CRCW12067K00JNTA
 }
 C 46400 66000 1 0 0 gnd-1.sym
 N 46500 66400 46500 66300 4
@@ -659,7 +666,7 @@ C 8900 68300 1 0 0 connector2-1.sym
 T 9100 69300 5 10 0 0 0 0 1
 device=CONNECTOR_2
 T 8900 68300 5 10 0 1 0 0 1
-footprint=MTA_156 2
+footprint=HEADER2_1
 T 8900 69100 5 10 1 1 0 0 1
 refdes=CONN117
 T 8900 68100 5 10 1 1 0 0 1
@@ -1120,22 +1127,26 @@ device=CONNECTOR_2
 T 36100 75500 5 10 1 1 180 0 1
 refdes=CONN126
 T 36100 76300 5 10 0 0 0 0 1
-footprint=MTA_156 2
+footprint=HEADER2_1
 T 35100 76400 5 10 1 1 0 0 1
 value=Ambient Temperature Sensor 0
 }
 N 33900 76100 34400 76100 4
 N 33900 75800 34400 75800 4
-C 43500 67900 1 0 0 header20-4.sym
+C 43500 67900 1 0 0 header20-2.sym
 {
-T 43400 72900 5 10 0 1 0 0 1
+T 43750 67650 5 10 0 1 0 0 1
 device=HEADER20
 T 44100 72000 5 10 1 1 0 0 1
 refdes=J101
 T 43500 67900 5 10 0 0 0 0 1
-documentation=http://www.samtec.com/technical-specifications/Default.aspx?SeriesMaster=IPL1
-T 43500 67900 5 10 0 0 0 0 1
 footprint=IPL1-110-02-L-D-K.fp
+T 43500 67900 5 10 0 0 0 0 1
+description=http://www.samtec.com/technical-specifications/Default.aspx?SeriesMaster=IPL1
 T 43500 67900 5 10 0 0 0 0 1
 value=IPL1-110-02-L-D-K
 }
+T 2100 58200 9 100 1 0 0 0 3
+TO DO:
+- Create an SPI/I2C header for the Radaxas and Jetsons.
+	- Connect the header to the Energy Monitor.
