@@ -6,7 +6,7 @@ FileVersion[20070407]
 PCB["" 960400 600000]
 
 Grid[10.0 0 0 1]
-Cursor[0 0 0.000000]
+Cursor[338080 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[700 1000 700 500 800 500]
@@ -791,7 +791,7 @@ Via[90000 110000 31496 2000 16348 15748 "" "hole"]
 Via[500000 110000 31496 2000 16348 15748 "" "hole"]
 Via[200600 323000 31496 2000 16348 15748 "" "hole"]
 Via[331000 323000 31496 2000 16348 15748 "" "hole"]
-Via[437000 323000 31496 2000 16348 15748 "" "hole,warn"]
+Via[437000 323000 31496 2000 16348 15748 "" "hole"]
 Via[587000 537000 31496 2000 16348 15748 "" "hole"]
 Via[437000 467000 31496 2000 16348 15748 "" "hole"]
 Via[331000 467000 31496 2000 16348 15748 "" "hole"]
@@ -2026,36 +2026,6 @@ Element["" "HEADER2_1" "CONN128" "Spare 24V" 923600 66190 -6050 5020 0 100 ""]
 
 	)
 
-Element["" "IPL1-110-02-L-D-K_2.fp" "J103" "IPL1-110-02-L-D-K" 59458 568904 55550 11890 0 100 ""]
-(
-	Attribute("device" "HEADER20")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-45000 -17500 -45000 -7000 5000 2000 6000 "2" "2" "square"]
-	Pad[-35000 -17500 -35000 -7000 5000 2000 6000 "4" "4" "square"]
-	Pad[-25000 -17500 -25000 -7000 5000 2000 6000 "6" "6" "square"]
-	Pad[-15000 -17500 -15000 -7000 5000 2000 6000 "8" "8" "square"]
-	Pad[-5000 -17500 -5000 -7000 5000 2000 6000 "10" "10" "square"]
-	Pad[5000 -17500 5000 -7000 5000 2000 6000 "12" "12" "square"]
-	Pad[15000 -17500 15000 -7000 5000 2000 6000 "14" "14" "square"]
-	Pad[25000 -17500 25000 -7000 5000 2000 6000 "16" "16" "square"]
-	Pad[35000 -17500 35000 -7000 5000 2000 6000 "18" "18" "square"]
-	Pad[45000 -17500 45000 -7000 5000 2000 6000 "20" "20" "square"]
-	Pad[-45000 7000 -45000 17500 5000 2000 6000 "1" "1" "square,edge2"]
-	Pad[-35000 7000 -35000 17500 5000 2000 6000 "3" "3" "square,edge2"]
-	Pad[-25000 7000 -25000 17500 5000 2000 6000 "5" "5" "square,edge2"]
-	Pad[-15000 7000 -15000 17500 5000 2000 6000 "7" "7" "square,edge2"]
-	Pad[-5000 7000 -5000 17500 5000 2000 6000 "9" "9" "square,edge2"]
-	Pad[5000 7000 5000 17500 5000 2000 6000 "11" "11" "square,edge2"]
-	Pad[15000 7000 15000 17500 5000 2000 6000 "13" "13" "square,edge2"]
-	Pad[25000 7000 25000 17500 5000 2000 6000 "15" "15" "square,edge2"]
-	Pad[35000 7000 35000 17500 5000 2000 6000 "17" "17" "square,edge2"]
-	Pad[45000 7000 45000 17500 5000 2000 6000 "19" "19" "square,edge2"]
-
-	)
-
 Element["" "HEADER2_1" "CONN127" "Spare 24V" 923240 10770 -6260 4920 0 100 ""]
 (
 	Attribute("device" "CONNECTOR_2")
@@ -2360,24 +2330,6 @@ Element["" "HEADER2_1" "CONN105" "Spare 3.3V" 591220 358160 -5600 6000 0 100 ""]
 
 	)
 
-Element["" "HEADER2_1" "CONN104" "Spare 5V" 576140 151940 -6300 5600 0 100 ""]
-(
-	Attribute("device" "CONNECTOR_2")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-	ElementLine [-5000 5000 15000 5000 1000]
-	ElementLine [15000 5000 15000 -5000 1000]
-	ElementLine [15000 -5000 -5000 -5000 1000]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementLine [5000 5000 5000 -5000 1000]
-
-	)
-
 Element["" "HEADER2_1" "CONN109" "Spare 5V" 576120 180450 -5700 5500 0 100 ""]
 (
 	Attribute("device" "CONNECTOR_2")
@@ -2429,6 +2381,54 @@ Element["" "HEADER2_1" "CONN130" "Spare 5V" 576150 245680 -5890 5090 0 100 ""]
 	ElementLine [15000 -5000 -5000 -5000 1000]
 	ElementLine [-5000 5000 5000 5000 1000]
 	ElementLine [5000 5000 5000 -5000 1000]
+
+	)
+
+Element["" "HEADER2_1" "CONN104" "Spare 5V" 576140 151940 -6300 5600 0 100 ""]
+(
+	Attribute("device" "CONNECTOR_2")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
+	Pin[10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
+	ElementLine [-5000 -5000 -5000 5000 1000]
+	ElementLine [-5000 5000 15000 5000 1000]
+	ElementLine [15000 5000 15000 -5000 1000]
+	ElementLine [15000 -5000 -5000 -5000 1000]
+	ElementLine [-5000 5000 5000 5000 1000]
+	ElementLine [5000 5000 5000 -5000 1000]
+
+	)
+
+Element["" "IPL1-110-02-L-D-K_2.fp" "J103" "IPL1-110-02-L-D-K" 59458 568904 55550 11890 0 100 ""]
+(
+	Attribute("device" "HEADER20")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-45000 -17500 -45000 -7000 5000 2000 6000 "2" "2" "square"]
+	Pad[-35000 -17500 -35000 -7000 5000 2000 6000 "4" "4" "square"]
+	Pad[-25000 -17500 -25000 -7000 5000 2000 6000 "6" "6" "square"]
+	Pad[-15000 -17500 -15000 -7000 5000 2000 6000 "8" "8" "square"]
+	Pad[-5000 -17500 -5000 -7000 5000 2000 6000 "10" "10" "square"]
+	Pad[5000 -17500 5000 -7000 5000 2000 6000 "12" "12" "square"]
+	Pad[15000 -17500 15000 -7000 5000 2000 6000 "14" "14" "square"]
+	Pad[25000 -17500 25000 -7000 5000 2000 6000 "16" "16" "square"]
+	Pad[35000 -17500 35000 -7000 5000 2000 6000 "18" "18" "square"]
+	Pad[45000 -17500 45000 -7000 5000 2000 6000 "20" "20" "square"]
+	Pad[-45000 7000 -45000 17500 5000 2000 6000 "1" "1" "square,edge2"]
+	Pad[-35000 7000 -35000 17500 5000 2000 6000 "3" "3" "square,edge2"]
+	Pad[-25000 7000 -25000 17500 5000 2000 6000 "5" "5" "square,edge2"]
+	Pad[-15000 7000 -15000 17500 5000 2000 6000 "7" "7" "square,edge2"]
+	Pad[-5000 7000 -5000 17500 5000 2000 6000 "9" "9" "square,edge2"]
+	Pad[5000 7000 5000 17500 5000 2000 6000 "11" "11" "square,edge2"]
+	Pad[15000 7000 15000 17500 5000 2000 6000 "13" "13" "square,edge2"]
+	Pad[25000 7000 25000 17500 5000 2000 6000 "15" "15" "square,edge2"]
+	Pad[35000 7000 35000 17500 5000 2000 6000 "17" "17" "square,edge2"]
+	Pad[45000 7000 45000 17500 5000 2000 6000 "19" "19" "square,edge2"]
 
 	)
 Layer(1 "Top Signal 1")
@@ -3161,8 +3161,6 @@ Layer(7 "+5.0V")
 	Line[660660 205940 660960 206240 4000 2000 ""]
 	Line[658260 205940 660660 205940 4000 2000 ""]
 	Line[658260 196240 658260 205940 4000 2000 ""]
-	Line[572340 147940 575240 147940 4000 2000 ""]
-	Line[575240 147940 575640 148340 4000 2000 ""]
 	Line[575640 148340 575640 197340 4000 2000 ""]
 	Line[578940 197440 578940 147840 4000 2000 ""]
 	Line[572021 237639 579530 230130 4000 2000 ""]
@@ -3201,6 +3199,8 @@ Layer(7 "+5.0V")
 	Line[572630 251570 575030 251570 4000 2000 ""]
 	Line[572400 251340 572630 251570 4000 2000 ""]
 	Line[572400 239800 572400 251340 4000 2000 ""]
+	Line[575240 147940 575640 148340 4000 2000 ""]
+	Line[572340 147940 575240 147940 4000 2000 ""]
 	Polygon("clearpoly")
 	(
 		[700900 208000] [568100 208000] [568100 164600] [700900 164600] 
@@ -3655,8 +3655,6 @@ Layer(10 "GND")
 	Line[721050 31480 720300 32230 4000 2000 ""]
 	Line[582840 146740 582840 196240 4000 2000 ""]
 	Line[585540 196740 585540 148040 4000 2000 ""]
-	Line[585540 148040 588640 148040 4000 2000 ""]
-	Line[588640 148040 588740 148140 4000 2000 ""]
 	Line[588740 148140 588740 196040 4000 2000 ""]
 	Line[586430 261850 586430 241170 4000 2000 ""]
 	Line[586430 241170 586130 240870 4000 2000 ""]
@@ -3685,6 +3683,8 @@ Layer(10 "GND")
 	Line[609200 24000 608500 24700 4000 2000 ""]
 	Line[607090 9720 607090 25450 1000 2000 ""]
 	Line[607090 25450 607420 25780 1000 2000 ""]
+	Line[588640 148040 588740 148140 4000 2000 ""]
+	Line[585540 148040 588640 148040 4000 2000 ""]
 	Polygon("clearpoly")
 	(
 		[818390 71270] [694130 71270] [694130 0] [818390 0] 
@@ -3743,7 +3743,7 @@ Layer(14 "silk")
 (
 	Text[201500 26500 0 125 "Red Switch" "clearline"]
 	Text[540800 35300 0 125 "Indicator LEDs" "clearline"]
-	Text[600500 3500 0 125 "+" "clearline"]
+	Text[600150 -1190 0 125 "+" "clearline"]
 	Text[575900 44100 0 125 "+" "clearline"]
 	Text[493600 550200 0 125 "Blinker/Sigmux" "clearline"]
 	Text[366900 550600 0 125 "System Monitor" "clearline"]
@@ -3768,9 +3768,9 @@ Layer(14 "silk")
 	Text[942150 62570 0 125 "+" "clearline"]
 	Text[814230 457770 0 125 "0V" "clearline"]
 	Text[805050 499420 0 125 "+24V" "clearline"]
-	Text[670670 3600 0 125 "+" "clearline"]
-	Text[635690 3420 0 125 "+" "clearline"]
-	Text[706060 3420 0 125 "+" "clearline"]
+	Text[670790 -1200 0 125 "+" "clearline"]
+	Text[635570 -1150 0 125 "+" "clearline"]
+	Text[706060 -1220 0 125 "+" "clearline"]
 	Text[913040 87370 0 125 "+24V Power" "clearline"]
 	Text[8450 589400 0 125 "Embedded Platform SPI Interface" "clearline"]
 	Text[850430 561080 0 175 "Engineered in Chicago" "clearline"]
@@ -3792,7 +3792,34 @@ Layer(14 "silk")
 	Text[611110 382230 0 100 "-" "clearline"]
 	Text[611200 408050 0 100 "-" "clearline"]
 	Text[611990 311160 0 100 "-" "clearline"]
-	Text[619975 121930 0 125 "+12V Power" "clearline"]
+	Text[621055 93000 0 125 "+12V Power" "clearline"]
+	Text[49560 336510 0 100 "LCD Interface" "clearline"]
+	Text[33850 345710 0 100 "1" "clearline"]
+	Text[100410 346420 0 100 "2" "clearline"]
+	Text[34650 437040 0 100 "19" "clearline"]
+	Text[93090 436560 0 100 "20" "clearline"]
+	Text[558650 245730 0 100 "+" "clearline"]
+	Text[560520 211320 0 100 "+" "clearline"]
+	Text[560370 180270 0 100 "+" "clearline"]
+	Text[599000 180710 0 100 "-" "clearline"]
+	Text[599860 211650 0 100 "-" "clearline"]
+	Text[600590 245670 0 100 "-" "clearline"]
+	Text[315580 15280 0 100 "Blindmate Interface" "clearline"]
+	Text[773180 114670 0 100 "+12V" "clearline"]
+	Text[767780 219990 0 100 "+5V" "clearline"]
+	Text[769920 335370 0 100 "+3.3V" "clearline"]
+	Text[470300 74130 0 100 "RoboteQ USB Connection" "clearline"]
+	Text[597680 152180 0 100 "-" "clearline"]
+	Text[559790 152030 0 100 "+" "clearline"]
+	Text[861970 90020 0 100 "+" "clearline"]
+	Text[863570 150610 0 100 "-" "clearline"]
+	Text[858320 119970 0 100 "Control" "clearline"]
+	Text[856610 197630 0 100 "+" "clearline"]
+	Text[858210 258220 0 100 "-" "clearline"]
+	Text[852960 227580 0 100 "Control" "clearline"]
+	Text[858390 306380 0 100 "+" "clearline"]
+	Text[859990 366970 0 100 "-" "clearline"]
+	Text[854740 336330 0 100 "Control" "clearline"]
 )
 NetList()
 (
