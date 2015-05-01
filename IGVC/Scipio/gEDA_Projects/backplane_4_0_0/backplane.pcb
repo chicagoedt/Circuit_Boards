@@ -6,7 +6,7 @@ FileVersion[20070407]
 PCB["" 960400 600000]
 
 Grid[100.0 0 0 1]
-Cursor[0 415100 0.000000]
+Cursor[388000 561200 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[700 1000 700 500 800 500]
@@ -2342,7 +2342,7 @@ Element["" "HEADER3_1" "CONN126" "Ambient Temperature Sensor 0" 169000 582700 -1
 
 	)
 
-Element["" "HEADER3_1" "CONN132" "To LEDs" 368900 574200 -10000 15000 0 100 ""]
+Element["" "HEADER3_1" "CONN132" "To LEDs" 368900 574200 -10700 -11400 0 100 ""]
 (
 	Attribute("device" "CONNECTOR_3")
 	Attribute("manufacturer" "unknown")
