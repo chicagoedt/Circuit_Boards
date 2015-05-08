@@ -1,1257 +1,1100 @@
-# release: pcb 1.99x
-# To read pcb files, the pcb version (or the cvs source date) must be >= the file version
+# release: pcb 20110918
+
+# To read pcb files, the pcb version (or the git source date) must be >= the file version
 FileVersion[20070407]
-PCB["" 600000 500000]
-Grid[10000.000000 0 0 0]
-Cursor[0 0 0.000000]
+
+PCB["" 600000 350000]
+
+Grid[10.0 0 0 1]
+Cursor[87750 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
-DRC[1000 1000 1000 1000 1500 1000]
-Flags("nameonpcb,uniquename,clearnew,snappin")
-Groups("1,c:2,s:3:4:5:6:7:8")
-Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0805" "R115" "49.9" 0 0 -3150 -3150 0 100 ""]
+DRC[700 1000 700 500 800 500]
+Flags("nameonpcb,uniquename,snappin")
+Groups("1,2,3,4,5,c:6,7,8,9,10,s")
+Styles["Signal,1000,2000,1000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
+
+Symbol[' ' 1800]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-3543 -393
-		-3543 393
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[3543 -393
-		3543 393
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-393 -2755 393 -2755 800]
-	    ElementLine[-393 2755 393 2755 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
 )
-
-Element["" "MOLEX1720640006" "CONN101" "unknown" 50000 50000 0 0 0 100 ""]
+Symbol['!' 1200]
 (
-	Pin[-22441 -24441 11811 2000 12411 7087 "" "1" ""]
-	Pin[0 -24441 11811 2000 12411 7087 "" "3" ""]
-	Pin[22441 -24441 11811 2000 12411 7087 "" "5" ""]
-	Pin[-22441 -2000 11811 2000 12411 7087 "" "2" ""]
-	Pin[0 -2000 11811 2000 12411 7087 "" "4" ""]
-	Pin[22441 -2000 11811 2000 12411 7087 "" "6" ""]
-	Pin[-22441 26740 12211 2000 12811 11811 "" "7" ""]
-	Pin[22441 26740 12211 2000 12811 11811 "" "8" ""]
-	ElementLine [-31889 -32708 -31889 35796 1000]
-	ElementLine [-31889 35796 31890 35796 1000]
-	ElementLine [31890 35796 31890 -32708 1000]
-	ElementLine [31890 -32708 -31889 -32708 1000]
+	SymbolLine[0 4500 0 5000 800]
+	SymbolLine[0 1000 0 3500 800]
+)
+Symbol['"' 1200]
+(
+	SymbolLine[0 1000 0 2000 800]
+	SymbolLine[1000 1000 1000 2000 800]
+)
+Symbol['#' 1200]
+(
+	SymbolLine[0 3500 2000 3500 800]
+	SymbolLine[0 2500 2000 2500 800]
+	SymbolLine[1500 2000 1500 4000 800]
+	SymbolLine[500 2000 500 4000 800]
+)
+Symbol['$' 1200]
+(
+	SymbolLine[1500 1500 2000 2000 800]
+	SymbolLine[500 1500 1500 1500 800]
+	SymbolLine[0 2000 500 1500 800]
+	SymbolLine[0 2000 0 2500 800]
+	SymbolLine[0 2500 500 3000 800]
+	SymbolLine[500 3000 1500 3000 800]
+	SymbolLine[1500 3000 2000 3500 800]
+	SymbolLine[2000 3500 2000 4000 800]
+	SymbolLine[1500 4500 2000 4000 800]
+	SymbolLine[500 4500 1500 4500 800]
+	SymbolLine[0 4000 500 4500 800]
+	SymbolLine[1000 1000 1000 5000 800]
+)
+Symbol['%' 1200]
+(
+	SymbolLine[0 1500 0 2000 800]
+	SymbolLine[0 1500 500 1000 800]
+	SymbolLine[500 1000 1000 1000 800]
+	SymbolLine[1000 1000 1500 1500 800]
+	SymbolLine[1500 1500 1500 2000 800]
+	SymbolLine[1000 2500 1500 2000 800]
+	SymbolLine[500 2500 1000 2500 800]
+	SymbolLine[0 2000 500 2500 800]
+	SymbolLine[0 5000 4000 1000 800]
+	SymbolLine[3500 5000 4000 4500 800]
+	SymbolLine[4000 4000 4000 4500 800]
+	SymbolLine[3500 3500 4000 4000 800]
+	SymbolLine[3000 3500 3500 3500 800]
+	SymbolLine[2500 4000 3000 3500 800]
+	SymbolLine[2500 4000 2500 4500 800]
+	SymbolLine[2500 4500 3000 5000 800]
+	SymbolLine[3000 5000 3500 5000 800]
+)
+Symbol['&' 1200]
+(
+	SymbolLine[0 4500 500 5000 800]
+	SymbolLine[0 1500 0 2500 800]
+	SymbolLine[0 1500 500 1000 800]
+	SymbolLine[0 3500 1500 2000 800]
+	SymbolLine[500 5000 1000 5000 800]
+	SymbolLine[1000 5000 2000 4000 800]
+	SymbolLine[0 2500 2500 5000 800]
+	SymbolLine[500 1000 1000 1000 800]
+	SymbolLine[1000 1000 1500 1500 800]
+	SymbolLine[1500 1500 1500 2000 800]
+	SymbolLine[0 3500 0 4500 800]
+)
+Symbol[''' 1200]
+(
+	SymbolLine[0 2000 1000 1000 800]
+)
+Symbol['(' 1200]
+(
+	SymbolLine[0 4500 500 5000 800]
+	SymbolLine[0 1500 500 1000 800]
+	SymbolLine[0 1500 0 4500 800]
+)
+Symbol[')' 1200]
+(
+	SymbolLine[0 1000 500 1500 800]
+	SymbolLine[500 1500 500 4500 800]
+	SymbolLine[0 5000 500 4500 800]
+)
+Symbol['*' 1200]
+(
+	SymbolLine[0 2000 2000 4000 800]
+	SymbolLine[0 4000 2000 2000 800]
+	SymbolLine[0 3000 2000 3000 800]
+	SymbolLine[1000 2000 1000 4000 800]
+)
+Symbol['+' 1200]
+(
+	SymbolLine[0 3000 2000 3000 800]
+	SymbolLine[1000 2000 1000 4000 800]
+)
+Symbol[',' 1200]
+(
+	SymbolLine[0 6000 1000 5000 800]
+)
+Symbol['-' 1200]
+(
+	SymbolLine[0 3000 2000 3000 800]
+)
+Symbol['.' 1200]
+(
+	SymbolLine[0 5000 500 5000 800]
+)
+Symbol['/' 1200]
+(
+	SymbolLine[0 4500 3000 1500 800]
+)
+Symbol['0' 1200]
+(
+	SymbolLine[0 4500 500 5000 800]
+	SymbolLine[0 1500 0 4500 800]
+	SymbolLine[0 1500 500 1000 800]
+	SymbolLine[500 1000 1500 1000 800]
+	SymbolLine[1500 1000 2000 1500 800]
+	SymbolLine[2000 1500 2000 4500 800]
+	SymbolLine[1500 5000 2000 4500 800]
+	SymbolLine[500 5000 1500 5000 800]
+	SymbolLine[0 4000 2000 2000 800]
+)
+Symbol['1' 1200]
+(
+	SymbolLine[0 1800 800 1000 800]
+	SymbolLine[800 1000 800 5000 800]
+	SymbolLine[0 5000 1500 5000 800]
+)
+Symbol['2' 1200]
+(
+	SymbolLine[0 1500 500 1000 800]
+	SymbolLine[500 1000 2000 1000 800]
+	SymbolLine[2000 1000 2500 1500 800]
+	SymbolLine[2500 1500 2500 2500 800]
+	SymbolLine[0 5000 2500 2500 800]
+	SymbolLine[0 5000 2500 5000 800]
+)
+Symbol['3' 1200]
+(
+	SymbolLine[0 1500 500 1000 800]
+	SymbolLine[500 1000 1500 1000 800]
+	SymbolLine[1500 1000 2000 1500 800]
+	SymbolLine[1500 5000 2000 4500 800]
+	SymbolLine[500 5000 1500 5000 800]
+	SymbolLine[0 4500 500 5000 800]
+	SymbolLine[500 2800 1500 2800 800]
+	SymbolLine[2000 1500 2000 2300 800]
+	SymbolLine[2000 3300 2000 4500 800]
+	SymbolLine[2000 3300 1500 2800 800]
+	SymbolLine[2000 2300 1500 2800 800]
+)
+Symbol['4' 1200]
+(
+	SymbolLine[0 3500 2000 1000 800]
+	SymbolLine[0 3500 2500 3500 800]
+	SymbolLine[2000 1000 2000 5000 800]
+)
+Symbol['5' 1200]
+(
+	SymbolLine[0 1000 2000 1000 800]
+	SymbolLine[0 1000 0 3000 800]
+	SymbolLine[0 3000 500 2500 800]
+	SymbolLine[500 2500 1500 2500 800]
+	SymbolLine[1500 2500 2000 3000 800]
+	SymbolLine[2000 3000 2000 4500 800]
+	SymbolLine[1500 5000 2000 4500 800]
+	SymbolLine[500 5000 1500 5000 800]
+	SymbolLine[0 4500 500 5000 800]
+)
+Symbol['6' 1200]
+(
+	SymbolLine[1500 1000 2000 1500 800]
+	SymbolLine[500 1000 1500 1000 800]
+	SymbolLine[0 1500 500 1000 800]
+	SymbolLine[0 1500 0 4500 800]
+	SymbolLine[0 4500 500 5000 800]
+	SymbolLine[1500 2800 2000 3300 800]
+	SymbolLine[0 2800 1500 2800 800]
+	SymbolLine[500 5000 1500 5000 800]
+	SymbolLine[1500 5000 2000 4500 800]
+	SymbolLine[2000 3300 2000 4500 800]
+)
+Symbol['7' 1200]
+(
+	SymbolLine[500 5000 2500 1000 800]
+	SymbolLine[0 1000 2500 1000 800]
+)
+Symbol['8' 1200]
+(
+	SymbolLine[0 4500 500 5000 800]
+	SymbolLine[0 3700 0 4500 800]
+	SymbolLine[0 3700 700 3000 800]
+	SymbolLine[700 3000 1300 3000 800]
+	SymbolLine[1300 3000 2000 3700 800]
+	SymbolLine[2000 3700 2000 4500 800]
+	SymbolLine[1500 5000 2000 4500 800]
+	SymbolLine[500 5000 1500 5000 800]
+	SymbolLine[0 2300 700 3000 800]
+	SymbolLine[0 1500 0 2300 800]
+	SymbolLine[0 1500 500 1000 800]
+	SymbolLine[500 1000 1500 1000 800]
+	SymbolLine[1500 1000 2000 1500 800]
+	SymbolLine[2000 1500 2000 2300 800]
+	SymbolLine[1300 3000 2000 2300 800]
+)
+Symbol['9' 1200]
+(
+	SymbolLine[500 5000 2000 3000 800]
+	SymbolLine[2000 1500 2000 3000 800]
+	SymbolLine[1500 1000 2000 1500 800]
+	SymbolLine[500 1000 1500 1000 800]
+	SymbolLine[0 1500 500 1000 800]
+	SymbolLine[0 1500 0 2500 800]
+	SymbolLine[0 2500 500 3000 800]
+	SymbolLine[500 3000 2000 3000 800]
+)
+Symbol[':' 1200]
+(
+	SymbolLine[0 2500 500 2500 800]
+	SymbolLine[0 3500 500 3500 800]
+)
+Symbol[';' 1200]
+(
+	SymbolLine[0 5000 1000 4000 800]
+	SymbolLine[1000 2500 1000 3000 800]
+)
+Symbol['<' 1200]
+(
+	SymbolLine[0 3000 1000 2000 800]
+	SymbolLine[0 3000 1000 4000 800]
+)
+Symbol['=' 1200]
+(
+	SymbolLine[0 2500 2000 2500 800]
+	SymbolLine[0 3500 2000 3500 800]
+)
+Symbol['>' 1200]
+(
+	SymbolLine[0 2000 1000 3000 800]
+	SymbolLine[0 4000 1000 3000 800]
+)
+Symbol['?' 1200]
+(
+	SymbolLine[1000 3000 1000 3500 800]
+	SymbolLine[1000 4500 1000 5000 800]
+	SymbolLine[0 1500 0 2000 800]
+	SymbolLine[0 1500 500 1000 800]
+	SymbolLine[500 1000 1500 1000 800]
+	SymbolLine[1500 1000 2000 1500 800]
+	SymbolLine[2000 1500 2000 2000 800]
+	SymbolLine[1000 3000 2000 2000 800]
+)
+Symbol['@' 1200]
+(
+	SymbolLine[0 1000 0 4000 800]
+	SymbolLine[0 4000 1000 5000 800]
+	SymbolLine[1000 5000 4000 5000 800]
+	SymbolLine[5000 3500 5000 1000 800]
+	SymbolLine[5000 1000 4000 0 800]
+	SymbolLine[4000 0 1000 0 800]
+	SymbolLine[1000 0 0 1000 800]
+	SymbolLine[1500 2000 1500 3000 800]
+	SymbolLine[1500 3000 2000 3500 800]
+	SymbolLine[2000 3500 3000 3500 800]
+	SymbolLine[3000 3500 3500 3000 800]
+	SymbolLine[3500 3000 4000 3500 800]
+	SymbolLine[3500 3000 3500 1500 800]
+	SymbolLine[3500 2000 3000 1500 800]
+	SymbolLine[2000 1500 3000 1500 800]
+	SymbolLine[2000 1500 1500 2000 800]
+	SymbolLine[4000 3500 5000 3500 800]
+)
+Symbol['A' 1200]
+(
+	SymbolLine[0 2000 0 5000 800]
+	SymbolLine[0 2000 700 1000 800]
+	SymbolLine[700 1000 1800 1000 800]
+	SymbolLine[1800 1000 2500 2000 800]
+	SymbolLine[2500 2000 2500 5000 800]
+	SymbolLine[0 3000 2500 3000 800]
+)
+Symbol['B' 1200]
+(
+	SymbolLine[0 5000 2000 5000 800]
+	SymbolLine[2000 5000 2500 4500 800]
+	SymbolLine[2500 3300 2500 4500 800]
+	SymbolLine[2000 2800 2500 3300 800]
+	SymbolLine[500 2800 2000 2800 800]
+	SymbolLine[500 1000 500 5000 800]
+	SymbolLine[0 1000 2000 1000 800]
+	SymbolLine[2000 1000 2500 1500 800]
+	SymbolLine[2500 1500 2500 2300 800]
+	SymbolLine[2000 2800 2500 2300 800]
+)
+Symbol['C' 1200]
+(
+	SymbolLine[700 5000 2000 5000 800]
+	SymbolLine[0 4300 700 5000 800]
+	SymbolLine[0 1700 0 4300 800]
+	SymbolLine[0 1700 700 1000 800]
+	SymbolLine[700 1000 2000 1000 800]
+)
+Symbol['D' 1200]
+(
+	SymbolLine[500 1000 500 5000 800]
+	SymbolLine[1800 1000 2500 1700 800]
+	SymbolLine[2500 1700 2500 4300 800]
+	SymbolLine[1800 5000 2500 4300 800]
+	SymbolLine[0 5000 1800 5000 800]
+	SymbolLine[0 1000 1800 1000 800]
+)
+Symbol['E' 1200]
+(
+	SymbolLine[0 2800 1500 2800 800]
+	SymbolLine[0 5000 2000 5000 800]
+	SymbolLine[0 1000 0 5000 800]
+	SymbolLine[0 1000 2000 1000 800]
+)
+Symbol['F' 1200]
+(
+	SymbolLine[0 1000 0 5000 800]
+	SymbolLine[0 1000 2000 1000 800]
+	SymbolLine[0 2800 1500 2800 800]
+)
+Symbol['G' 1200]
+(
+	SymbolLine[2000 1000 2500 1500 800]
+	SymbolLine[500 1000 2000 1000 800]
+	SymbolLine[0 1500 500 1000 800]
+	SymbolLine[0 1500 0 4500 800]
+	SymbolLine[0 4500 500 5000 800]
+	SymbolLine[500 5000 2000 5000 800]
+	SymbolLine[2000 5000 2500 4500 800]
+	SymbolLine[2500 3500 2500 4500 800]
+	SymbolLine[2000 3000 2500 3500 800]
+	SymbolLine[1000 3000 2000 3000 800]
+)
+Symbol['H' 1200]
+(
+	SymbolLine[0 1000 0 5000 800]
+	SymbolLine[2500 1000 2500 5000 800]
+	SymbolLine[0 3000 2500 3000 800]
+)
+Symbol['I' 1200]
+(
+	SymbolLine[0 1000 1000 1000 800]
+	SymbolLine[500 1000 500 5000 800]
+	SymbolLine[0 5000 1000 5000 800]
+)
+Symbol['J' 1200]
+(
+	SymbolLine[700 1000 1500 1000 800]
+	SymbolLine[1500 1000 1500 4500 800]
+	SymbolLine[1000 5000 1500 4500 800]
+	SymbolLine[500 5000 1000 5000 800]
+	SymbolLine[0 4500 500 5000 800]
+	SymbolLine[0 4500 0 4000 800]
+)
+Symbol['K' 1200]
+(
+	SymbolLine[0 1000 0 5000 800]
+	SymbolLine[0 3000 2000 1000 800]
+	SymbolLine[0 3000 2000 5000 800]
+)
+Symbol['L' 1200]
+(
+	SymbolLine[0 1000 0 5000 800]
+	SymbolLine[0 5000 2000 5000 800]
+)
+Symbol['M' 1200]
+(
+	SymbolLine[0 1000 0 5000 800]
+	SymbolLine[0 1000 1500 3000 800]
+	SymbolLine[1500 3000 3000 1000 800]
+	SymbolLine[3000 1000 3000 5000 800]
+)
+Symbol['N' 1200]
+(
+	SymbolLine[0 1000 0 5000 800]
+	SymbolLine[0 1000 2500 5000 800]
+	SymbolLine[2500 1000 2500 5000 800]
+)
+Symbol['O' 1200]
+(
+	SymbolLine[0 1500 0 4500 800]
+	SymbolLine[0 1500 500 1000 800]
+	SymbolLine[500 1000 1500 1000 800]
+	SymbolLine[1500 1000 2000 1500 800]
+	SymbolLine[2000 1500 2000 4500 800]
+	SymbolLine[1500 5000 2000 4500 800]
+	SymbolLine[500 5000 1500 5000 800]
+	SymbolLine[0 4500 500 5000 800]
+)
+Symbol['P' 1200]
+(
+	SymbolLine[500 1000 500 5000 800]
+	SymbolLine[0 1000 2000 1000 800]
+	SymbolLine[2000 1000 2500 1500 800]
+	SymbolLine[2500 1500 2500 2500 800]
+	SymbolLine[2000 3000 2500 2500 800]
+	SymbolLine[500 3000 2000 3000 800]
+)
+Symbol['Q' 1200]
+(
+	SymbolLine[0 1500 0 4500 800]
+	SymbolLine[0 1500 500 1000 800]
+	SymbolLine[500 1000 1500 1000 800]
+	SymbolLine[1500 1000 2000 1500 800]
+	SymbolLine[2000 1500 2000 4000 800]
+	SymbolLine[1000 5000 2000 4000 800]
+	SymbolLine[500 5000 1000 5000 800]
+	SymbolLine[0 4500 500 5000 800]
+	SymbolLine[1000 3500 2000 5000 800]
+)
+Symbol['R' 1200]
+(
+	SymbolLine[0 1000 2000 1000 800]
+	SymbolLine[2000 1000 2500 1500 800]
+	SymbolLine[2500 1500 2500 2500 800]
+	SymbolLine[2000 3000 2500 2500 800]
+	SymbolLine[500 3000 2000 3000 800]
+	SymbolLine[500 1000 500 5000 800]
+	SymbolLine[1300 3000 2500 5000 800]
+)
+Symbol['S' 1200]
+(
+	SymbolLine[2000 1000 2500 1500 800]
+	SymbolLine[500 1000 2000 1000 800]
+	SymbolLine[0 1500 500 1000 800]
+	SymbolLine[0 1500 0 2500 800]
+	SymbolLine[0 2500 500 3000 800]
+	SymbolLine[500 3000 2000 3000 800]
+	SymbolLine[2000 3000 2500 3500 800]
+	SymbolLine[2500 3500 2500 4500 800]
+	SymbolLine[2000 5000 2500 4500 800]
+	SymbolLine[500 5000 2000 5000 800]
+	SymbolLine[0 4500 500 5000 800]
+)
+Symbol['T' 1200]
+(
+	SymbolLine[0 1000 2000 1000 800]
+	SymbolLine[1000 1000 1000 5000 800]
+)
+Symbol['U' 1200]
+(
+	SymbolLine[0 1000 0 4500 800]
+	SymbolLine[0 4500 500 5000 800]
+	SymbolLine[500 5000 1500 5000 800]
+	SymbolLine[1500 5000 2000 4500 800]
+	SymbolLine[2000 1000 2000 4500 800]
+)
+Symbol['V' 1200]
+(
+	SymbolLine[0 1000 1000 5000 800]
+	SymbolLine[1000 5000 2000 1000 800]
+)
+Symbol['W' 1200]
+(
+	SymbolLine[0 1000 0 3000 800]
+	SymbolLine[0 3000 500 5000 800]
+	SymbolLine[500 5000 1500 3000 800]
+	SymbolLine[1500 3000 2500 5000 800]
+	SymbolLine[2500 5000 3000 3000 800]
+	SymbolLine[3000 3000 3000 1000 800]
+)
+Symbol['X' 1200]
+(
+	SymbolLine[0 5000 2500 1000 800]
+	SymbolLine[0 1000 2500 5000 800]
+)
+Symbol['Y' 1200]
+(
+	SymbolLine[0 1000 1000 3000 800]
+	SymbolLine[1000 3000 2000 1000 800]
+	SymbolLine[1000 3000 1000 5000 800]
+)
+Symbol['Z' 1200]
+(
+	SymbolLine[0 1000 2500 1000 800]
+	SymbolLine[0 5000 2500 1000 800]
+	SymbolLine[0 5000 2500 5000 800]
+)
+Symbol['[' 1200]
+(
+	SymbolLine[0 1000 500 1000 800]
+	SymbolLine[0 1000 0 5000 800]
+	SymbolLine[0 5000 500 5000 800]
+)
+Symbol['\' 1200]
+(
+	SymbolLine[0 1500 3000 4500 800]
+)
+Symbol[']' 1200]
+(
+	SymbolLine[0 1000 500 1000 800]
+	SymbolLine[500 1000 500 5000 800]
+	SymbolLine[0 5000 500 5000 800]
+)
+Symbol['^' 1200]
+(
+	SymbolLine[0 1500 500 1000 800]
+	SymbolLine[500 1000 1000 1500 800]
+)
+Symbol['_' 1200]
+(
+	SymbolLine[0 5000 2000 5000 800]
+)
+Symbol['a' 1200]
+(
+	SymbolLine[1500 3000 2000 3500 800]
+	SymbolLine[500 3000 1500 3000 800]
+	SymbolLine[0 3500 500 3000 800]
+	SymbolLine[0 3500 0 4500 800]
+	SymbolLine[0 4500 500 5000 800]
+	SymbolLine[2000 3000 2000 4500 800]
+	SymbolLine[2000 4500 2500 5000 800]
+	SymbolLine[500 5000 1500 5000 800]
+	SymbolLine[1500 5000 2000 4500 800]
+)
+Symbol['b' 1200]
+(
+	SymbolLine[0 1000 0 5000 800]
+	SymbolLine[0 4500 500 5000 800]
+	SymbolLine[500 5000 1500 5000 800]
+	SymbolLine[1500 5000 2000 4500 800]
+	SymbolLine[2000 3500 2000 4500 800]
+	SymbolLine[1500 3000 2000 3500 800]
+	SymbolLine[500 3000 1500 3000 800]
+	SymbolLine[0 3500 500 3000 800]
+)
+Symbol['c' 1200]
+(
+	SymbolLine[500 3000 2000 3000 800]
+	SymbolLine[0 3500 500 3000 800]
+	SymbolLine[0 3500 0 4500 800]
+	SymbolLine[0 4500 500 5000 800]
+	SymbolLine[500 5000 2000 5000 800]
+)
+Symbol['d' 1200]
+(
+	SymbolLine[2000 1000 2000 5000 800]
+	SymbolLine[1500 5000 2000 4500 800]
+	SymbolLine[500 5000 1500 5000 800]
+	SymbolLine[0 4500 500 5000 800]
+	SymbolLine[0 3500 0 4500 800]
+	SymbolLine[0 3500 500 3000 800]
+	SymbolLine[500 3000 1500 3000 800]
+	SymbolLine[1500 3000 2000 3500 800]
+)
+Symbol['e' 1200]
+(
+	SymbolLine[500 5000 2000 5000 800]
+	SymbolLine[0 4500 500 5000 800]
+	SymbolLine[0 3500 0 4500 800]
+	SymbolLine[0 3500 500 3000 800]
+	SymbolLine[500 3000 1500 3000 800]
+	SymbolLine[1500 3000 2000 3500 800]
+	SymbolLine[0 4000 2000 4000 800]
+	SymbolLine[2000 4000 2000 3500 800]
+)
+Symbol['f' 1000]
+(
+	SymbolLine[500 1500 500 5000 800]
+	SymbolLine[500 1500 1000 1000 800]
+	SymbolLine[1000 1000 1500 1000 800]
+	SymbolLine[0 3000 1000 3000 800]
+)
+Symbol['g' 1200]
+(
+	SymbolLine[1500 3000 2000 3500 800]
+	SymbolLine[500 3000 1500 3000 800]
+	SymbolLine[0 3500 500 3000 800]
+	SymbolLine[0 3500 0 4500 800]
+	SymbolLine[0 4500 500 5000 800]
+	SymbolLine[500 5000 1500 5000 800]
+	SymbolLine[1500 5000 2000 4500 800]
+	SymbolLine[0 6000 500 6500 800]
+	SymbolLine[500 6500 1500 6500 800]
+	SymbolLine[1500 6500 2000 6000 800]
+	SymbolLine[2000 3000 2000 6000 800]
+)
+Symbol['h' 1200]
+(
+	SymbolLine[0 1000 0 5000 800]
+	SymbolLine[0 3500 500 3000 800]
+	SymbolLine[500 3000 1500 3000 800]
+	SymbolLine[1500 3000 2000 3500 800]
+	SymbolLine[2000 3500 2000 5000 800]
+)
+Symbol['i' 1000]
+(
+	SymbolLine[0 2000 0 2100 1000]
+	SymbolLine[0 3500 0 5000 800]
+)
+Symbol['j' 1000]
+(
+	SymbolLine[500 2000 500 2100 1000]
+	SymbolLine[500 3500 500 6000 800]
+	SymbolLine[0 6500 500 6000 800]
+)
+Symbol['k' 1200]
+(
+	SymbolLine[0 1000 0 5000 800]
+	SymbolLine[0 3500 1500 5000 800]
+	SymbolLine[0 3500 1000 2500 800]
+)
+Symbol['l' 1000]
+(
+	SymbolLine[0 1000 0 4500 800]
+	SymbolLine[0 4500 500 5000 800]
+)
+Symbol['m' 1200]
+(
+	SymbolLine[500 3500 500 5000 800]
+	SymbolLine[500 3500 1000 3000 800]
+	SymbolLine[1000 3000 1500 3000 800]
+	SymbolLine[1500 3000 2000 3500 800]
+	SymbolLine[2000 3500 2000 5000 800]
+	SymbolLine[2000 3500 2500 3000 800]
+	SymbolLine[2500 3000 3000 3000 800]
+	SymbolLine[3000 3000 3500 3500 800]
+	SymbolLine[3500 3500 3500 5000 800]
+	SymbolLine[0 3000 500 3500 800]
+)
+Symbol['n' 1200]
+(
+	SymbolLine[500 3500 500 5000 800]
+	SymbolLine[500 3500 1000 3000 800]
+	SymbolLine[1000 3000 1500 3000 800]
+	SymbolLine[1500 3000 2000 3500 800]
+	SymbolLine[2000 3500 2000 5000 800]
+	SymbolLine[0 3000 500 3500 800]
+)
+Symbol['o' 1200]
+(
+	SymbolLine[0 3500 0 4500 800]
+	SymbolLine[0 3500 500 3000 800]
+	SymbolLine[500 3000 1500 3000 800]
+	SymbolLine[1500 3000 2000 3500 800]
+	SymbolLine[2000 3500 2000 4500 800]
+	SymbolLine[1500 5000 2000 4500 800]
+	SymbolLine[500 5000 1500 5000 800]
+	SymbolLine[0 4500 500 5000 800]
+)
+Symbol['p' 1200]
+(
+	SymbolLine[500 3500 500 6500 800]
+	SymbolLine[0 3000 500 3500 800]
+	SymbolLine[500 3500 1000 3000 800]
+	SymbolLine[1000 3000 2000 3000 800]
+	SymbolLine[2000 3000 2500 3500 800]
+	SymbolLine[2500 3500 2500 4500 800]
+	SymbolLine[2000 5000 2500 4500 800]
+	SymbolLine[1000 5000 2000 5000 800]
+	SymbolLine[500 4500 1000 5000 800]
+)
+Symbol['q' 1200]
+(
+	SymbolLine[2000 3500 2000 6500 800]
+	SymbolLine[1500 3000 2000 3500 800]
+	SymbolLine[500 3000 1500 3000 800]
+	SymbolLine[0 3500 500 3000 800]
+	SymbolLine[0 3500 0 4500 800]
+	SymbolLine[0 4500 500 5000 800]
+	SymbolLine[500 5000 1500 5000 800]
+	SymbolLine[1500 5000 2000 4500 800]
+)
+Symbol['r' 1200]
+(
+	SymbolLine[500 3500 500 5000 800]
+	SymbolLine[500 3500 1000 3000 800]
+	SymbolLine[1000 3000 2000 3000 800]
+	SymbolLine[0 3000 500 3500 800]
+)
+Symbol['s' 1200]
+(
+	SymbolLine[500 5000 2000 5000 800]
+	SymbolLine[2000 5000 2500 4500 800]
+	SymbolLine[2000 4000 2500 4500 800]
+	SymbolLine[500 4000 2000 4000 800]
+	SymbolLine[0 3500 500 4000 800]
+	SymbolLine[0 3500 500 3000 800]
+	SymbolLine[500 3000 2000 3000 800]
+	SymbolLine[2000 3000 2500 3500 800]
+	SymbolLine[0 4500 500 5000 800]
+)
+Symbol['t' 1000]
+(
+	SymbolLine[500 1000 500 4500 800]
+	SymbolLine[500 4500 1000 5000 800]
+	SymbolLine[0 2500 1000 2500 800]
+)
+Symbol['u' 1200]
+(
+	SymbolLine[0 3000 0 4500 800]
+	SymbolLine[0 4500 500 5000 800]
+	SymbolLine[500 5000 1500 5000 800]
+	SymbolLine[1500 5000 2000 4500 800]
+	SymbolLine[2000 3000 2000 4500 800]
+)
+Symbol['v' 1200]
+(
+	SymbolLine[0 3000 1000 5000 800]
+	SymbolLine[2000 3000 1000 5000 800]
+)
+Symbol['w' 1200]
+(
+	SymbolLine[0 3000 0 4500 800]
+	SymbolLine[0 4500 500 5000 800]
+	SymbolLine[500 5000 1000 5000 800]
+	SymbolLine[1000 5000 1500 4500 800]
+	SymbolLine[1500 3000 1500 4500 800]
+	SymbolLine[1500 4500 2000 5000 800]
+	SymbolLine[2000 5000 2500 5000 800]
+	SymbolLine[2500 5000 3000 4500 800]
+	SymbolLine[3000 3000 3000 4500 800]
+)
+Symbol['x' 1200]
+(
+	SymbolLine[0 3000 2000 5000 800]
+	SymbolLine[0 5000 2000 3000 800]
+)
+Symbol['y' 1200]
+(
+	SymbolLine[0 3000 0 4500 800]
+	SymbolLine[0 4500 500 5000 800]
+	SymbolLine[2000 3000 2000 6000 800]
+	SymbolLine[1500 6500 2000 6000 800]
+	SymbolLine[500 6500 1500 6500 800]
+	SymbolLine[0 6000 500 6500 800]
+	SymbolLine[500 5000 1500 5000 800]
+	SymbolLine[1500 5000 2000 4500 800]
+)
+Symbol['z' 1200]
+(
+	SymbolLine[0 3000 2000 3000 800]
+	SymbolLine[0 5000 2000 3000 800]
+	SymbolLine[0 5000 2000 5000 800]
+)
+Symbol['{' 1200]
+(
+	SymbolLine[500 1500 1000 1000 800]
+	SymbolLine[500 1500 500 2500 800]
+	SymbolLine[0 3000 500 2500 800]
+	SymbolLine[0 3000 500 3500 800]
+	SymbolLine[500 3500 500 4500 800]
+	SymbolLine[500 4500 1000 5000 800]
+)
+Symbol['|' 1200]
+(
+	SymbolLine[0 1000 0 5000 800]
+)
+Symbol['}' 1200]
+(
+	SymbolLine[0 1000 500 1500 800]
+	SymbolLine[500 1500 500 2500 800]
+	SymbolLine[500 2500 1000 3000 800]
+	SymbolLine[500 3500 1000 3000 800]
+	SymbolLine[500 3500 500 4500 800]
+	SymbolLine[0 5000 500 4500 800]
+)
+Symbol['~' 1200]
+(
+	SymbolLine[0 3500 500 3000 800]
+	SymbolLine[500 3000 1000 3000 800]
+	SymbolLine[1000 3000 1500 3500 800]
+	SymbolLine[1500 3500 2000 3500 800]
+	SymbolLine[2000 3500 2500 3000 800]
+)
+Attribute("PCB::grid::unit" "mil")
+Via[183500 175500 2000 2000 0 1000 "" ""]
+Via[210000 168500 2000 2000 0 1000 "" ""]
+Via[166470 160790 2000 2000 0 1000 "" ""]
+Via[172720 163750 2000 2000 0 1000 "" ""]
+
+Element["" "0805" "R115" "49.9" 412913 195680 9953 -3050 0 100 ""]
+(
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-3543 -393 -3543 393 5118 2000 5718 "1" "1" "square"]
+	Pad[3543 -393 3543 393 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-393 -2755 393 -2755 800]
+	ElementLine [-393 2755 393 2755 800]
 
 	)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0402" "C109" "100pF" 0 0 -3150 -3150 0 100 ""]
+
+Element["" "MOLEX1720640006" "CONN101" "unknown" 412500 36500 -20000 0 0 100 ""]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-1574 -393
-		-1574 393
-		1968 2000 2568 "1" "1" "square"]
-	    Pad[1574 -393
-		1574 393
-		1968 2000 2568 "2" "2" "square"]
-	 
-
-	
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-Element(0x00 "SOT23D" "D101" "unknown" 148 0 3 100 0x00)
-(
-	ElementLine(0 0 0 139 10)
-	ElementLine(0 139 128 139 10)
-	ElementLine(128 139 128 0 10)
-	ElementLine(128 0 0 0 10)
-
-	# 1st side, 1st pin
-	Pad(25 107
-	       25 113
-			   34
-			      "2" "2" 0x100)
-	 
-	
-
-	# 1st side, 2nd pin
-	
-
-	# 1st side, 3rd pin
-	Pad(103 107
-	    103 113
-			   34
-			      "3" "3" 0x100)
-	
-
-	# 2nd side, 3rd pin
-	
-
-	# 2nd side, 2nd pin
-	Pad(64 25
-	       64 31
-			   34
-			      "1" "1" 0x100)
-	   
-	 
-
-	# 2nd side, 1st pin
-	
-
-	Mark(25 110)
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0402" "R103" "10" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-1574 -393
-		-1574 393
-		1968 2000 2568 "1" "1" "square"]
-	    Pad[1574 -393
-		1574 393
-		1968 2000 2568 "2" "2" "square"]
-	 
-
-	
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0402" "C119" "100nF" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-1574 -393
-		-1574 393
-		1968 2000 2568 "1" "1" "square"]
-	    Pad[1574 -393
-		1574 393
-		1968 2000 2568 "2" "2" "square"]
-	 
-
-	
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask
-	
-	# clearance from planes
-	
-Element(0x00 "EIA7343" "C112" "100uF" 0 0 229 0 3 100 0x00)
-(
-	ElementLine(-219 -117 -219 117 20)
-	    ElementLine(-219 117 -158 150 10)
-	    ElementLine(-158 150 209 150 10)
-	    ElementLine(209 150 209 -150 10)
-	    ElementLine(209 -150 -158 -150 10)
-	    ElementLine(-158 -150 -219 -117 10)
-	   
-
-	Pad(-115 -56 
-		-115 56
-		123 20 129 "1" "1" 0x00000100)
-	    Pad(115 -56 
-		115 56
-		123 20 129 "2" "2" 0x00000100)
-	 
-
-)
-
-Element["" "DO5040H" "L101" "3.9uH" 59500 47500 0 0 0 100 ""]
-(
-	Pad[-32750 -15250 -32750 19250 12500 2000 13500 "" "1" "square"]
-	Pad[36250 -15250 36250 19250 12500 2000 13500 "" "2" "square"]
-
-	)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "1206" "R107" "10" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-5905 -1181
-		-5905 1181
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[5905 -1181
-		5905 1181
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-2362 -3740 2362 -3740 800]
-	    ElementLine[-2362 3740 2362 3740 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-
-Element["" "PowerPAK_SO8" "Q101" "Cgs_=_800pF_VT=3V" 12700 8600 0 0 0 100 ""]
-(
-	Pad[3000 -100 3000 300 15000 2000 16000 "9" "1" "square"]
-	Pad[-11500 -7400 -8900 -7400 2400 2000 3400 "1" "2" "square"]
-	Pad[-11500 -2400 -8900 -2400 2400 2000 3400 "2" "3" "square"]
-	Pad[-11500 2600 -8900 2600 2400 2000 3400 "3" "4" "square"]
-	Pad[-11500 7600 -8900 7600 2400 2000 3400 "4" "5" "square"]
-	Pad[10450 -7450 12150 -7450 2300 2000 3300 "8" "6" "square,edge2"]
-	Pad[10450 -2450 12150 -2450 2300 2000 3300 "" "7" "square,edge2"]
-	Pad[10450 7650 12150 7650 2300 2000 3300 "5" "8" "square,edge2"]
-	Pad[10450 2550 12150 2550 2300 2000 3300 "6" "9" "square,edge2"]
+	Attribute("device" "CONNECTOR_6")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[22441 24441 11811 2000 12411 7087 "1" "1" ""]
+	Pin[0 24441 11811 2000 12411 7087 "3" "3" ""]
+	Pin[-22441 24441 11811 2000 12411 7087 "5" "5" ""]
+	Pin[22441 2000 11811 2000 12411 7087 "2" "2" ""]
+	Pin[0 2000 11811 2000 12411 7087 "4" "4" ""]
+	Pin[-22441 2000 11811 2000 12411 7087 "6" "6" ""]
+	Pin[22441 -26740 12211 2000 12811 11811 "" "7" ""]
+	Pin[-22441 -26740 12211 2000 12811 11811 "" "8" ""]
+	ElementLine [31889 -35796 31889 32708 1000]
+	ElementLine [-31890 -35796 31889 -35796 1000]
+	ElementLine [-31890 -35796 -31890 32708 1000]
+	ElementLine [-31890 32708 31889 32708 1000]
 
 	)
 
-Element["" "PowerPAK_SO8" "Q102" "2.5n" 12700 8600 0 0 0 100 ""]
+Element["" "1206" "R107" "10" 280710 230710 -9055 6850 0 100 ""]
 (
-	Pad[3000 -100 3000 300 15000 2000 16000 "9" "1" "square"]
-	Pad[-11500 -7400 -8900 -7400 2400 2000 3400 "1" "2" "square"]
-	Pad[-11500 -2400 -8900 -2400 2400 2000 3400 "2" "3" "square"]
-	Pad[-11500 2600 -8900 2600 2400 2000 3400 "3" "4" "square"]
-	Pad[-11500 7600 -8900 7600 2400 2000 3400 "4" "5" "square"]
-	Pad[10450 -7450 12150 -7450 2300 2000 3300 "8" "6" "square,edge2"]
-	Pad[10450 -2450 12150 -2450 2300 2000 3300 "" "7" "square,edge2"]
-	Pad[10450 7650 12150 7650 2300 2000 3300 "5" "8" "square,edge2"]
-	Pad[10450 2550 12150 2550 2300 2000 3300 "6" "9" "square,edge2"]
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
+	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-2362 -3740 2362 -3740 800]
+	ElementLine [-2362 3740 2362 3740 800]
 
 	)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0603" "C108" "470nF" 0 0 -3150 -3150 0 100 ""]
+
+Element["" "0603" "C108" "470nF" 250941 7500 -5709 6850 0 100 ""]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-2559 -492
-		-2559 492
-		2952 2000 3552 "1" "1" "square"]
-	    Pad[2559 -492
-		2559 492
-		2952 2000 3552 "2" "2" "square"]
-	 
+	Attribute("device" "CAPACITOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-2559 -492 -2559 492 2952 2000 3552 "1" "1" "square"]
+	Pad[2559 -492 2559 492 2952 2000 3552 "2" "2" "square"]
 
-	
+	)
 
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "1206" "C104" "4.7uF" 0 0 -3150 -3150 0 100 ""]
+Element["" "1206" "C104" "4.7uF" 231000 7500 945 6850 0 100 ""]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-5905 -1181
-		-5905 1181
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[5905 -1181
-		5905 1181
-		5118 2000 5718 "2" "2" "square"]
-	 
+	Attribute("device" "CAPACITOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
+	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-2362 -3740 2362 -3740 800]
+	ElementLine [-2362 3740 2362 3740 800]
 
-	ElementLine[-2362 -3740 2362 -3740 800]
-	    ElementLine[-2362 3740 2362 3740 800]
-	   
+	)
 
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0402" "R105" "2.21" 0 0 -3150 -3150 0 100 ""]
+Element["" "0402" "R105" "2.21" 230926 24000 -1576 6850 0 100 ""]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-1574 -393
-		-1574 393
-		1968 2000 2568 "1" "1" "square"]
-	    Pad[1574 -393
-		1574 393
-		1968 2000 2568 "2" "2" "square"]
-	 
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-1574 -393 -1574 393 1968 2000 2568 "1" "1" "square"]
+	Pad[1574 -393 1574 393 1968 2000 2568 "2" "2" "square"]
 
-	
+	)
 
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "1206" "C105" "2.2uF" 0 0 -3150 -3150 0 100 ""]
+Element["" "1206" "C105" "2.2uF" 251945 105290 -4960 6850 0 100 ""]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-5905 -1181
-		-5905 1181
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[5905 -1181
-		5905 1181
-		5118 2000 5718 "2" "2" "square"]
-	 
+	Attribute("device" "CAPACITOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-5905 -1181 -5905 1181 5118 2000 5718 "1" "1" "square"]
+	Pad[5905 -1181 5905 1181 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-2362 -3740 2362 -3740 800]
+	ElementLine [-2362 3740 2362 3740 800]
 
-	ElementLine[-2362 -3740 2362 -3740 800]
-	    ElementLine[-2362 3740 2362 3740 800]
-	   
+	)
 
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0402" "C116" "680pF" 0 0 -3150 -3150 0 100 ""]
+Element["" "0402" "C116" "680pF" 385604 195420 -7356 7030 0 100 ""]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-1574 -393
-		-1574 393
-		1968 2000 2568 "1" "1" "square"]
-	    Pad[1574 -393
-		1574 393
-		1968 2000 2568 "2" "2" "square"]
-	 
+	Attribute("device" "CAPACITOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-1574 -393 -1574 393 1968 2000 2568 "1" "1" "square"]
+	Pad[1574 -393 1574 393 1968 2000 2568 "2" "2" "square"]
 
-	
+	)
 
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0402" "R111" "1.33K" 0 0 -3150 -3150 0 100 ""]
+Element["" "0402" "R111" "1.33K" 395536 195600 -1576 6850 0 100 ""]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-1574 -393
-		-1574 393
-		1968 2000 2568 "1" "1" "square"]
-	    Pad[1574 -393
-		1574 393
-		1968 2000 2568 "2" "2" "square"]
-	 
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-1574 -393 -1574 393 1968 2000 2568 "1" "1" "square"]
+	Pad[1574 -393 1574 393 1968 2000 2568 "2" "2" "square"]
 
-	
+	)
 
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0402" "R112" "48.7K" 0 0 -3150 -3150 0 100 ""]
+Element["" "0402" "R112" "48.7K" 395066 185420 -6426 -12900 0 100 ""]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-1574 -393
-		-1574 393
-		1968 2000 2568 "1" "1" "square"]
-	    Pad[1574 -393
-		1574 393
-		1968 2000 2568 "2" "2" "square"]
-	 
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-1574 -393 -1574 393 1968 2000 2568 "1" "1" "square"]
+	Pad[1574 -393 1574 393 1968 2000 2568 "2" "2" "square"]
 
-	
+	)
 
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0402" "R113" "6.49K" 0 0 -3150 -3150 0 100 ""]
+Element["" "0402" "R113" "6.49K" 40610 100320 -1576 6850 0 100 ""]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-1574 -393
-		-1574 393
-		1968 2000 2568 "1" "1" "square"]
-	    Pad[1574 -393
-		1574 393
-		1968 2000 2568 "2" "2" "square"]
-	 
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-1574 -393 -1574 393 1968 2000 2568 "1" "1" "square"]
+	Pad[1574 -393 1574 393 1968 2000 2568 "2" "2" "square"]
 
-	
+	)
 
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0402" "R114" "47.5K" 0 0 -3150 -3150 0 100 ""]
+Element["" "0402" "R114" "47.5K" 185648 174074 3850 13224 1 100 ""]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-1574 -393
-		-1574 393
-		1968 2000 2568 "1" "1" "square"]
-	    Pad[1574 -393
-		1574 393
-		1968 2000 2568 "2" "2" "square"]
-	 
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-393 -1574 393 -1574 1968 2000 2568 "1" "1" "square"]
+	Pad[-393 1574 393 1574 1968 2000 2568 "2" "2" "square"]
 
-	
+	)
 
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0402" "C114" "39pF" 0 0 -3150 -3150 0 100 ""]
+Element["" "0402" "C114" "39pF" 145074 169500 -6576 1850 0 100 ""]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-1574 -393
-		-1574 393
-		1968 2000 2568 "1" "1" "square"]
-	    Pad[1574 -393
-		1574 393
-		1968 2000 2568 "2" "2" "square"]
-	 
+	Attribute("device" "CAPACITOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-1574 -393 -1574 393 1968 2000 2568 "1" "1" "square"]
+	Pad[1574 -393 1574 393 1968 2000 2568 "2" "2" "square"]
 
-	
+	)
 
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0402" "C115" "1.8nF" 0 0 -3150 -3150 0 100 ""]
+Element["" "0402" "C115" "1.8nF" 21574 120000 -1576 6850 0 100 ""]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-1574 -393
-		-1574 393
-		1968 2000 2568 "1" "1" "square"]
-	    Pad[1574 -393
-		1574 393
-		1968 2000 2568 "2" "2" "square"]
-	 
+	Attribute("device" "CAPACITOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-1574 -393 -1574 393 1968 2000 2568 "1" "1" "square"]
+	Pad[1574 -393 1574 393 1968 2000 2568 "2" "2" "square"]
 
-	
+	)
 
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0402" "R110" "22.6K" 0 0 -3150 -3150 0 100 ""]
+Element["" "0402" "R110" "22.6K" 81574 100000 -1576 6850 0 100 ""]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-1574 -393
-		-1574 393
-		1968 2000 2568 "1" "1" "square"]
-	    Pad[1574 -393
-		1574 393
-		1968 2000 2568 "2" "2" "square"]
-	 
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-1574 -393 -1574 393 1968 2000 2568 "1" "1" "square"]
+	Pad[1574 -393 1574 393 1968 2000 2568 "2" "2" "square"]
 
-	
+	)
 
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0402" "C113" "68pF" 0 0 -3150 -3150 0 100 ""]
+Element["" "0402" "C113" "68pF" 175556 163764 -18058 -1368 0 100 ""]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-1574 -393
-		-1574 393
-		1968 2000 2568 "1" "1" "square"]
-	    Pad[1574 -393
-		1574 393
-		1968 2000 2568 "2" "2" "square"]
-	 
+	Attribute("device" "CAPACITOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[1574 -393 1574 393 1968 2000 2568 "1" "1" "square"]
+	Pad[-1574 -393 -1574 393 1968 2000 2568 "2" "2" "square"]
 
-	
+	)
 
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0402" "R109" "30.9K" 0 0 -3150 -3150 0 100 ""]
+Element["" "0402" "R109" "30.9K" 169434 160760 2404 -14698 3 100 ""]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-1574 -393
-		-1574 393
-		1968 2000 2568 "1" "1" "square"]
-	    Pad[1574 -393
-		1574 393
-		1968 2000 2568 "2" "2" "square"]
-	 
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[1574 -393 1574 393 1968 2000 2568 "1" "1" "square"]
+	Pad[-1574 -393 -1574 393 1968 2000 2568 "2" "2" "square"]
 
-	
+	)
 
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0402" "R104" "51.1K" 0 0 -3150 -3150 0 100 ""]
+Element["" "0402" "R104" "51.1K" 178850 154714 3670 -18886 3 100 ""]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-1574 -393
-		-1574 393
-		1968 2000 2568 "1" "1" "square"]
-	    Pad[1574 -393
-		1574 393
-		1968 2000 2568 "2" "2" "square"]
-	 
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-393 -1574 393 -1574 1968 2000 2568 "1" "1" "square"]
+	Pad[-393 1574 393 1574 1968 2000 2568 "2" "2" "square"]
 
-	
+	)
 
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0402" "C102" "100nF" 0 0 -3150 -3150 0 100 ""]
+Element["" "1210" "C106" "10uF" 412525 123500 12440 -3260 0 100 ""]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-1574 -393
-		-1574 393
-		1968 2000 2568 "1" "1" "square"]
-	    Pad[1574 -393
-		1574 393
-		1968 2000 2568 "2" "2" "square"]
-	 
+	Attribute("device" "CAPACITOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-5905 -2755 -5905 2755 5118 2000 5718 "1" "1" "square"]
+	Pad[5905 -2755 5905 2755 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-1968 -5314 1968 -5314 800]
+	ElementLine [-1968 5314 1968 5314 800]
 
-	
+	)
 
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "1210" "C106" "10uF" 0 0 -3150 -3150 0 100 ""]
+Element["" "1210" "C107" "10uF" 412840 135960 12485 -3420 0 100 ""]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-5905 -2755
-		-5905 2755
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[5905 -2755
-		5905 2755
-		5118 2000 5718 "2" "2" "square"]
-	 
+	Attribute("device" "CAPACITOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-5905 -2755 -5905 2755 5118 2000 5718 "1" "1" "square"]
+	Pad[5905 -2755 5905 2755 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-1968 -5314 1968 -5314 800]
+	ElementLine [-1968 5314 1968 5314 800]
 
-	ElementLine[-1968 -5314 1968 -5314 800]
-	    ElementLine[-1968 5314 1968 5314 800]
-	   
+	)
 
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "1210" "C107" "10uF" 0 0 -3150 -3150 0 100 ""]
+Element["" "cap-elec-100uF-50V-Panasonic-EEVFK1H101P" "C101" "100uF" 398950 87000 35400 -3300 0 100 ""]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-5905 -2755
-		-5905 2755
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[5905 -2755
-		5905 2755
-		5118 2000 5718 "2" "2" "square"]
-	 
+	Attribute("device" "POLARIZED_CAPACITOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-4500 0 4500 0 4300 3000 4900 "+" "1" "square"]
+	Pad[21000 0 30100 0 4300 3000 4900 "-" "2" "square,edge2"]
+	ElementLine [-7600 -8600 3300 -17300 1000]
+	ElementLine [3300 -17300 33200 -17300 1000]
+	ElementLine [33200 -17300 33200 17300 1000]
+	ElementLine [33200 17300 3300 17300 1000]
+	ElementLine [3300 17300 -7600 8600 1000]
+	ElementLine [-7600 8600 -7600 -8600 1000]
 
-	ElementLine[-1968 -5314 1968 -5314 800]
-	    ElementLine[-1968 5314 1968 5314 800]
-	   
+	)
 
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0805" "C103" "1uF" 0 0 -3150 -3150 0 100 ""]
+Element["" "QSOPEP16.fp" "U101" "unknown" 196531 159685 -5469 10685 0 100 ""]
 (
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-3543 -393
-		-3543 393
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[3543 -393
-		3543 393
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-393 -2755 393 -2755 800]
-	    ElementLine[-393 2755 393 2755 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-Element(0x0 "cap-elec-100uF-50V-Panasonic-EEVFK1H101P" "C101" "100uF" -136 -198 0 100 0x0)
-(
-   Pad(-45 0 45 0 43 "" "1" 0x0100)
-   Pad(210 0 301 0 43 "" "2" 0x0100)
-   ElementLine(-76 -86 33 -173 10)
-   ElementLine(33 -173 332 -173 10)
-   ElementLine(332 -173 332 173 10)
-   ElementLine(332 173 33 173 10)
-   ElementLine(33 173 -76 86 10)
-   ElementLine(-76 86 -76 -86 10)
-   Mark(0 0)
-)
-
-Element["" "QSOPEP16.fp" "U101" "unknown" 14016 9764 0 0 0 100 ""]
-(
-	Pad[-13310 -8701 -8412 -8701 1401 0 1401 "" "1" ""]
-	Pad[-13310 -6201 -8412 -6201 1401 0 1401 "" "2" ""]
-	Pad[-13310 -3701 -8412 -3701 1401 0 1401 "" "3" ""]
-	Pad[-13310 -1201 -8412 -1201 1401 0 1401 "" "4" ""]
-	Pad[-13310 1299 -8412 1299 1401 0 1401 "" "5" ""]
-	Pad[-13310 3799 -8412 3799 1401 0 1401 "" "6" ""]
-	Pad[-13310 6299 -8412 6299 1401 0 1401 "" "7" ""]
-	Pad[-13310 8799 -8412 8799 1401 0 1401 "" "8" ""]
-	Pad[7590 8799 12488 8799 1401 0 1401 "" "9" "edge2"]
-	Pad[7590 6299 12488 6299 1401 0 1401 "" "10" "edge2"]
-	Pad[7590 3799 12488 3799 1401 0 1401 "" "11" "edge2"]
-	Pad[7590 1299 12488 1299 1401 0 1401 "" "12" "edge2"]
-	Pad[7590 -1201 12488 -1201 1401 0 1401 "" "13" "edge2"]
-	Pad[7590 -3701 12488 -3701 1401 0 1401 "" "14" "edge2"]
-	Pad[7590 -6201 12488 -6201 1401 0 1401 "" "15" "edge2"]
-	Pad[7590 -8701 12488 -8701 1401 0 1401 "" "16" "edge2"]
+	Attribute("device" "MAX15046B")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-13310 -8701 -8412 -8701 1401 0 1401 "IN" "1" ""]
+	Pad[-13310 -6201 -8412 -6201 1401 0 1401 "Vcc" "2" ""]
+	Pad[-13310 -3701 -8412 -3701 1401 0 1401 "PGOOD" "3" ""]
+	Pad[-13310 -1201 -8412 -1201 1401 0 1401 "EN" "4" ""]
+	Pad[-13310 1299 -8412 1299 1401 0 1401 "LIM" "5" ""]
+	Pad[-13310 3799 -8412 3799 1401 0 1401 "COMP" "6" ""]
+	Pad[-13310 6299 -8412 6299 1401 0 1401 "FB" "7" ""]
+	Pad[-13310 8799 -8412 8799 1401 0 1401 "RT" "8" ""]
+	Pad[7590 8799 12488 8799 1401 0 1401 "GND" "9" "edge2"]
+	Pad[7590 6299 12488 6299 1401 0 1401 "PGND" "10" "edge2"]
+	Pad[7590 3799 12488 3799 1401 0 1401 "DRV" "11" "edge2"]
+	Pad[7590 1299 12488 1299 1401 0 1401 "DL" "12" "edge2"]
+	Pad[7590 -1201 12488 -1201 1401 0 1401 "BST" "13" "edge2"]
+	Pad[7590 -3701 12488 -3701 1401 0 1401 "LX" "14" "edge2"]
+	Pad[7590 -6201 12488 -6201 1401 0 1401 "DH" "15" "edge2"]
+	Pad[7590 -8701 12488 -8701 1401 0 1401 "CSP" "16" "edge2"]
 	Pad[-531 -1673 -531 2303 9016 2000 10016 "" "17" "square,edge2"]
 	ElementLine [-8265 -9754 -8265 9852 1]
 	ElementLine [-8265 -9754 7443 -9754 1]
@@ -1324,33 +1167,1034 @@ Element["" "QSOPEP16.fp" "U101" "unknown" 14016 9764 0 0 0 100 ""]
 	ElementArc [-411 -9754 2618 2618 0 180 0]
 
 	)
-Layer(1 "component")
+
+Element["" "0402" "C109" "100pF" 279324 272000 -1576 6850 0 100 ""]
+(
+	Attribute("device" "CAPACITOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-1574 -393 -1574 393 1968 2000 2568 "1" "1" "square"]
+	Pad[1574 -393 1574 393 1968 2000 2568 "2" "2" "square"]
+
+	)
+
+Element["" "SOT23D" "D101" "unknown" 224760 156400 1000 -5500 2 100 ""]
+(
+	Attribute("device" "DIODE")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[0 -300 0 300 3400 3000 4000 "2" "2" "square"]
+	Pad[-7800 -300 -7800 300 3400 3000 4000 "3" "3" "square"]
+	Pad[-3900 7900 -3900 8500 3400 3000 4000 "1" "1" "square,edge2"]
+	ElementLine [2500 -2900 2500 11000 1000]
+	ElementLine [-10300 -2900 2500 -2900 1000]
+	ElementLine [-10300 -2900 -10300 11000 1000]
+	ElementLine [-10300 11000 2500 11000 1000]
+
+	)
+
+Element["" "0402" "R103" "10" 174329 156470 2210 -19986 3 100 ""]
+(
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-393 -1574 393 -1574 1968 2000 2568 "1" "1" "square"]
+	Pad[-393 1574 393 1574 1968 2000 2568 "2" "2" "square"]
+
+	)
+
+Element["" "0402" "C119" "100nF" 476000 155426 -4502 4924 0 100 ""]
+(
+	Attribute("device" "CAPACITOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-393 1574 393 1574 1968 2000 2568 "1" "1" "square"]
+	Pad[-393 -1574 393 -1574 1968 2000 2568 "2" "2" "square"]
+
+	)
+
+Element["" "EIA7343" "C112" "100uF" 504000 155500 -5500 23600 0 100 ""]
+(
+	Attribute("device" "POLARIZED_CAPACITOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-5600 11500 5600 11500 12300 2000 12900 "+" "1" "square"]
+	Pad[-5600 -11500 5600 -11500 12300 2000 12900 "-" "2" "square"]
+	ElementLine [-11700 21900 11700 21900 2000]
+	ElementLine [11700 21900 15000 15800 1000]
+	ElementLine [15000 -20900 15000 15800 1000]
+	ElementLine [-15000 -20900 15000 -20900 1000]
+	ElementLine [-15000 -20900 -15000 15800 1000]
+	ElementLine [-15000 15800 -11700 21900 1000]
+
+	)
+
+Element["" "MOLEX1720640006" "CONN102" "unknown" 563631 156696 0 0 1 100 ""]
+(
+	Attribute("device" "CONNECTOR_6")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[-24441 22441 11811 2000 12411 7087 "1" "1" "edge2"]
+	Pin[-24441 0 11811 2000 12411 7087 "3" "3" "edge2"]
+	Pin[-24441 -22441 11811 2000 12411 7087 "5" "5" "edge2"]
+	Pin[-2000 22441 11811 2000 12411 7087 "2" "2" "edge2"]
+	Pin[-2000 0 11811 2000 12411 7087 "4" "4" "edge2"]
+	Pin[-2000 -22441 11811 2000 12411 7087 "6" "6" "edge2"]
+	Pin[26740 22441 12211 2000 12811 11811 "" "7" "edge2"]
+	Pin[26740 -22441 12211 2000 12811 11811 "" "8" "edge2"]
+	ElementLine [-32708 31889 35796 31889 1000]
+	ElementLine [35796 -31890 35796 31889 1000]
+	ElementLine [-32708 -31890 35796 -31890 1000]
+	ElementLine [-32708 -31890 -32708 31889 1000]
+
+	)
+
+Element["" "DO5040H" "L101" "3.9uH" 397750 230500 0 30000 0 100 ""]
+(
+	Attribute("device" "INDUCTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-32750 -15250 -32750 19250 12500 2000 13500 "1" "1" "square"]
+	Pad[36250 -15250 36250 19250 12500 2000 13500 "2" "2" "square"]
+
+	)
+
+Element["" "0402" "C102" "100nF" 412500 108500 12064 -3320 0 100 ""]
+(
+	Attribute("device" "CAPACITOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-1574 -393 -1574 393 1968 2000 2568 "1" "1" "square"]
+	Pad[1574 -393 1574 393 1968 2000 2568 "2" "2" "square"]
+
+	)
+
+Element["" "0805" "C103" "1uF" 412440 114360 12383 -3150 0 100 ""]
+(
+	Attribute("device" "CAPACITOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[-3543 -393 -3543 393 5118 2000 5718 "1" "1" "square"]
+	Pad[3543 -393 3543 393 5118 2000 5718 "2" "2" "square"]
+	ElementLine [-393 -2755 393 -2755 800]
+	ElementLine [-393 2755 393 2755 800]
+
+	)
+
+Element["" "PowerPAK_SO8" "U102" "Cgs = 800pF VT=3V" 338714 261773 0 0 0 100 ""]
+(
+	Attribute("device" "2S2K3")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[3000 -100 3000 300 15000 2000 16000 "9" "1" "square"]
+	Pad[-11500 -7400 -8900 -7400 2400 2000 3400 "1" "2" "square"]
+	Pad[-11500 -2400 -8900 -2400 2400 2000 3400 "2" "3" "square"]
+	Pad[-11500 2600 -8900 2600 2400 2000 3400 "3" "4" "square"]
+	Pad[-11500 7600 -8900 7600 2400 2000 3400 "4" "5" "square"]
+	Pad[10450 -7450 12150 -7450 2300 2000 3300 "8" "6" "square,edge2"]
+	Pad[10450 -2450 12150 -2450 2300 2000 3300 "" "7" "square,edge2"]
+	Pad[10450 7650 12150 7650 2300 2000 3300 "5" "8" "square,edge2"]
+	Pad[10450 2550 12150 2550 2300 2000 3300 "6" "9" "square,edge2"]
+
+	)
+
+Element["" "PowerPAK_SO8" "U103" "2.5n" 287815 290143 0 0 0 100 ""]
+(
+	Attribute("device" "2S2K3")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pad[3000 -100 3000 300 15000 2000 16000 "9" "1" "square"]
+	Pad[-11500 -7400 -8900 -7400 2400 2000 3400 "1" "2" "square"]
+	Pad[-11500 -2400 -8900 -2400 2400 2000 3400 "2" "3" "square"]
+	Pad[-11500 2600 -8900 2600 2400 2000 3400 "3" "4" "square"]
+	Pad[-11500 7600 -8900 7600 2400 2000 3400 "4" "5" "square"]
+	Pad[10450 -7450 12150 -7450 2300 2000 3300 "8" "6" "square,edge2"]
+	Pad[10450 -2450 12150 -2450 2300 2000 3300 "" "7" "square,edge2"]
+	Pad[10450 7650 12150 7650 2300 2000 3300 "5" "8" "square,edge2"]
+	Pad[10450 2550 12150 2550 2300 2000 3300 "6" "9" "square,edge2"]
+
+	)
+Rat[414270 148800 0 286615 229529 0  ""]
+Rat[286615 229529 0 215790 167610 1  ""]
+Rat[209019 165984 0 48000 135500 1  "via"]
+Rat[48000 135500 1 42184 99927 0  ""]
+Rat[215700 167520 1 257850 104109 0  ""]
+Rat[257850 104109 0 225095 6319 0  ""]
+Rat[236905 6319 0 232500 23607 0  ""]
+Rat[232500 23607 0 185670 153484 0  ""]
+Rat[177130 163371 0 146648 169107 0  ""]
+Rat[146648 169107 0 83148 99607 0  ""]
+Rat[143500 169107 0 183221 165984 0  ""]
+Rat[143500 169107 0 39036 99927 0  ""]
+Rat[39036 99927 0 20000 119607 0  ""]
+Rat[183221 165984 0 384030 195027 0  ""]
+Rat[384030 195027 0 393492 185027 0  ""]
+Rat[246040 104109 0 220860 164900 0  ""]
+Rat[220860 164900 0 209019 163484 0  ""]
+Rat[246040 104109 0 229352 23607 0  ""]
+Rat[248382 7008 0 224760 156100 0  ""]
+Rat[224760 156100 0 209019 158484 0  ""]
+Rat[253500 7008 0 209019 150984 0  ""]
+Rat[209019 150984 0 209019 155984 0  ""]
+Rat[209019 155984 0 280898 271607 0  ""]
+Rat[280898 271607 0 365000 215250 0  ""]
+Rat[23148 119607 0 80000 99607 0  ""]
+Rat[397110 195207 0 396640 185027 0  ""]
+Rat[397110 195207 0 409370 195287 0  ""]
+Rat[387178 195027 0 393962 195207 0  ""]
+Rat[277750 271607 0 274805 229529 0  ""]
+Rat[385000 71500 0 183221 150984 0  ""]
+Layer(1 "Vin_Top")
+(
+	Line[394500 30000 394500 73000 4000 2000 ""]
+	Line[394500 73000 396000 74500 4000 2000 ""]
+	Line[396000 74500 391500 74500 4000 2000 ""]
+	Line[391500 74500 391500 29000 4000 2000 ""]
+	Line[391500 29000 387500 29000 4000 2000 ""]
+	Line[387500 29000 387500 72500 4000 2000 ""]
+	Line[387500 72500 388000 73000 4000 2000 ""]
+	Line[388000 73000 388000 30500 4000 2000 ""]
+	Line[388000 30500 386500 29000 4000 2000 ""]
+	Line[386500 29000 386500 70000 4000 2000 ""]
+	Line[386500 70000 385000 71500 4000 2000 ""]
+	Line[385000 71500 385000 31000 4000 2000 ""]
+	Line[385000 31000 383500 29500 4000 2000 ""]
+	Line[394500 30000 394500 64000 4000 2000 ""]
+	Line[394500 64000 397000 66500 4000 2000 ""]
+	Line[397000 66500 397000 67000 4000 2000 ""]
+	Line[397000 67000 394500 69500 4000 2000 ""]
+	Line[394500 69500 394500 33000 4000 2000 ""]
+	Line[394500 33000 397000 30500 4000 2000 ""]
+	Line[397000 30500 397000 69000 4000 2000 ""]
+	Line[397000 69000 394500 71500 4000 2000 ""]
+	Line[391500 34000 418500 34000 4000 2000 ""]
+	Line[418500 34000 418500 42500 4000 2000 ""]
+	Line[418500 42500 392500 42500 4000 2000 ""]
+	Line[392500 42500 391500 43500 4000 2000 ""]
+	Line[391500 43500 393500 43500 4000 2000 ""]
+	Line[393500 43500 400000 37000 4000 2000 ""]
+	Line[400000 37000 418500 37000 4000 2000 ""]
+	Line[418500 37000 418500 39500 4000 2000 ""]
+	Line[418500 39500 397500 39500 4000 2000 ""]
+	Line[397500 39500 397000 40000 4000 2000 ""]
+	Line[397000 45500 419500 45500 4000 2000 ""]
+	Line[419500 45500 419500 34500 4000 2000 ""]
+	Line[419500 34500 419000 34000 4000 2000 ""]
+	Line[419000 34000 419000 29000 4000 2000 ""]
+	Line[419000 29000 397000 29000 4000 2000 ""]
+	Line[397000 29000 397000 31500 4000 2000 ""]
+	Line[397000 31500 419000 31500 4000 2000 ""]
+	Line[397000 48500 419500 48500 4000 2000 ""]
+	Line[419500 48500 419500 29000 4000 2000 ""]
+	Line[419500 29000 419000 28500 4000 2000 ""]
+	Line[397000 28500 419500 28500 4000 2000 ""]
+	Line[397500 80500 397500 94500 4000 2000 ""]
+	Line[397500 94500 397000 94500 4000 2000 ""]
+	Line[397000 94500 394500 92000 4000 2000 ""]
+	Line[394500 92000 394500 81500 4000 2000 ""]
+	Line[394500 81500 394000 81000 4000 2000 ""]
+	Line[394000 81000 394000 90000 4000 2000 ""]
+	Line[394000 90000 392000 92000 4000 2000 ""]
+	Line[392000 92000 392000 84500 4000 2000 ""]
+	Line[392000 84500 390500 83000 4000 2000 ""]
+	Line[404000 80000 404000 95000 4000 2000 ""]
+	Line[404000 95000 398500 95000 4000 2000 ""]
+	Line[398500 95000 397500 94000 4000 2000 ""]
+	Line[397500 94000 397500 82500 4000 2000 ""]
+	Line[397500 82500 400500 79500 4000 2000 ""]
+	Line[400500 79500 400500 94500 4000 2000 ""]
+	Line[400500 94500 401000 95000 4000 2000 ""]
+	Line[397500 78500 406500 78500 4000 2000 ""]
+	Line[406500 78500 406500 95000 4000 2000 ""]
+	Line[406500 95000 397500 95000 4000 2000 ""]
+	Line[394500 97500 407000 97500 4000 2000 ""]
+	Line[407000 97500 407000 78000 4000 2000 ""]
+	Line[407000 78000 406500 77500 4000 2000 ""]
+	Line[406500 77500 395000 77500 4000 2000 ""]
+	Line[395000 77500 394500 77000 4000 2000 ""]
+	Line[398500 101500 407500 101500 4000 2000 ""]
+	Line[407500 101500 407500 78000 4000 2000 ""]
+	Line[407500 78000 406500 77000 4000 2000 ""]
+	Line[406500 77000 398500 77000 4000 2000 ""]
+	Line[398500 77000 398000 77500 4000 2000 ""]
+	Line[398500 104000 408500 104000 4000 2000 ""]
+	Line[408500 104000 408500 76000 4000 2000 ""]
+	Line[408500 76000 407000 74500 4000 2000 ""]
+	Line[407000 74500 397500 74500 4000 2000 ""]
+	Line[397500 74500 396750 75250 4000 2000 ""]
+	Line[399500 48500 399500 78000 4000 2000 ""]
+	Line[399500 78000 399000 78500 4000 2000 ""]
+	Line[399000 117500 397500 116000 2500 2000 ""]
+	Line[406000 104000 406000 112000 2500 2000 ""]
+	Line[404000 112000 404000 104500 2500 2000 ""]
+	Line[404000 104500 404500 104000 2500 2000 ""]
+	Line[402000 104000 402000 114500 2500 2000 ""]
+	Line[399500 116000 399500 104500 2500 2000 ""]
+	Line[399500 104500 400000 104000 2500 2000 ""]
+	Line[408500 100500 408500 114000 4000 2000 ""]
+	Line[408500 104500 408500 114500 2500 2000 ""]
+	Line[408500 114000 408000 114500 4000 2000 ""]
+	Line[406000 112020 406000 143410 4000 2000 ""]
+	Line[406000 143410 406040 143450 4000 2000 ""]
+	Line[406040 143450 403660 143450 4000 2000 ""]
+	Line[403660 143450 403460 143650 4000 2000 ""]
+	Line[403460 143650 403460 115720 4000 2000 ""]
+	Line[403460 115720 402000 114260 4000 2000 ""]
+	Line[408500 106180 408500 144250 4000 2000 ""]
+	Line[408500 144250 408350 144400 4000 2000 ""]
+	Line[408500 105700 408500 106074 2500 2000 ""]
+	Line[408500 106074 410926 108500 2500 2000 ""]
+	Line[410926 108500 410926 109044 2500 2000 ""]
+	Line[410926 109044 408500 111470 2500 2000 ""]
+	Line[411070 106510 411070 110790 1000 2000 ""]
+	Line[411070 110790 408700 110790 1000 2000 ""]
+	Line[408700 110790 408500 110990 1000 2000 ""]
+	Line[408500 110990 408500 108950 1000 2000 ""]
+	Line[408500 108950 411070 106380 1000 2000 ""]
+	Line[408500 106320 410950 106320 1000 2000 ""]
+	Line[410950 106320 411040 106410 1000 2000 ""]
+	Line[411070 110940 411070 117970 1000 2000 ""]
+	Line[411070 117970 410630 118410 1000 2000 ""]
+	Line[410630 118410 410630 111690 1000 2000 ""]
+	Line[410630 111690 411070 111250 1000 2000 ""]
+	Polygon("clearpoly")
+	(
+		[399000 26500] [270500 26500] [270500 159500] [399000 159500] 
+	)
+	Polygon("clearpoly")
+	(
+		[410610 149130] [398950 149130] [398950 106920] [410610 106920] 
+	)
+)
+Layer(2 "Vout_Top")
+(
+	Line[434000 232500 444000 232500 4000 2000 ""]
+	Line[441500 204000 441500 259500 4000 2000 ""]
+	Line[441500 259500 442500 260500 4000 2000 ""]
+	Line[426000 204500 426000 265500 4000 2000 ""]
+	Line[426000 265500 428000 267500 4000 2000 ""]
+	Line[426000 207500 441000 207500 4000 2000 ""]
+	Line[441000 207500 441500 207000 4000 2000 ""]
+	Line[426000 256500 443500 256500 4000 2000 ""]
+	Line[443500 256500 445500 258500 4000 2000 ""]
+	Line[539190 179137 539190 180310 4000 2000 ""]
+	Line[539190 180310 534500 185000 4000 2000 ""]
+	Line[534500 185000 534500 183500 4000 2000 ""]
+	Line[534500 183500 544500 173500 4000 2000 ""]
+	Line[544500 173500 533000 173500 4000 2000 ""]
+	Line[533000 173500 533000 185000 4000 2000 ""]
+	Line[533000 185000 533750 185750 4000 2000 ""]
+	Line[533750 185750 541750 185750 4000 2000 ""]
+	Line[541750 185750 544000 183500 4000 2000 ""]
+	Line[544000 183500 544000 177500 4000 2000 ""]
+	Line[544000 177500 546000 175500 4000 2000 ""]
+	Line[546000 175500 546000 184000 4000 2000 ""]
+	Line[546000 184000 546000 182000 4000 2000 ""]
+	Line[546000 182000 537500 173500 4000 2000 ""]
+	Line[537500 173500 537000 173500 4000 2000 ""]
+	Line[537000 173500 533000 177500 4000 2000 ""]
+	Line[533000 177500 534750 177500 4000 2000 ""]
+	Line[534750 177500 543000 185750 4000 2000 ""]
+	Line[543000 185750 543750 185750 4000 2000 ""]
+	Line[543750 185750 546750 182750 4000 2000 ""]
+	Line[539190 156696 539190 179000 4000 2000 ""]
+	Line[539190 157500 538500 157500 4000 2000 ""]
+	Line[538500 157500 534500 161500 4000 2000 ""]
+	Line[534500 161500 534500 177250 4000 2000 ""]
+	Line[534500 177250 535875 178625 4000 2000 ""]
+	Line[535875 178625 535875 160125 4000 2000 ""]
+	Line[535875 160125 537000 159000 4000 2000 ""]
+	Line[539190 156696 539196 156696 4000 2000 ""]
+	Line[539196 156696 544500 162000 4000 2000 ""]
+	Line[544500 162000 544500 173500 4000 2000 ""]
+	Line[544500 173500 541250 176750 4000 2000 ""]
+	Line[541250 176750 541250 162560 4000 2000 ""]
+	Line[541250 162560 539190 160500 4000 2000 ""]
+	Line[553500 178000 570000 178000 4000 2000 ""]
+	Line[570000 178000 570500 177500 4000 2000 ""]
+	Line[570500 177500 556500 177500 4000 2000 ""]
+	Line[556500 177500 553500 174500 4000 2000 ""]
+	Line[553500 174500 567500 174500 4000 2000 ""]
+	Line[567500 174500 568000 174000 4000 2000 ""]
+	Line[568000 174000 560500 174000 4000 2000 ""]
+	Line[560500 174000 558500 172000 4000 2000 ""]
+	Line[551500 180000 571000 180000 4000 2000 ""]
+	Line[571000 180000 572000 181000 4000 2000 ""]
+	Line[572000 181000 559000 181000 4000 2000 ""]
+	Line[559000 181000 555500 184500 4000 2000 ""]
+	Line[555500 184500 568500 184500 4000 2000 ""]
+	Line[568500 184500 569000 184000 4000 2000 ""]
+	Line[533500 151000 533500 162500 4000 2000 ""]
+	Line[533500 162500 534500 163500 4000 2000 ""]
+	Line[534500 163500 534500 153500 4000 2000 ""]
+	Line[534500 153500 537500 150500 4000 2000 ""]
+	Line[537500 150500 542500 150500 4000 2000 ""]
+	Line[542500 150500 543000 151000 4000 2000 ""]
+	Line[543000 151000 545000 151000 4000 2000 ""]
+	Line[545000 151000 546000 152000 4000 2000 ""]
+	Line[546000 152000 546000 161500 4000 2000 ""]
+	Line[546000 161500 544500 163000 4000 2000 ""]
+	Line[544500 163000 544500 152500 4000 2000 ""]
+	Line[544500 152500 542500 150500 4000 2000 ""]
+	Line[542500 150500 542500 151690 4000 2000 ""]
+	Line[542500 151690 539190 155000 4000 2000 ""]
+	Line[539190 155000 535500 155000 4000 2000 ""]
+	Line[535500 155000 533500 153000 4000 2000 ""]
+	Line[533500 153000 533500 166500 4000 2000 ""]
+	Line[533500 166500 534500 167500 4000 2000 ""]
+	Line[534500 167500 533000 167500 4000 2000 ""]
+	Line[533000 167500 530500 170000 4000 2000 ""]
+	Line[530500 170000 542500 170000 4000 2000 ""]
+	Line[547000 165500 547000 165000 4000 2000 ""]
+	Line[547000 165000 544500 162500 4000 2000 ""]
+	Line[544500 162500 546500 162500 4000 2000 ""]
+	Line[546500 162500 548250 164250 4000 2000 ""]
+	Line[542500 170000 548250 164250 4000 2000 ""]
+	Line[547000 165500 544500 168000 4000 2000 ""]
+	Line[484000 169000 524000 169000 4000 2000 ""]
+	Line[524000 169000 524500 168500 4000 2000 ""]
+	Line[524500 171500 482000 171500 4000 2000 ""]
+	Line[482000 171500 526500 171500 4000 2000 ""]
+	Line[526500 171500 527000 172000 4000 2000 ""]
+	Line[527000 172000 526500 172000 4000 2000 ""]
+	Line[526500 172000 526000 171500 4000 2000 ""]
+	Line[526000 171500 484500 171500 4000 2000 ""]
+	Line[484000 174500 523500 174500 4000 2000 ""]
+	Line[523500 174500 526000 172000 4000 2000 ""]
+	Line[488500 162000 518000 162000 4000 2000 ""]
+	Line[518000 162000 518000 169000 4000 2000 ""]
+	Line[518000 169000 518000 166000 4000 2000 ""]
+	Line[518000 166000 488000 166000 4000 2000 ""]
+	Line[488000 166000 488000 162000 4000 2000 ""]
+	Line[488000 162000 488000 168500 4000 2000 ""]
+	Line[488000 168500 487500 169000 4000 2000 ""]
+	Line[533500 150000 547500 150000 4000 2000 ""]
+	Line[547500 150000 548000 150500 4000 2000 ""]
+	Line[548000 150500 548000 168000 4000 2000 ""]
+	Line[548000 168000 549000 169000 4000 2000 ""]
+	Line[476000 157000 476000 169500 2500 2000 ""]
+	Line[476000 157500 533000 157500 2500 2000 ""]
+	Line[533000 157500 533500 158000 2500 2000 ""]
+	Line[533500 160500 476500 160500 2500 2000 ""]
+	Line[476500 160500 476000 161000 2500 2000 ""]
+	Line[532000 160500 532000 158000 2500 2000 ""]
+	Line[532000 158000 531500 157500 2500 2000 ""]
+	Line[532500 160500 478000 160500 4000 2000 ""]
+	Line[478000 160500 478000 171000 4000 2000 ""]
+	Line[478000 171000 477500 171500 4000 2000 ""]
+	Line[477500 171500 477500 167500 4000 2000 ""]
+	Line[477500 167500 482000 163000 4000 2000 ""]
+	Line[482000 163000 484500 163000 4000 2000 ""]
+	Line[484500 163000 485000 163500 4000 2000 ""]
+	Line[485000 163500 485000 169000 4000 2000 ""]
+	Line[485000 169000 485000 168000 4000 2000 ""]
+	Line[485000 168000 482500 165500 4000 2000 ""]
+	Line[482500 165500 479500 165500 4000 2000 ""]
+	Line[479500 165500 479000 166000 4000 2000 ""]
+	Line[519000 162000 531500 162000 4000 2000 ""]
+	Line[531500 162000 533500 164000 4000 2000 ""]
+	Line[533500 164000 531500 164000 4000 2000 ""]
+	Line[531500 164000 529000 166500 4000 2000 ""]
+	Line[529000 166500 525000 166500 4000 2000 ""]
+	Line[525000 166500 523500 165000 4000 2000 ""]
+	Line[523500 165000 529500 165000 4000 2000 ""]
+	Line[529500 165000 530000 165500 4000 2000 ""]
+	Line[530000 165500 520000 165500 4000 2000 ""]
+	Line[520000 165500 519500 166000 4000 2000 ""]
+	Line[473500 157000 473500 168000 2500 2000 ""]
+	Line[471500 157000 471500 167500 2500 2000 ""]
+	Line[470000 157000 470000 168500 2500 2000 ""]
+	Line[468000 157000 468000 168000 2500 2000 ""]
+	Line[417440 188130 417440 206340 2500 2000 ""]
+	Line[417440 206340 418490 207390 2500 2000 ""]
+	Line[418490 207390 418490 190370 2500 2000 ""]
+	Line[418490 190370 417440 189320 2500 2000 ""]
+	Line[417440 189320 417440 202630 2500 2000 ""]
+	Line[417440 202630 415650 204420 2500 2000 ""]
+	Line[415650 204420 415650 185970 2500 2000 ""]
+	Line[415650 185970 415990 185630 2500 2000 ""]
+	Line[419950 190390 419950 203460 2500 2000 ""]
+	Line[419950 203460 418490 204920 2500 2000 ""]
+	Line[415650 201790 415650 190980 2500 2000 ""]
+	Line[414390 189010 414390 200290 1000 2000 ""]
+	Line[414390 200290 415650 201550 1000 2000 ""]
+	Polygon("clearpoly")
+	(
+		[414000 167500] [600000 167500] [600000 346500] [414000 346500] 
+	)
+)
+Layer(3 "Signal_Top")
+(
+	Line[185670 168484 185670 172478 1000 2000 "clearline"]
+	Line[185670 172478 185648 172500 1000 2000 "clearline"]
+	Line[185670 153484 179194 153484 1000 2000 ""]
+	Line[179194 153484 178850 153140 1000 2000 ""]
+	Line[185670 155984 179154 155984 1000 2000 ""]
+	Line[179154 155984 178850 156288 1000 2000 ""]
+	Line[178770 153484 175741 153484 1000 2000 ""]
+	Line[175741 153484 174329 154896 1000 2000 ""]
+	Line[185670 158484 174768 158484 1000 2000 ""]
+	Line[174768 158484 174329 158044 1000 2000 ""]
+	Line[171008 160760 185446 160760 1000 2000 ""]
+	Line[185446 160760 185670 160984 1000 2000 ""]
+	Line[185670 163484 177410 163484 1000 2000 ""]
+	Line[177410 163484 177130 163764 1000 2000 ""]
+)
+Layer(4 "Signal_GND_Top")
 (
 )
-Layer(2 "solder")
+Layer(5 "Power_GND_Top")
+(
+	Line[539190 179137 538863 179137 4000 2000 ""]
+	Line[528000 130000 548000 130000 4000 2000 ""]
+	Line[548000 130000 542000 130000 4000 2000 ""]
+	Line[542000 130000 538000 126000 4000 2000 ""]
+	Line[538000 126000 534000 130000 4000 2000 ""]
+	Line[534000 130000 534000 140500 4000 2000 ""]
+	Line[534000 140500 534500 141000 4000 2000 ""]
+	Line[534500 141000 543500 141000 4000 2000 ""]
+	Line[543500 141000 546000 138500 4000 2000 ""]
+	Line[546000 138500 546000 131000 4000 2000 ""]
+	Line[546000 131000 545000 130000 4000 2000 ""]
+	Line[545000 130000 541000 130000 4000 2000 ""]
+	Line[541000 130000 541000 139500 4000 2000 ""]
+	Line[541000 139500 542500 141000 4000 2000 ""]
+	Line[542500 141000 542500 137565 4000 2000 ""]
+	Line[542500 137565 539190 134255 4000 2000 ""]
+	Line[544745 134255 546000 133000 4000 2000 ""]
+	Line[546000 133000 538000 141000 4000 2000 ""]
+	Line[538000 141000 536000 141000 4000 2000 ""]
+	Line[536000 141000 534000 139000 4000 2000 ""]
+	Line[534000 139000 534445 139000 4000 2000 ""]
+	Line[534445 139000 539190 134255 4000 2000 ""]
+	Line[544745 134255 534255 134255 4000 2000 ""]
+	Line[534255 134255 534000 134000 4000 2000 ""]
+	Line[534000 134000 534000 133000 4000 2000 ""]
+	Line[534000 133000 537000 130000 4000 2000 ""]
+	Line[537000 130000 545000 130000 4000 2000 ""]
+	Line[545000 130000 545000 135000 4000 2000 ""]
+	Line[545000 135000 546000 136000 4000 2000 ""]
+	Line[546000 136000 546000 138500 4000 2000 ""]
+	Line[546000 138500 544500 140000 4000 2000 ""]
+	Line[544500 140000 544500 138000 4000 2000 ""]
+	Line[544500 138000 542500 136000 4000 2000 ""]
+	Line[555000 129000 568000 129000 4000 2000 ""]
+	Line[568000 129000 569000 128000 4000 2000 ""]
+	Line[569000 128000 569000 135500 4000 2000 ""]
+	Line[569000 135500 564500 140000 4000 2000 ""]
+	Line[564500 140000 564500 137124 4000 2000 ""]
+	Line[561631 134255 561631 139869 4000 2000 ""]
+	Line[561631 139869 560500 141000 4000 2000 ""]
+	Line[560500 141000 556000 141000 4000 2000 ""]
+	Line[556000 141000 553000 138000 4000 2000 ""]
+	Line[553000 138000 553000 136500 4000 2000 ""]
+	Line[553000 136500 554000 135500 4000 2000 ""]
+	Line[554000 135500 560386 135500 4000 2000 ""]
+	Line[560386 135500 561631 134255 4000 2000 ""]
+	Line[561631 134255 561631 136869 4000 2000 ""]
+	Line[561631 136869 557500 141000 4000 2000 ""]
+	Line[557500 141000 557500 137500 4000 2000 ""]
+	Line[557500 137500 555500 135500 4000 2000 ""]
+	Line[555500 135500 555500 132000 4000 2000 ""]
+	Line[555500 132000 559376 132000 4000 2000 ""]
+	Line[564500 137124 559376 132000 4000 2000 ""]
+	Line[561631 134255 570245 134255 4000 2000 ""]
+	Line[570245 134255 572500 132000 4000 2000 ""]
+	Line[572500 132000 570000 132000 4000 2000 ""]
+	Line[570000 132000 569000 133000 4000 2000 ""]
+	Line[569000 133000 568000 133000 4000 2000 ""]
+	Line[568000 133000 564000 129000 4000 2000 ""]
+	Line[564000 129000 563000 129000 4000 2000 ""]
+	Line[563000 129000 563000 131500 4000 2000 ""]
+	Line[563000 131500 560938 133562 4000 2000 ""]
+	Line[560938 133562 562938 135562 4000 2000 ""]
+	Line[559500 139000 559500 154565 4000 2000 ""]
+	Line[559500 154565 561631 156696 4000 2000 ""]
+	Line[561631 156696 561631 142869 4000 2000 ""]
+	Line[561631 142869 563500 141000 4000 2000 ""]
+	Line[563500 141000 563500 154827 4000 2000 ""]
+	Line[563500 154827 561631 156696 4000 2000 ""]
+	Line[556000 141000 556000 151065 4000 2000 ""]
+	Line[556000 151065 561631 156696 4000 2000 ""]
+	Line[561631 156696 558196 156696 4000 2000 ""]
+	Line[558196 156696 555500 154000 4000 2000 ""]
+	Line[555500 154000 555500 161500 4000 2000 ""]
+	Line[555500 161500 556000 162000 4000 2000 ""]
+	Line[556000 162000 567000 162000 4000 2000 ""]
+	Line[567000 162000 567000 143500 4000 2000 ""]
+	Line[567000 143500 566500 143000 4000 2000 ""]
+	Line[566500 143000 566500 158000 4000 2000 ""]
+	Line[566500 158000 567000 158500 4000 2000 ""]
+	Line[555500 162500 555500 141000 4000 2000 ""]
+	Line[488000 137000 519000 137000 4000 2000 ""]
+	Line[519000 137000 519500 137500 4000 2000 ""]
+	Line[484500 142000 524500 142000 4000 2000 ""]
+	Line[524500 142000 526500 140000 4000 2000 ""]
+	Line[526500 140000 479500 140000 4000 2000 ""]
+	Line[479500 140000 479000 139500 4000 2000 ""]
+	Line[486000 149000 520500 149000 4000 2000 ""]
+	Line[520500 149000 520500 138500 4000 2000 ""]
+	Line[517000 149000 517000 137000 4000 2000 ""]
+	Line[486000 149000 486000 140000 4000 2000 ""]
+	Line[490000 149000 490000 137500 4000 2000 ""]
+	Line[490000 137500 490500 137000 4000 2000 ""]
+	Line[493500 149000 493500 137000 4000 2000 ""]
+	Line[490000 146500 517000 146500 4000 2000 ""]
+	Line[486000 144500 517000 144500 4000 2000 ""]
+	Line[476500 142000 476500 152500 4000 2000 ""]
+	Line[476500 152500 495000 152500 4000 2000 ""]
+	Line[495000 152500 490500 152500 4000 2000 ""]
+	Line[490500 152500 482500 144500 4000 2000 ""]
+	Line[482500 144500 482500 149000 4000 2000 ""]
+	Line[482500 149000 480500 149000 4000 2000 ""]
+	Line[480500 149000 480000 149500 4000 2000 ""]
+	Line[480000 149500 480000 143000 4000 2000 ""]
+	Line[480000 143000 479500 142500 4000 2000 ""]
+	Line[495000 152500 464500 152500 4000 2000 ""]
+	Line[464500 141500 464500 152500 4000 2000 ""]
+	Line[464500 152500 467500 152500 4000 2000 ""]
+	Line[467500 152500 476500 143500 4000 2000 ""]
+	Line[476500 143500 476500 147000 4000 2000 ""]
+	Line[476500 147000 473500 150000 4000 2000 ""]
+	Line[473500 150000 468500 150000 4000 2000 ""]
+	Line[468500 150000 467500 149000 4000 2000 ""]
+	Line[467500 149000 467500 144500 4000 2000 ""]
+	Line[467500 144500 472500 144500 4000 2000 ""]
+	Line[472500 144500 474000 146000 4000 2000 ""]
+	Line[474000 146000 472000 146000 4000 2000 ""]
+	Line[472000 146000 468000 150000 4000 2000 ""]
+	Line[493500 152500 522000 152500 4000 2000 ""]
+	Line[522000 152500 524500 150000 4000 2000 ""]
+	Line[524500 150000 524500 145000 4000 2000 ""]
+	Line[524500 145000 523000 143500 4000 2000 ""]
+	Line[523000 143500 532500 143500 4000 2000 ""]
+	Line[532500 143500 533000 143000 4000 2000 ""]
+	Line[533000 143000 531500 143000 4000 2000 ""]
+	Line[531500 143000 525000 149500 4000 2000 ""]
+	Line[532000 143500 556000 143500 4000 2000 ""]
+	Line[522250 152250 526750 152250 4000 2000 ""]
+	Line[526750 152250 527000 152000 4000 2000 ""]
+	Line[527000 152000 527000 147500 4000 2000 ""]
+	Line[527000 147500 527750 146750 4000 2000 ""]
+	Line[427500 34500 444500 34500 4000 2000 ""]
+	Line[445000 34000 434500 34000 4000 2000 ""]
+	Line[434500 34000 432500 32000 4000 2000 ""]
+	Line[432500 32000 437000 32000 4000 2000 ""]
+	Line[437000 32000 437500 31500 4000 2000 ""]
+	Line[428000 37000 442000 37000 4000 2000 ""]
+	Line[445000 34000 442000 37000 4000 2000 ""]
+	Line[444500 34500 436000 34500 4000 2000 ""]
+	Line[436000 34500 428000 42500 4000 2000 ""]
+	Line[428000 42500 429000 41500 4000 2000 ""]
+	Line[429000 41500 429000 38000 4000 2000 ""]
+	Line[429000 38000 430000 37000 4000 2000 ""]
+	Line[430000 37000 430000 42500 4000 2000 ""]
+	Line[430000 42500 433000 45500 4000 2000 ""]
+	Line[433000 45500 437000 45500 4000 2000 ""]
+	Line[437000 45500 438500 44000 4000 2000 ""]
+	Line[438500 44000 438500 42059 4000 2000 ""]
+	Line[438500 42059 434941 38500 4000 2000 ""]
+	Line[434941 38500 439500 38500 4000 2000 ""]
+	Line[439500 38500 441000 37000 4000 2000 ""]
+	Line[441000 37000 441000 39500 4000 2000 ""]
+	Line[441000 39500 438500 42000 4000 2000 ""]
+	Line[438500 42000 429000 42000 4000 2000 ""]
+	Line[430000 52000 430000 68000 4000 2000 ""]
+	Line[430000 68000 430500 68500 4000 2000 ""]
+	Line[430500 68500 430500 59500 4000 2000 ""]
+	Line[430500 59500 436000 54000 4000 2000 ""]
+	Line[436000 54000 431000 54000 4000 2000 ""]
+	Line[431000 54000 430000 55000 4000 2000 ""]
+	Line[430000 55000 437500 55000 4000 2000 ""]
+	Line[437500 55000 442000 59500 4000 2000 ""]
+	Line[442000 59500 442000 63000 4000 2000 ""]
+	Line[442000 63000 441000 64000 4000 2000 ""]
+	Line[441000 64000 440500 64000 4000 2000 ""]
+	Line[440500 64000 435500 69000 4000 2000 ""]
+	Line[435500 69000 434500 69000 4000 2000 ""]
+	Line[434500 69000 430000 64500 4000 2000 ""]
+	Line[430000 64500 431382 64500 4000 2000 ""]
+	Line[434941 60941 434941 64441 4000 2000 ""]
+	Line[434941 64441 437500 67000 4000 2000 ""]
+	Line[437500 67000 437500 61000 4000 2000 ""]
+	Line[437500 61000 440500 58000 4000 2000 ""]
+	Line[440500 58000 437882 58000 4000 2000 ""]
+	Line[431382 64500 437882 58000 4000 2000 ""]
+	Line[434941 60941 431941 60941 4000 2000 ""]
+	Line[431941 60941 430000 59000 4000 2000 ""]
+	Line[430000 59000 432000 59000 4000 2000 ""]
+	Line[432000 59000 438750 65750 4000 2000 ""]
+	Line[438750 65750 438750 65250 4000 2000 ""]
+	Line[438750 65250 442000 62000 4000 2000 ""]
+	Line[442000 62000 439500 62000 4000 2000 ""]
+	Line[439500 62000 438000 60500 4000 2000 ""]
+	Line[438000 60500 438000 56000 4000 2000 ""]
+	Line[438000 56000 437000 55000 4000 2000 ""]
+	Line[437000 55000 437000 56000 4000 2000 ""]
+	Line[437000 56000 430000 63000 4000 2000 ""]
+	Line[430000 63000 414559 63000 4000 2000 ""]
+	Line[414559 63000 412500 60941 4000 2000 ""]
+	Line[412500 60941 429559 60941 4000 2000 ""]
+	Line[429559 60941 430000 60500 4000 2000 ""]
+	Line[430000 60500 428000 60500 4000 2000 ""]
+	Line[428000 60500 423000 55500 4000 2000 ""]
+	Line[423000 55500 407500 55500 4000 2000 ""]
+	Line[407500 55500 407500 67500 4000 2000 ""]
+	Line[407500 67500 424500 67500 4000 2000 ""]
+	Line[424500 67500 422000 67500 4000 2000 ""]
+	Line[422000 67500 417500 63000 4000 2000 ""]
+	Line[417500 63000 419500 63000 4000 2000 ""]
+	Line[419500 63000 424000 67500 4000 2000 ""]
+	Line[424000 67500 419059 67500 4000 2000 ""]
+	Line[419059 67500 412500 60941 4000 2000 ""]
+	Line[412500 60941 412500 66500 4000 2000 ""]
+	Line[412500 66500 411500 67500 4000 2000 ""]
+	Line[411500 67500 411500 61941 4000 2000 ""]
+	Line[411500 61941 412500 60941 4000 2000 ""]
+	Line[412500 60941 417059 60941 4000 2000 ""]
+	Line[417059 60941 420000 58000 4000 2000 ""]
+	Line[420000 58000 422000 58000 4000 2000 ""]
+	Line[422000 58000 422500 58500 4000 2000 ""]
+	Line[422500 58500 408000 58500 4000 2000 ""]
+	Line[408000 58500 407500 59000 4000 2000 ""]
+	Line[417000 55500 428000 55500 4000 2000 ""]
+	Line[428000 55500 430000 53500 4000 2000 ""]
+	Line[435500 86000 416500 86000 4000 2000 ""]
+	Line[416500 86000 416500 77500 4000 2000 ""]
+	Line[416500 77500 436000 77500 4000 2000 ""]
+	Line[436000 77500 436000 97500 4000 2000 ""]
+	Line[436000 97500 416500 97500 4000 2000 ""]
+	Line[419000 77500 419000 97500 4000 2000 ""]
+	Line[422000 77500 422000 97500 4000 2000 ""]
+	Line[424500 77500 424500 97500 4000 2000 ""]
+	Line[426500 77500 426500 94500 4000 2000 ""]
+	Line[426500 94500 427000 95000 4000 2000 ""]
+	Line[430000 97500 430000 77500 4000 2000 ""]
+	Line[416500 103000 426500 103000 4000 2000 ""]
+	Line[426500 103000 426500 100000 4000 2000 ""]
+	Line[426500 100000 419000 100000 4000 2000 ""]
+	Line[417000 67500 417000 79000 4000 2000 ""]
+	Line[417000 79000 416500 79500 4000 2000 ""]
+	Line[416500 79500 416500 68500 4000 2000 ""]
+	Line[416500 68500 415500 67500 4000 2000 ""]
+	Line[420000 77500 420000 68000 4000 2000 ""]
+	Line[420000 68000 420500 67500 4000 2000 ""]
+	Line[420500 67500 423500 67500 4000 2000 ""]
+	Line[423500 67500 423500 76500 4000 2000 ""]
+	Line[423500 76500 422500 77500 4000 2000 ""]
+	Line[427000 114500 415148 114500 2500 2000 ""]
+	Line[425500 112000 415500 112000 2500 2000 ""]
+	Line[425500 118000 415500 118000 2500 2000 ""]
+	Line[415500 118000 415500 112000 2500 2000 ""]
+	Line[416500 103000 416500 112000 2500 2000 ""]
+	Line[419000 103000 419000 111500 2500 2000 ""]
+	Line[419000 111500 419500 112000 2500 2000 ""]
+	Line[419500 112000 419500 104500 2500 2000 ""]
+	Line[419500 104500 421000 103000 2500 2000 ""]
+	Line[419000 105000 425000 105000 2500 2000 ""]
+	Line[425000 105000 425500 105500 2500 2000 ""]
+	Line[425500 105500 424500 105500 2500 2000 ""]
+	Line[424500 105500 422000 108000 2500 2000 ""]
+	Line[422000 108000 422000 106000 2500 2000 ""]
+	Line[422000 106000 421000 105000 2500 2000 ""]
+	Line[421000 105000 421000 112000 2500 2000 ""]
+	Line[421000 112000 424000 112000 2500 2000 ""]
+	Line[424000 112000 424000 108500 2500 2000 ""]
+	Line[424000 108500 422750 107250 2500 2000 ""]
+	Line[422750 107250 422750 111750 2500 2000 ""]
+	Line[422750 111750 422500 112000 2500 2000 ""]
+	Line[416500 86500 416500 112000 4000 2000 ""]
+	Line[425000 116500 415500 116500 2500 2000 ""]
+	Line[414110 107170 416330 107170 1000 2000 ""]
+	Line[416330 107170 416500 107340 1000 2000 ""]
+	Line[416500 107340 414810 107340 1000 2000 ""]
+	Line[414810 107340 414180 107970 1000 2000 ""]
+	Line[414180 107970 414180 108830 1000 2000 ""]
+	Line[414180 108830 414390 109040 1000 2000 ""]
+	Line[414390 109040 414390 107590 1000 2000 ""]
+	Line[414390 107590 413970 107170 1000 2000 ""]
+	Line[413970 107170 413970 109040 1000 2000 ""]
+	Line[413970 109040 414180 109250 1000 2000 ""]
+	Line[414180 109250 414180 109980 1000 2000 ""]
+	Line[414180 109980 414320 110120 1000 2000 ""]
+	Line[414320 110120 413410 110120 1000 2000 ""]
+	Line[413410 110120 413410 106960 1000 2000 ""]
+	Line[413410 106960 413450 106920 1000 2000 ""]
+	Line[413450 106920 414940 106920 1000 2000 ""]
+	Line[414940 106920 415190 107170 1000 2000 ""]
+	Line[418360 112000 415000 112000 4000 2000 ""]
+	Line[413720 118700 413720 112110 1000 2000 ""]
+	Line[413720 112110 413830 112000 1000 2000 ""]
+	Line[413830 112000 413830 118520 1000 2000 ""]
+	Line[413830 118520 413720 118630 1000 2000 ""]
+	Line[413720 118630 415520 118630 1000 2000 ""]
+	Line[415520 118630 416150 118000 1000 2000 ""]
+	Line[416700 118000 416700 143900 4000 2000 ""]
+	Line[416700 143900 416740 143940 4000 2000 ""]
+	Line[416740 143940 421140 143940 4000 2000 ""]
+	Line[421140 143940 421230 143850 4000 2000 ""]
+	Line[421230 143850 421230 118030 4000 2000 ""]
+	Line[421230 118030 421260 118000 4000 2000 ""]
+	Line[421260 118000 419650 118000 4000 2000 ""]
+	Line[419650 118000 419650 143430 4000 2000 ""]
+	Line[419650 143430 419140 143940 4000 2000 ""]
+	Polygon("clearpoly")
+	(
+		[600000 143500] [424500 143500] [424500 29000] [600000 29000] 
+	)
+	Polygon("clearpoly")
+	(
+		[414460 149050] [425590 149050] [425590 104640] [414460 104640] 
+	)
+	Polygon("clearpoly")
+	(
+		[414270 148800] [469200 148800] [469200 141690] [414270 141690] 
+	)
+	Polygon("clearpoly")
+	(
+		[464330 149220] [414590 149220] [414590 141590] [464330 141590] 
+	)
+)
+Layer(6 "Vin_Bottom")
 (
 )
-Layer(3 "outline")
+Layer(7 "Vout_Bottom")
 (
 )
-Layer(4 "GND")
+Layer(8 "Signal_Bottom")
 (
 )
-Layer(5 "power")
+Layer(9 "Signal_GND_Bottom")
+(
+	Line[202050 167520 215700 167520 4000 2000 ""]
+	Line[215700 167520 215790 167610 4000 2000 ""]
+	Line[215790 167610 205860 167610 4000 2000 ""]
+	Line[205860 167610 200690 172780 4000 2000 ""]
+	Line[200690 172780 209260 172780 4000 2000 ""]
+	Line[209260 172780 214520 167520 4000 2000 ""]
+	Line[214520 167520 210980 167520 4000 2000 ""]
+	Line[210980 167520 210000 168500 4000 2000 ""]
+	Line[185080 184660 185080 171930 4000 2000 ""]
+	Line[185080 171930 184400 171250 4000 2000 ""]
+	Line[184400 171250 184400 176770 4000 2000 ""]
+	Line[184400 176770 181770 179400 4000 2000 ""]
+	Line[181770 179400 181770 172010 4000 2000 ""]
+	Line[181770 172010 181690 171930 4000 2000 ""]
+	Line[165290 158110 165290 164330 1000 2000 ""]
+	Line[165290 164330 165330 164370 1000 2000 ""]
+	Line[165330 164370 165330 158330 1000 2000 ""]
+	Line[165330 158330 166170 157490 1000 2000 ""]
+	Line[166170 157490 166170 164390 1000 2000 ""]
+	Line[166170 164390 166150 164410 1000 2000 ""]
+	Line[166150 164410 166530 164410 1000 2000 ""]
+	Line[166530 164410 167270 163670 1000 2000 ""]
+	Line[167270 163670 167270 157690 1000 2000 ""]
+	Line[167270 157690 166830 157250 1000 2000 ""]
+	Line[166830 157250 166590 157250 1000 2000 ""]
+	Line[166590 157250 166500 157160 1000 2000 ""]
+	Line[166500 157160 166500 164420 1000 2000 ""]
+	Line[166500 164420 167030 164950 1000 2000 ""]
+	Line[168210 164310 168210 158430 1000 2000 ""]
+	Line[168210 158430 167270 157490 1000 2000 ""]
+	Line[165290 164430 165290 158290 1000 2000 ""]
+	Line[165290 158290 164530 157530 1000 2000 ""]
+	Line[164530 157530 164600 157600 1000 2000 ""]
+	Line[164600 157600 164600 163620 1000 2000 ""]
+	Line[164600 163620 165290 164310 1000 2000 ""]
+	Line[171610 161160 171610 166050 2500 2000 ""]
+	Line[171610 166050 171580 166080 2500 2000 ""]
+	Line[171580 166080 173880 166080 2500 2000 ""]
+	Line[173880 166080 173980 166180 2500 2000 ""]
+	Line[173980 166180 173980 161100 2500 2000 ""]
+	Line[173980 161100 173710 160830 2500 2000 ""]
+	Line[173710 160830 173710 162290 2500 2000 ""]
+	Line[173710 162290 171610 164390 2500 2000 ""]
+	Polygon("clearpoly")
+	(
+		[48000 135500] [236500 135500] [236500 306500] [48000 306500] 
+	)
+)
+Layer(10 "Power_GND_Bottom")
 (
 )
-Layer(6 "signal1")
+Layer(11 "silk")
 (
 )
-Layer(7 "signal2")
+Layer(12 "silk")
 (
+	Text[541500 97500 0 500 "GND" "clearline"]
+	Text[271500 30240 0 500 "+24V IN" "clearline"]
+	Text[450990 29440 0 500 "GND" "clearline"]
+	Text[502680 187000 0 500 "+5V Out" "clearline"]
 )
-Layer(8 "signal3")
+NetList()
 (
-)
-Layer(9 "silk")
-(
-)
-Layer(10 "silk")
-(
+	Net("5Vout" "(unknown)")
+	(
+		Connect("C112-1")
+		Connect("C119-1")
+		Connect("CONN102-1")
+		Connect("CONN102-2")
+		Connect("CONN102-3")
+		Connect("L101-2")
+		Connect("R115-2")
+	)
+	Net("EN" "(unknown)")
+	(
+		Connect("R103-2")
+		Connect("U101-4")
+	)
+	Net("PGND" "(unknown)")
+	(
+		Connect("C101-2")
+		Connect("C102-2")
+		Connect("C103-2")
+		Connect("C104-1")
+		Connect("C105-2")
+		Connect("C106-2")
+		Connect("C107-2")
+		Connect("C112-2")
+		Connect("C113-2")
+		Connect("C119-2")
+		Connect("CONN101-1")
+		Connect("CONN101-2")
+		Connect("CONN101-3")
+		Connect("CONN102-4")
+		Connect("CONN102-5")
+		Connect("CONN102-6")
+		Connect("R107-2")
+		Connect("R109-2")
+		Connect("R113-2")
+		Connect("R114-2")
+		Connect("U101-9")
+		Connect("U101-10")
+		Connect("U?-?")
+	)
+	Net("PGOOD_OUT" "(unknown)")
+	(
+		Connect("R104-2")
+		Connect("U101-3")
+	)
+	Net("unnamed_net1" "(unknown)")
+	(
+		Connect("C104-2")
+		Connect("R103-1")
+		Connect("R104-1")
+		Connect("R105-2")
+		Connect("U101-2")
+	)
+	Net("unnamed_net2" "(unknown)")
+	(
+		Connect("R109-1")
+		Connect("U101-5")
+	)
+	Net("unnamed_net3" "(unknown)")
+	(
+		Connect("C113-1")
+		Connect("C114-2")
+		Connect("R110-2")
+		Connect("U101-6")
+	)
+	Net("unnamed_net4" "(unknown)")
+	(
+		Connect("C114-1")
+		Connect("C115-1")
+		Connect("C116-1")
+		Connect("R112-1")
+		Connect("R113-1")
+		Connect("U101-7")
+	)
+	Net("unnamed_net5" "(unknown)")
+	(
+		Connect("R114-1")
+		Connect("U101-8")
+	)
+	Net("unnamed_net6" "(unknown)")
+	(
+		Connect("C105-1")
+		Connect("D101-1")
+		Connect("R105-1")
+		Connect("U101-11")
+	)
+	Net("unnamed_net7" "(unknown)")
+	(
+		Connect("U101-12")
+		Connect("U?-?")
+	)
+	Net("unnamed_net8" "(unknown)")
+	(
+		Connect("C108-1")
+		Connect("D101-2")
+		Connect("U101-13")
+	)
+	Net("unnamed_net9" "(unknown)")
+	(
+		Connect("C108-2")
+		Connect("C109-2")
+		Connect("L101-1")
+		Connect("U101-14")
+		Connect("U101-16")
+		Connect("U?-?")
+	)
+	Net("unnamed_net10" "(unknown)")
+	(
+		Connect("U101-15")
+		Connect("U?-?")
+	)
+	Net("unnamed_net11" "(unknown)")
+	(
+		Connect("C115-2")
+		Connect("R110-1")
+	)
+	Net("unnamed_net12" "(unknown)")
+	(
+		Connect("R111-2")
+		Connect("R112-2")
+		Connect("R115-1")
+	)
+	Net("unnamed_net13" "(unknown)")
+	(
+		Connect("C116-2")
+		Connect("R111-1")
+	)
+	Net("unnamed_net14" "(unknown)")
+	(
+		Connect("C109-1")
+		Connect("R107-1")
+	)
+	Net("VIN" "(unknown)")
+	(
+		Connect("C101-1")
+		Connect("C102-1")
+		Connect("C103-1")
+		Connect("C106-1")
+		Connect("C107-1")
+		Connect("CONN101-4")
+		Connect("CONN101-5")
+		Connect("CONN101-6")
+		Connect("U101-1")
+		Connect("U?-?")
+	)
 )
