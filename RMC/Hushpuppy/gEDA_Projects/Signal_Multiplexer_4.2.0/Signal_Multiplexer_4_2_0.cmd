@@ -270,10 +270,6 @@ ChangePinName(LED105, 1, A)
 ChangePinName(CONN110, 1, 1)
 ChangePinName(CONN110, 2, 2)
 
-# Start of element CONN109
-ChangePinName(CONN109, 1, 1)
-ChangePinName(CONN109, 2, 2)
-
 # Start of element CONN108
 ChangePinName(CONN108, 1, 1)
 ChangePinName(CONN108, 2, 2)
@@ -302,10 +298,6 @@ ChangePinName(U101, 1, 1)
 ChangePinName(R105, 1, 1)
 ChangePinName(R105, 2, 2)
 
-# Start of element R104
-ChangePinName(R104, 1, 1)
-ChangePinName(R104, 2, 2)
-
 # Start of element R103
 ChangePinName(R103, 1, 1)
 ChangePinName(R103, 2, 2)
@@ -317,10 +309,6 @@ ChangePinName(R102, 2, 2)
 # Start of element LED104
 ChangePinName(LED104, 2, K)
 ChangePinName(LED104, 1, A)
-
-# Start of element LED103
-ChangePinName(LED103, 2, K)
-ChangePinName(LED103, 1, A)
 
 # Start of element LED102
 ChangePinName(LED102, 2, K)
