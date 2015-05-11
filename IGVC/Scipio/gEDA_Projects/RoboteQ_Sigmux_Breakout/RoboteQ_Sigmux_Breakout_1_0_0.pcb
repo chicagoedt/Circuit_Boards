@@ -6,7 +6,7 @@ FileVersion[20070407]
 PCB["" 380000 180000]
 
 Grid[500.0 0 0 0]
-Cursor[99000 68000 0.000000]
+Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[700 1000 700 500 800 500]
@@ -802,7 +802,7 @@ Via[198000 138500 5000 2000 0 2500 "" ""]
 Via[217000 138500 5000 2000 0 2500 "" ""]
 Via[207500 138500 5000 2000 0 2500 "" ""]
 
-Element["" "SO14" "U102" "unknown" 326500 19000 -7500 1000 1 100 ""]
+Element["" "SO14" "U102" "unknown" 326500 19000 -14500 16500 0 100 ""]
 (
 	Attribute("device" "7432")
 	Attribute("manufacturer" "unknown")
@@ -1041,7 +1041,7 @@ Element["" "SIP10" "CONN106" "c6" 113000 169500 -20000 4000 0 100 ""]
 
 	)
 
-Element["" "SO8" "U101" "555" 270500 33000 -6000 2000 1 100 ""]
+Element["" "SO8" "U101" "555" 270500 33000 -7500 16000 0 100 ""]
 (
 	Attribute("device" "LM555")
 	Attribute("manufacturer" "unknown")
@@ -1118,7 +1118,7 @@ Element["" "SIP10" "CONN102" "c2" 213000 159500 -22000 -12500 0 100 ""]
 
 	)
 
-Element["" "mos" "Q101" "IRF520" 114000 27658 2529 -8403 3 100 ""]
+Element["" "mos" "Q101" "IRF520" 114000 27658 -5245 14813 0 100 ""]
 (
 	Attribute("device" "IRF 520")
 	Attribute("manufacturer" "unknown")
@@ -1253,7 +1253,7 @@ Element["" "1206" "R113" "330" 50905 105500 -5270 -10650 0 100 ""]
 
 	)
 
-Element["" "20mm fuse set" "F101" "1A" 348342 108370 0 0 1 100 ""]
+Element["" "20mm fuse set" "F101" "1A" 348342 108370 -4712 1972 0 100 ""]
 (
 	Attribute("device" "FUSE")
 	Attribute("manufacturer" "unknown")
