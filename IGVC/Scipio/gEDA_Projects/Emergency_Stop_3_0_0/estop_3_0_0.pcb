@@ -6,7 +6,7 @@ FileVersion[20070407]
 PCB["" 374016 236220]
 
 Grid[39.0 0 0 1]
-Cursor[356811 64467 0.000000]
+Cursor[0 312 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[700 1000 700 500 800 500]
@@ -840,7 +840,7 @@ Element["" "EVM-915-250-FCR" "W101" "unknown" 283140 124800 0 0 0 100 ""]
 
 	)
 
-Element["" "1206" "R102" "10" 193268 167739 -8415 4923 0 100 ""]
+Element["" "1206" "R102" "10" 193268 167739 -6114 4923 0 100 ""]
 (
 	Attribute("device" "RESISTOR")
 	Attribute("manufacturer" "unknown")
@@ -916,7 +916,7 @@ Element["" "CONNECTOR 1 2" "CONN102" "unknown" 110180 226007 17981 -3893 0 100 "
 
 	)
 
-Element["" "1206" "D101" "unknown" 89882 201929 -2287 6205 0 100 ""]
+Element["" "1206" "D101" "unknown" 89882 201929 -5485 4255 0 100 ""]
 (
 	Attribute("device" "LED")
 	Attribute("manufacturer" "unknown")
@@ -930,7 +930,7 @@ Element["" "1206" "D101" "unknown" 89882 201929 -2287 6205 0 100 ""]
 
 	)
 
-Element["" "1206" "R101" "330" 126732 202874 -15485 -11276 0 100 ""]
+Element["" "1206" "R101" "330" 126732 202874 -6944 -10613 0 100 ""]
 (
 	Attribute("device" "RESISTOR")
 	Attribute("manufacturer" "unknown")
@@ -1038,7 +1038,7 @@ Element["" "1206" "C102" "10uF" 193892 153036 -6296 4084 0 100 ""]
 
 	)
 
-Element["" "CONNECTOR 5 2" "CONN103" "unknown" 203986 33774 -30965 17119 0 100 ""]
+Element["" "CONNECTOR 5 2" "CONN103" "unknown" 203986 33774 -32330 15715 0 100 ""]
 (
 	Attribute("device" "CONNECTOR_10")
 	Attribute("manufacturer" "unknown")
@@ -1064,7 +1064,7 @@ Element["" "CONNECTOR 5 2" "CONN103" "unknown" 203986 33774 -30965 17119 0 100 "
 
 	)
 
-Element["" "CC3E" "C101" "unknown" 82040 148548 0 0 0 100 ""]
+Element["" "CC3E" "C101" "unknown" 82040 148548 -28314 39117 0 100 ""]
 (
 	Attribute("device" "CC3")
 	Attribute("manufacturer" "unknown")
@@ -1109,7 +1109,6 @@ Layer(1 "VCC")
 	Line[74902 82421 70984 86339 4000 2000 "clearline"]
 	Line[70984 86339 54252 86339 4000 2000 "clearline"]
 	Line[54252 86339 50472 90118 4000 2000 "clearline"]
-	Line[203986 43774 203986 46745 4000 2000 ""]
 	Line[49959 90831 49959 100191 4000 2000 ""]
 	Line[49959 100191 61425 111657 4000 2000 ""]
 	Line[61425 111657 147420 111657 4000 2000 ""]
@@ -1151,9 +1150,6 @@ Layer(1 "VCC")
 	Line[164307 186264 162669 186264 2500 2000 ""]
 	Line[162669 186264 162494 186440 2500 2000 ""]
 	Line[162494 186440 162494 193304 2500 2000 ""]
-	Line[203986 46800 204789 46800 4000 2000 ""]
-	Line[204789 46800 207051 44538 4000 2000 ""]
-	Line[207051 44538 201630 44538 4000 2000 ""]
 )
 Layer(2 "ground plane")
 (
