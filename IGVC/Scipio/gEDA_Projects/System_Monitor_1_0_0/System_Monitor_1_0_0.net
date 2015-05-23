@@ -1,0 +1,36 @@
+AGND	U101-31 
+AVcc	U101-30 
+unnamed_net30	U101-26 CONN101-26 
+GND	U101-11 CONN101-30 
+unnamed_net29	U101-29 CONN101-29 
+unnamed_net28	U101-28 CONN101-28 
+unnamed_net27	U101-27 CONN101-27 
+unnamed_net26	U101-2 CONN101-21 
+unnamed_net25	U101-25 CONN101-25 
+unnamed_net24	U101-24 CONN101-24 
+unnamed_net23	U101-23 CONN101-23 
+unnamed_net22	U101-22 CONN101-22 
+unnamed_net21	U101-1 CONN101-16 
+unnamed_net20	U101-21 CONN101-20 
+unnamed_net19	U101-20 CONN101-19 
+unnamed_net18	U101-19 CONN101-18 
+unnamed_net17	U101-18 CONN101-17 
+unnamed_net16	CONN101-11 
+unnamed_net15	CONN101-12 
+unnamed_net14	CONN101-10 
+unnamed_net13	CONN101-9 
+unnamed_net12	U101-17 CONN101-56 
+unnamed_net11	U101-7 CONN101-60 
+unnamed_net10	U101-6 CONN101-59 
+unnamed_net9	U101-8 CONN101-51 
+unnamed_net8	U101-16 CONN101-55 
+unnamed_net7	U101-15 CONN101-54 
+unnamed_net6	U101-14 CONN101-53 
+unnamed_net5	U101-5 CONN101-52 
+unnamed_net4	CONN101-41 
+unnamed_net3	CONN101-42 
+Vcc	U101-10 CONN101-31 
+unnamed_net2	CONN101-32 R103-1 
+Battery+	CONN101-3 CONN101-33 R102-2 
+Battery-	CONN101-6 CONN101-36 R101-1 
+unnamed_net1	U101-40 R102-1 R101-2 
