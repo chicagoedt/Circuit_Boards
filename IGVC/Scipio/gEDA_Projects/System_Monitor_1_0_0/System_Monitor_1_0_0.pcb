@@ -6,7 +6,7 @@ FileVersion[20070407]
 PCB["" 354300 220000]
 
 Grid[100.0 0 0 0]
-Cursor[0 7100 0.000000]
+Cursor[41700 36000 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[700 1000 700 500 800 500]
@@ -970,7 +970,7 @@ Element["onsolder" "1206" "D102" "Status 0" 20000 50000 5950 4350 2 100 "auto"]
 
 	)
 
-Element["" "CON_HDR-254P-5C-2R-10N__Molex_8624-Series" "J101" "ISP Programmer Interface (USBASP)" 197500 13600 -23400 11300 0 100 ""]
+Element["" "CON_HDR-254P-5C-2R-10N__Molex_8624-Series" "J101" "ISP Programmer Interface (USBASP)" 197500 13600 26000 4000 0 100 ""]
 (
 	Attribute("device" "HEADER10")
 	Attribute("manufacturer" "unknown")
@@ -1553,7 +1553,6 @@ Layer(10 "Signal Bottom")
 	Line[244700 205300 255100 205300 1000 2000 "clearline"]
 	Line[255100 205300 257300 203100 1000 2000 "clearline"]
 	Line[257300 203100 257300 192100 1000 2000 "clearline"]
-	Line[212300 172600 241400 130400 1000 2000 "clearline"]
 	Line[236500 75300 241400 70400 1000 2000 "clearline"]
 	Line[246300 123200 246300 75500 1000 2000 "clearline"]
 	Line[246300 75500 251400 70400 1000 2000 "clearline"]
@@ -1576,6 +1575,8 @@ Layer(10 "Signal Bottom")
 	Line[236500 132800 210100 159200 1000 2000 "clearline"]
 	Line[207300 190200 207300 162000 1000 2000 "clearline"]
 	Line[207300 162000 211000 158300 1000 2000 "clearline"]
+	Line[241400 130400 241400 143900 1000 2000 "clearline"]
+	Line[241400 143900 212300 173000 1000 2000 "clearline"]
 )
 Layer(11 "silk")
 (
@@ -1585,14 +1586,17 @@ Layer(11 "silk")
 	Text[27900 114700 2 100 "Status 3" "clearline,onsolder"]
 	Text[27900 139900 2 100 "Status 4" "clearline,onsolder"]
 	Text[27800 64800 2 100 "Status 1" "clearline,onsolder"]
-	Text[313500 39900 2 125 "Motor Monitor GPIO Jumper" "clearline,onsolder"]
+	Text[313500 39900 2 125 "Motor Monitor GPIO Jumper" "clearline,selected,onsolder"]
 )
 Layer(12 "silk")
 (
 	Text[255200 159100 0 125 "Battery Input" "clearline"]
-	Text[12300 2300 0 100 "System Monitor" "clearline"]
-	Text[12000 9700 0 100 "Revision 1.0.0" "clearline"]
-	Text[12300 16700 0 100 "05/2015" "clearline"]
+	Text[174700 23800 0 100 "USB ASP Header" "clearline"]
+	Text[257500 183800 0 100 "BAT -" "clearline"]
+	Text[287200 183700 0 100 "BAT +" "clearline"]
+	Text[5300 3900 0 100 "System Monitor" "clearline"]
+	Text[5000 11300 0 100 "Revision 1.0.0" "clearline"]
+	Text[5300 18300 0 100 "05/2015" "clearline"]
 )
 NetList()
 (
