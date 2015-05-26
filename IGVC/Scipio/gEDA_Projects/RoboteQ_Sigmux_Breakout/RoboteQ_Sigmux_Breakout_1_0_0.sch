@@ -182,6 +182,10 @@ T 48200 50000 5 10 0 1 0 0 1
 footprint=SO8
 T 48200 50000 5 10 0 1 0 0 1
 value=555
+T 48200 50000 5 10 0 0 0 0 1
+model=LM555CMX/NOPB
+T 48200 50000 5 10 0 0 0 0 1
+description=http://www.ti.com/lit/ds/symlink/lm555.pdf
 }
 C 49600 53200 1 0 0 vcc-1.sym
 N 49800 53200 49800 52800 4
@@ -354,6 +358,10 @@ T 54400 54400 5 10 1 1 180 0 1
 refdes=U102
 T 54100 53000 5 10 0 0 180 0 1
 footprint=SO14
+T 54700 55300 5 10 0 0 0 0 1
+model=SN74HC32DR
+T 54700 55300 5 10 0 0 0 0 1
+documentation=SN74HC32DRhttp://www.ti.com/lit/ds/symlink/sn74hc32.pdf
 }
 T 53900 54800 9 10 1 0 0 0 1
 OR

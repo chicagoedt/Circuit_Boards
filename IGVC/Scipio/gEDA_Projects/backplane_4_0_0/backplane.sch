@@ -1160,6 +1160,10 @@ T 36700 75000 5 10 1 1 0 6 1
 value=Ambient Temperature Sensor 0
 T 36100 75300 5 10 0 0 0 6 1
 footprint=HEADER3_1
+T 36100 75300 5 10 0 0 0 0 1
+model=NTCLE413E2103F520L
+T 36100 75300 5 10 0 0 0 0 1
+documentation=NTCLE413E2103F520Lhttp://www.vishay.com/docs/29078/ntcle413.pdf
 }
 N 33900 75500 34400 75500 4
 C 34300 66400 1 90 0 header20-2.sym
