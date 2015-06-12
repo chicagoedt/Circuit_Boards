@@ -369,7 +369,7 @@ footprint=SO14
 T 54700 55300 5 10 0 0 0 0 1
 model=SN74HC32DR
 T 54700 55300 5 10 0 0 0 0 1
-documentation=SN74HC32DRhttp://www.ti.com/lit/ds/symlink/sn74hc32.pdf
+documentation=http://www.ti.com/lit/ds/symlink/sn74hc32.pdf
 T 54100 52400 5 10 0 0 180 0 1
 net=GND:4,5,7,9,10,12,13
 }
@@ -426,3 +426,58 @@ N 52800 37000 52800 40100 4
 N 52800 40100 51900 40100 4
 N 56500 42200 56500 43400 4
 N 52300 34100 52300 37600 4
+C 43000 59600 1 270 0 capacitor-1.sym
+{
+T 43700 59400 5 10 0 0 270 0 1
+device=CAPACITOR
+T 42400 59400 5 10 1 1 0 0 1
+refdes=C105
+T 43900 59400 5 10 0 0 270 0 1
+symversion=0.1
+T 42400 59100 5 10 1 1 0 0 1
+value=0.1uF
+T 43000 59600 5 10 0 0 0 0 1
+description=Cermic
+T 43000 59600 5 10 0 0 0 0 1
+footprint=1206
+T 43000 59600 5 10 0 0 0 0 1
+model=GCJ31CR72E104KXJ3L
+T 43000 59600 5 10 0 0 0 0 1
+documentation=http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c03e.ashx
+}
+C 43100 58300 1 0 0 gnd-1.sym
+C 43000 59700 1 0 0 vcc-1.sym
+C 46000 59400 1 0 0 vcc-1.sym
+C 46100 58000 1 0 0 gnd-1.sym
+C 46000 59300 1 270 0 capacitor-2.sym
+{
+T 46700 59100 5 10 0 0 270 0 1
+device=POLARIZED_CAPACITOR
+T 45500 59000 5 10 1 1 0 0 1
+refdes=C106
+T 46900 59100 5 10 0 0 270 0 1
+symversion=0.1
+T 46000 59300 5 10 0 0 0 0 1
+description=Tantulum
+T 45500 58800 5 10 1 1 0 0 1
+value=1uF
+T 46000 59300 5 10 0 0 0 0 1
+footprint=1206
+T 46000 59300 5 10 0 0 0 0 1
+footprint=EIA3216
+T 46000 59300 5 10 0 0 0 0 1
+documentation=http://www.mouser.com/ds/2/212/KEM_T2005_T491-533941.pdf
+T 46000 59300 5 10 0 0 0 0 1
+model=T491A105K016AT
+}
+N 46200 59400 46200 59300 4
+N 46200 58400 46200 58300 4
+N 43200 59700 43200 59600 4
+N 43200 58700 43200 58600 4
+B 41700 56900 6400 3600 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 41700 60300 9 10 1 0 0 0 1
+Decoupling Capacitors
+T 45400 57700 9 10 1 0 0 0 1
+Connect to 555 timer.
+T 42500 58000 9 10 1 0 0 0 1
+Connect to OR gate.
