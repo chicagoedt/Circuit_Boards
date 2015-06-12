@@ -6,11 +6,11 @@ FileVersion[20070407]
 PCB["" 960400 600000]
 
 Grid[100.0 0 0 1]
-Cursor[587300 415800 0.000000]
+Cursor[47700 487400 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[700 1000 700 500 800 500]
-Flags("nameonpcb,snappin")
+Flags("nameonpcb,clearnew,snappin")
 Groups("1,2,3,c:4,5:6,7,8:9,10,11,12,s")
 Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
@@ -3048,6 +3048,12 @@ Layer(5 "Second Signal 2")
 	Line[326000 573800 326500 574300 1000 2000 ""]
 	Line[168900 574400 168900 374900 2500 2000 ""]
 	Line[168900 374900 143900 349900 2500 2000 ""]
+	Line[45300 514700 45300 514800 4000 2000 ""]
+	Line[45300 514800 32500 527600 4000 2000 ""]
+	Line[32500 527600 17600 527600 4000 2000 ""]
+	Line[17600 527600 6900 516900 4000 2000 ""]
+	Line[6900 516900 6900 418930 4000 2000 ""]
+	Line[6900 418930 37650 388180 4000 2000 ""]
 )
 Layer(6 "+3.3V")
 (
@@ -4065,11 +4071,6 @@ Layer(12 "Bottom Signal")
 	Line[355600 285100 365100 285100 1000 2000 "clearline"]
 	Line[365100 285100 370000 290000 1000 2000 "clearline"]
 	Line[134000 450000 133920 450000 1000 2000 "clearline"]
-	Line[35300 514700 35300 474700 4000 2000 "clearline"]
-	Line[35300 474700 51700 458300 4000 2000 "clearline"]
-	Line[51700 458300 51700 402230 4000 2000 "clearline"]
-	Line[51700 402230 37650 388180 4000 2000 "clearline"]
-	Line[45300 514700 45300 489800 4000 2000 "clearline"]
 	Line[45300 489800 76800 458300 4000 2000 "clearline"]
 	Line[76800 458300 76800 389710 4000 2000 "clearline"]
 	Line[76800 389710 88280 378230 4000 2000 "clearline"]
@@ -4085,6 +4086,8 @@ Layer(12 "Bottom Signal")
 	Line[188500 166400 251900 229800 1000 2000 "clearline"]
 	Line[251900 229800 251900 249900 1000 2000 "clearline"]
 	Line[251900 249900 252000 250000 1000 2000 "clearline"]
+	Line[35300 514700 35300 499800 4000 2000 "clearline"]
+	Line[35300 499800 47700 487400 4000 2000 "clearline"]
 )
 Layer(13 "silk")
 (
@@ -4349,135 +4352,125 @@ NetList()
 	)
 	Net("unnamed_net15" "(unknown)")
 	(
-		Connect("J101-4")
-		Connect("R112-3")
-	)
-	Net("unnamed_net16" "(unknown)")
-	(
-		Connect("J101-5")
-		Connect("R112-2")
-	)
-	Net("unnamed_net17" "(unknown)")
-	(
 		Connect("CONN114-39")
 		Connect("J102-20")
 	)
-	Net("unnamed_net18" "(unknown)")
+	Net("unnamed_net16" "(unknown)")
 	(
 		Connect("CONN114-42")
 		Connect("CONN133-2")
 	)
-	Net("unnamed_net19" "(unknown)")
+	Net("unnamed_net17" "(unknown)")
 	(
 		Connect("CONN114-41")
 		Connect("CONN133-1")
 	)
-	Net("unnamed_net20" "(unknown)")
+	Net("unnamed_net18" "(unknown)")
 	(
 		Connect("CONN114-47")
 		Connect("J101-7")
 	)
-	Net("unnamed_net21" "(unknown)")
+	Net("unnamed_net19" "(unknown)")
 	(
 		Connect("CONN114-48")
 		Connect("J101-8")
 	)
-	Net("unnamed_net22" "(unknown)")
+	Net("unnamed_net20" "(unknown)")
 	(
 		Connect("CONN114-49")
 		Connect("J101-9")
 	)
-	Net("unnamed_net23" "(unknown)")
+	Net("unnamed_net21" "(unknown)")
 	(
 		Connect("CONN114-50")
 		Connect("J101-10")
 	)
-	Net("unnamed_net24" "(unknown)")
+	Net("unnamed_net22" "(unknown)")
 	(
 		Connect("CONN114-46")
 		Connect("J101-6")
 	)
-	Net("unnamed_net25" "(unknown)")
+	Net("unnamed_net23" "(unknown)")
 	(
 		Connect("CONN114-52")
 		Connect("J101-12")
 	)
-	Net("unnamed_net26" "(unknown)")
+	Net("unnamed_net24" "(unknown)")
 	(
 		Connect("CONN114-53")
 		Connect("J101-13")
 	)
-	Net("unnamed_net27" "(unknown)")
+	Net("unnamed_net25" "(unknown)")
 	(
 		Connect("CONN114-54")
 		Connect("J101-14")
 	)
-	Net("unnamed_net28" "(unknown)")
+	Net("unnamed_net26" "(unknown)")
 	(
 		Connect("CONN114-55")
 		Connect("J101-15")
 	)
-	Net("unnamed_net29" "(unknown)")
+	Net("unnamed_net27" "(unknown)")
 	(
 		Connect("CONN114-51")
 		Connect("J101-11")
 	)
-	Net("unnamed_net30" "(unknown)")
+	Net("unnamed_net28" "(unknown)")
 	(
 		Connect("CONN114-57")
 		Connect("J101-17")
 	)
-	Net("unnamed_net31" "(unknown)")
+	Net("unnamed_net29" "(unknown)")
 	(
 		Connect("CONN114-58")
 		Connect("J101-18")
 	)
-	Net("unnamed_net32" "(unknown)")
+	Net("unnamed_net30" "(unknown)")
 	(
 		Connect("CONN114-59")
 		Connect("J101-19")
 	)
-	Net("unnamed_net33" "(unknown)")
+	Net("unnamed_net31" "(unknown)")
 	(
 		Connect("CONN114-56")
 		Connect("J101-16")
 	)
-	Net("unnamed_net34" "(unknown)")
+	Net("unnamed_net32" "(unknown)")
 	(
 		Connect("CONN114-10")
 		Connect("CONN126-1")
 	)
-	Net("unnamed_net35" "(unknown)")
+	Net("unnamed_net33" "(unknown)")
 	(
 		Connect("CONN114-12")
 		Connect("CONN126-3")
 	)
-	Net("unnamed_net36" "(unknown)")
+	Net("unnamed_net34" "(unknown)")
 	(
 		Connect("CONN114-11")
 		Connect("CONN126-2")
 	)
-	Net("unnamed_net37" "(unknown)")
+	Net("unnamed_net35" "(unknown)")
 	(
 		Connect("CONN114-22")
 		Connect("J103-12")
 	)
-	Net("unnamed_net38" "(unknown)")
+	Net("unnamed_net36" "(unknown)")
 	(
 		Connect("CONN114-23")
 		Connect("J103-14")
 	)
-	Net("unnamed_net39" "(unknown)")
+	Net("unnamed_net37" "(unknown)")
 	(
 		Connect("CONN114-24")
 		Connect("J103-16")
 	)
-	Net("unnamed_net40" "(unknown)")
+	Net("unnamed_net38" "(unknown)")
 	(
 		Connect("CONN114-25")
 		Connect("J103-18")
 	)
-	Net("unnamed_net41" "(unknown)")
+	Net("unnamed_net39" "(unknown)")
 	(
 		Connect("CONN114-21")
 		Connect("J103-2")
@@ -4486,7 +4479,7 @@ NetList()
 		Connect("J103-8")
 		Connect("J103-10")
 	)
-	Net("unnamed_net42" "(unknown)")
+	Net("unnamed_net40" "(unknown)")
 	(
 		Connect("CONN114-29")
 		Connect("J103-1")
@@ -4495,7 +4488,7 @@ NetList()
 		Connect("J103-7")
 		Connect("J103-9")
 	)
-	Net("unnamed_net43" "(unknown)")
+	Net("unnamed_net41" "(unknown)")
 	(
 		Connect("CONN114-30")
 		Connect("J103-11")
@@ -4504,117 +4497,127 @@ NetList()
 		Connect("J103-17")
 		Connect("J103-19")
 	)
-	Net("unnamed_net44" "(unknown)")
+	Net("unnamed_net42" "(unknown)")
 	(
 		Connect("CONN114-26")
 		Connect("J103-20")
 	)
-	Net("unnamed_net45" "(unknown)")
+	Net("unnamed_net43" "(unknown)")
 	(
 		Connect("CONN115-3")
 		Connect("CONN115-33")
 		Connect("J102-8")
 		Connect("R110-1")
 	)
-	Net("unnamed_net46" "(unknown)")
+	Net("unnamed_net44" "(unknown)")
 	(
 		Connect("CONN115-4")
 		Connect("CONN115-34")
 		Connect("J102-7")
 		Connect("R109-1")
 	)
-	Net("unnamed_net47" "(unknown)")
+	Net("unnamed_net45" "(unknown)")
 	(
 		Connect("CONN115-5")
 		Connect("CONN115-35")
 		Connect("J102-6")
 		Connect("R108-1")
 	)
-	Net("unnamed_net48" "(unknown)")
+	Net("unnamed_net46" "(unknown)")
 	(
 		Connect("CONN116-5")
 		Connect("CONN118-2")
 	)
-	Net("unnamed_net49" "(unknown)")
+	Net("unnamed_net47" "(unknown)")
 	(
 		Connect("CONN116-6")
 		Connect("CONN118-1")
 	)
-	Net("unnamed_net50" "(unknown)")
+	Net("unnamed_net48" "(unknown)")
 	(
 		Connect("CONN116-13")
 		Connect("CONN119-3")
 	)
-	Net("unnamed_net51" "(unknown)")
+	Net("unnamed_net49" "(unknown)")
 	(
 		Connect("CONN116-14")
 		Connect("CONN119-4")
 	)
-	Net("unnamed_net52" "(unknown)")
+	Net("unnamed_net50" "(unknown)")
 	(
 		Connect("CONN116-15")
 		Connect("CONN119-5")
 	)
-	Net("unnamed_net53" "(unknown)")
+	Net("unnamed_net51" "(unknown)")
 	(
 		Connect("CONN116-11")
 		Connect("CONN119-1")
 	)
-	Net("unnamed_net54" "(unknown)")
+	Net("unnamed_net52" "(unknown)")
 	(
 		Connect("CONN116-22")
 		Connect("CONN120-2")
 	)
-	Net("unnamed_net55" "(unknown)")
+	Net("unnamed_net53" "(unknown)")
 	(
 		Connect("CONN116-21")
 		Connect("CONN120-1")
 	)
-	Net("unnamed_net56" "(unknown)")
+	Net("unnamed_net54" "(unknown)")
 	(
 		Connect("CONN124-4")
 		Connect("J102-4")
 		Connect("R106-2")
 	)
-	Net("unnamed_net57" "(unknown)")
+	Net("unnamed_net55" "(unknown)")
 	(
 		Connect("CONN123-4")
 		Connect("J102-3")
 		Connect("R107-2")
 	)
-	Net("unnamed_net58" "(unknown)")
+	Net("unnamed_net56" "(unknown)")
 	(
 		Connect("CONN125-4")
 		Connect("J102-5")
 		Connect("R105-2")
 	)
-	Net("unnamed_net59" "(unknown)")
+	Net("unnamed_net57" "(unknown)")
 	(
 		Connect("CONN122-3")
 		Connect("J102-16")
 	)
-	Net("unnamed_net60" "(unknown)")
+	Net("unnamed_net58" "(unknown)")
 	(
 		Connect("CONN122-2")
 		Connect("J102-17")
 	)
-	Net("unnamed_net61" "(unknown)")
+	Net("unnamed_net59" "(unknown)")
 	(
 		Connect("CONN123-2")
 		Connect("D107-2")
 		Connect("R108-2")
 	)
-	Net("unnamed_net62" "(unknown)")
+	Net("unnamed_net60" "(unknown)")
 	(
 		Connect("CONN124-2")
 		Connect("D106-2")
 		Connect("R109-2")
 	)
-	Net("unnamed_net63" "(unknown)")
+	Net("unnamed_net61" "(unknown)")
 	(
 		Connect("CONN125-2")
 		Connect("D105-2")
 		Connect("R110-2")
+	)
+	Net("unnamed_net62" "(unknown)")
+	(
+		Connect("J101-4")
+		Connect("R112-2")
+	)
+	Net("unnamed_net63" "(unknown)")
+	(
+		Connect("J101-5")
+		Connect("R112-3")
 	)
 	Net("Vcc" "(unknown)")
 	(
